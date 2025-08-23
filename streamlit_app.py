@@ -19,17 +19,50 @@ import os
 # Add src directory to path for imports
 sys.path.append(str(Path(__file__).parent / "src"))
 
-# Cloud-compatible import handling
+# Cloud-compatible import handling with NLTK setup
 RAG_SYSTEM_AVAILABLE = True
+IMPORT_ERROR_DETAILS = None
+
+def setup_nltk_data():
+    """Download required NLTK data if not present"""
+    try:
+        import nltk
+        # Check if data is already downloaded
+        try:
+            nltk.data.find('tokenizers/punkt')
+            nltk.data.find('corpora/stopwords')
+        except LookupError:
+            # Download required data
+            nltk.download('punkt', quiet=True)
+            nltk.download('stopwords', quiet=True)
+        return True
+    except Exception as e:
+        st.warning(f"NLTK setup failed: {str(e)}")
+        return False
+
 try:
+    # Setup NLTK data first
+    setup_nltk_data()
+    
+    # Import RAG components
     from src.rag.secured_rag_pipeline import SecuredFinancialRAG
     from src.rag.guardrails import FinancialRAGGuardrails
     from src.rag.query_enhancer import FinancialQueryEnhancer
-    st.success("✅ Full RAG system components loaded")
+    st.success("✅ Full RAG system components loaded successfully")
+    
 except ImportError as e:
-    st.warning(f"⚠️ Full RAG system unavailable: {str(e)}")
+    IMPORT_ERROR_DETAILS = str(e)
+    st.error(f"⚠️ RAG system import failed: {IMPORT_ERROR_DETAILS}")
     RAG_SYSTEM_AVAILABLE = False
     # Cloud fallback - create lightweight alternatives
+    SecuredFinancialRAG = None
+    FinancialRAGGuardrails = None  
+    FinancialQueryEnhancer = None
+    
+except Exception as e:
+    IMPORT_ERROR_DETAILS = f"Unexpected error: {str(e)}"
+    st.error(f"⚠️ RAG system initialization failed: {IMPORT_ERROR_DETAILS}")
+    RAG_SYSTEM_AVAILABLE = False
     SecuredFinancialRAG = None
     FinancialRAGGuardrails = None
     FinancialQueryEnhancer = None
@@ -876,8 +909,21 @@ def documentation():
     6. **Web Interface**: Professional Streamlit-based deployment
     """)
     
-    # Troubleshooting
-    st.markdown("### 🔧 Troubleshooting")
+    # System Status & Debugging
+    st.markdown("### 🔧 System Status & Troubleshooting")
+    
+    with st.expander("🔍 System Diagnostic Information"):
+        st.markdown(f"""
+        **RAG System Status**: {"✅ Available" if RAG_SYSTEM_AVAILABLE else "❌ Unavailable"}
+        
+        **Python Version**: {sys.version}
+        
+        **Import Error Details**: {IMPORT_ERROR_DETAILS if IMPORT_ERROR_DETAILS else "None"}
+        
+        **System Path**: {sys.path[:3]}...
+        
+        **Available Packages**: Run `pip list` to see installed packages
+        """)
     
     with st.expander("❓ Common Issues"):
         st.markdown("""
