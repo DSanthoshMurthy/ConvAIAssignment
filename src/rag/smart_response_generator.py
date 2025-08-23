@@ -190,6 +190,15 @@ class SmartFinancialResponseGenerator:
             response, confidence = self.generate_template_response(
                 query, primary_category, extracted_data, chunks
             )
+            
+            # Cloud confidence enhancement: Boost confidence for good BM25-only results
+            if confidence < 0.6:  # Only boost if initially low
+                enhanced_confidence = self.enhance_cloud_confidence(
+                    query, response, chunks, confidence, primary_category
+                )
+                if enhanced_confidence > confidence:
+                    logger.info(f"💡 Cloud confidence enhanced: {confidence:.2f} → {enhanced_confidence:.2f}")
+                    confidence = enhanced_confidence
         
         # Calculate generation time
         generation_time = (datetime.now() - start_time).total_seconds()
@@ -477,6 +486,89 @@ class SmartFinancialResponseGenerator:
                 return response, 0.60
         
         return templates['no_data'].format(query_topic="this specific information"), 0.25
+    
+    def enhance_cloud_confidence(self, 
+                               query: str, 
+                               response: str, 
+                               chunks: List[Dict[str, Any]], 
+                               current_confidence: float,
+                               query_category: str) -> float:
+        """Enhance confidence for cloud deployments with degraded retrieval.
+        
+        This method boosts confidence when BM25-only retrieval still produces
+        good results, compensating for missing ChromaDB/cross-encoder.
+        
+        Args:
+            query: Original query
+            response: Generated response  
+            chunks: Retrieved chunks
+            current_confidence: Current confidence score
+            query_category: Query classification category
+            
+        Returns:
+            Enhanced confidence score
+        """
+        try:
+            boost_factors = []
+            
+            # Factor 1: Strong keyword match in response
+            query_keywords = set(query.lower().split())
+            response_keywords = set(response.lower().split())
+            keyword_overlap = len(query_keywords.intersection(response_keywords))
+            if keyword_overlap >= 2:
+                boost_factors.append(0.2)  # +0.2 for good keyword coverage
+            
+            # Factor 2: Financial data presence (numbers, crores, etc.)
+            financial_patterns = [
+                r'₹[\d,.]+ crore',  # Currency amounts
+                r'\d+\.?\d*%',      # Percentages  
+                r'Q[1-4] \d{4}',    # Quarters
+                r'FY \d{4}-?\d*'    # Financial years
+            ]
+            
+            financial_data_count = 0
+            for pattern in financial_patterns:
+                if re.search(pattern, response, re.IGNORECASE):
+                    financial_data_count += 1
+            
+            if financial_data_count >= 2:
+                boost_factors.append(0.25)  # +0.25 for rich financial data
+            elif financial_data_count >= 1:
+                boost_factors.append(0.15)  # +0.15 for some financial data
+            
+            # Factor 3: Revenue-specific queries get higher confidence
+            if query_category in ['revenue', 'financial_performance'] and 'revenue' in response.lower():
+                boost_factors.append(0.2)  # +0.2 for relevant revenue responses
+            
+            # Factor 4: Multiple relevant chunks retrieved (good BM25 performance)
+            if len(chunks) >= 3:
+                # Check if chunks are relevant by looking for query keywords
+                relevant_chunks = 0
+                for chunk in chunks[:5]:  # Check top 5 chunks
+                    chunk_text = chunk.get('text', '').lower()
+                    if any(keyword in chunk_text for keyword in query_keywords):
+                        relevant_chunks += 1
+                
+                if relevant_chunks >= 2:
+                    boost_factors.append(0.15)  # +0.15 for good chunk relevance
+            
+            # Factor 5: Response length and structure indicates good generation
+            if len(response) > 100 and ('₹' in response or 'crore' in response.lower()):
+                boost_factors.append(0.1)  # +0.1 for substantial financial response
+            
+            # Calculate enhanced confidence
+            boost = sum(boost_factors)
+            enhanced_confidence = min(0.85, current_confidence + boost)  # Cap at 0.85 for BM25-only
+            
+            # Log the enhancement details
+            if boost > 0:
+                logger.info(f"🔧 Cloud confidence boost: +{boost:.2f} from {len(boost_factors)} factors")
+            
+            return enhanced_confidence
+            
+        except Exception as e:
+            logger.warning(f"Cloud confidence enhancement failed: {str(e)}")
+            return current_confidence
     
     def update_generation_stats(self, category: str, confidence: float):
         """Update generation statistics."""

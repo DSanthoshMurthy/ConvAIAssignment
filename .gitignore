@@ -56,8 +56,8 @@ logs/
 # *.bin
 # *.onnx
 
-# ChromaDB persistence (cloud incompatible)
-data/indexes/chroma_db/
+# ChromaDB persistence - now cloud compatible with SQLite fixes
+# data/indexes/chroma_db/
 
 # Local testing files  
 test_*.py

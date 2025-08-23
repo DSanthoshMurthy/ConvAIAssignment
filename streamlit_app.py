@@ -932,16 +932,43 @@ def documentation():
     st.markdown("### 🔧 System Status & Troubleshooting")
     
     with st.expander("🔍 System Diagnostic Information"):
+        # Check data availability
+        data_status = {}
+        base_dir = Path(__file__).parent
+        
+        # Check critical data files
+        critical_files = {
+            "ChromaDB": base_dir / "data/indexes/chroma_db/chroma.sqlite3",
+            "BM25 Index": base_dir / "data/indexes/bm25_index.pkl", 
+            "Chunk Mapping": base_dir / "data/indexes/bm25_chunk_mapping.json",
+            "Q&A Pairs": base_dir / "data/processed/xbrl_qa_pairs.json",
+            "Index Metadata": base_dir / "data/indexes/index_metadata.json"
+        }
+        
+        for name, path in critical_files.items():
+            if path.exists():
+                size = path.stat().st_size / (1024*1024)  # MB
+                data_status[name] = f"✅ Available ({size:.1f}MB)"
+            else:
+                data_status[name] = f"❌ Missing"
+        
         st.markdown(f"""
         **RAG System Status**: {"✅ Available" if RAG_SYSTEM_AVAILABLE else "❌ Unavailable"}
         
-        **Python Version**: {sys.version}
+        **Python Version**: {sys.version.split()[0]}
         
         **Import Error Details**: {IMPORT_ERROR_DETAILS if IMPORT_ERROR_DETAILS else "None"}
         
-        **System Path**: {sys.path[:3]}...
+        **Data Availability:**
+        - **ChromaDB**: {data_status.get('ChromaDB', 'Unknown')}
+        - **BM25 Index**: {data_status.get('BM25 Index', 'Unknown')}
+        - **Q&A Pairs**: {data_status.get('Q&A Pairs', 'Unknown')}
+        - **Chunk Mapping**: {data_status.get('Chunk Mapping', 'Unknown')}
+        - **Metadata**: {data_status.get('Index Metadata', 'Unknown')}
         
-        **Available Packages**: Run `pip list` to see installed packages
+        **Deployment Mode**: {"🏠 Local" if str(base_dir).startswith('/Users') else "☁️ Cloud"}
+        
+        **Confidence Enhancement**: {"🔧 Active" if not RAG_SYSTEM_AVAILABLE or "❌" in str(data_status.values()) else "💎 Full System"}
         """)
     
     with st.expander("❓ Common Issues"):
