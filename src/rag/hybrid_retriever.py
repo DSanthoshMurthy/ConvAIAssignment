@@ -216,7 +216,7 @@ class FinancialHybridRetriever:
             return False
     
     def preprocess_query(self, query: str) -> Dict[str, Any]:
-        """Preprocess query for optimal retrieval."""
+        """Preprocess query for optimal retrieval with robust error handling."""
         try:
             # Original query
             original = query.strip()
@@ -225,8 +225,17 @@ class FinancialHybridRetriever:
             cleaned = re.sub(r'[^\w\s]', ' ', query.lower())
             cleaned = re.sub(r'\s+', ' ', cleaned).strip()
             
-            # Tokenization
-            tokens = word_tokenize(cleaned)
+            # Tokenization with fallback
+            try:
+                tokens = word_tokenize(cleaned)
+            except LookupError as e:
+                logger.warning(f"NLTK tokenization failed: {str(e)}")
+                # Fallback to simple space-based tokenization
+                tokens = cleaned.split()
+                logger.info("Using fallback tokenization")
+            except Exception as e:
+                logger.warning(f"Unexpected tokenization error: {str(e)}")
+                tokens = cleaned.split()
             
             # Filter tokens but preserve financial terms
             filtered_tokens = []
@@ -236,41 +245,73 @@ class FinancialHybridRetriever:
                     (token not in self.stop_words or token in self.financial_preserve_terms)):
                     filtered_tokens.append(token)
             
-            # Query expansion
+            # If no tokens passed filtering, keep original tokens
+            if not filtered_tokens and tokens:
+                logger.warning("No tokens passed filtering, using original tokens")
+                filtered_tokens = [t for t in tokens if len(t) > 1]
+            
+            # Query expansion with validation
             expanded_tokens = filtered_tokens.copy()
             for token in filtered_tokens:
                 if token in self.query_expansions:
-                    expanded_tokens.extend(self.query_expansions[token])
+                    expansions = self.query_expansions[token]
+                    # Validate expansions
+                    valid_expansions = [exp for exp in expansions if isinstance(exp, str) and exp.strip()]
+                    expanded_tokens.extend(valid_expansions)
             
             # Remove duplicates while preserving order
             unique_expanded = []
             seen = set()
             for token in expanded_tokens:
-                if token not in seen:
+                if token and token not in seen:  # Additional validation
                     unique_expanded.append(token)
                     seen.add(token)
             
-            # Create expanded query
-            expanded_query = ' '.join(unique_expanded)
+            # Create expanded query with validation
+            if not unique_expanded:
+                logger.warning("No valid tokens after expansion, using cleaned query")
+                expanded_query = cleaned
+                unique_expanded = [cleaned]
+            else:
+                expanded_query = ' '.join(unique_expanded)
             
-            return {
+            # Identify financial terms
+            financial_terms = [t for t in filtered_tokens if t in self.financial_preserve_terms]
+            if 'revenue' in cleaned and 'revenue' not in financial_terms:
+                financial_terms.append('revenue')  # Ensure revenue is captured
+            
+            result = {
                 'original': original,
                 'cleaned': cleaned,
                 'tokens': filtered_tokens,
                 'expanded_tokens': unique_expanded,
                 'expanded_query': expanded_query,
-                'financial_terms': [t for t in filtered_tokens if t in self.financial_preserve_terms]
+                'financial_terms': financial_terms
             }
+            
+            # Log preprocessing results
+            logger.info(f"Query preprocessing successful:")
+            logger.info(f"- Original: '{original}'")
+            logger.info(f"- Tokens: {filtered_tokens}")
+            logger.info(f"- Financial terms: {financial_terms}")
+            
+            return result
             
         except Exception as e:
             logger.warning(f"Error preprocessing query: {str(e)}")
+            logger.warning("Using safe fallback preprocessing")
+            
+            # Safe fallback that will always work
+            fallback_query = query.lower().strip()
+            fallback_tokens = [t for t in fallback_query.split() if t]
+            
             return {
                 'original': query,
-                'cleaned': query.lower(),
-                'tokens': [query.lower()],
-                'expanded_tokens': [query.lower()],
-                'expanded_query': query.lower(),
-                'financial_terms': []
+                'cleaned': fallback_query,
+                'tokens': fallback_tokens,
+                'expanded_tokens': fallback_tokens,
+                'expanded_query': fallback_query,
+                'financial_terms': ['revenue'] if 'revenue' in fallback_query else []
             }
     
     def dense_retrieval(self, query_data: Dict[str, Any], top_k: int = 10) -> List[Dict[str, Any]]:

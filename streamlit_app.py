@@ -44,17 +44,44 @@ def setup_nltk_data():
     """Download required NLTK data if not present"""
     try:
         import nltk
-        # Check if data is already downloaded
-        try:
-            nltk.data.find('tokenizers/punkt')
-            nltk.data.find('corpora/stopwords')
-        except LookupError:
-            # Download required data
-            nltk.download('punkt', quiet=True)
-            nltk.download('stopwords', quiet=True)
+        import os
+        
+        # Create NLTK data directory in a writable location
+        nltk_data_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
+        os.makedirs(nltk_data_dir, exist_ok=True)
+        nltk.data.path.append(nltk_data_dir)
+        
+        # List of required NLTK resources
+        required_resources = [
+            ('tokenizers/punkt', 'punkt'),
+            ('corpora/stopwords', 'stopwords'),
+            ('tokenizers/punkt_tab', 'punkt'),  # punkt_tab is part of punkt
+            ('tokenizers/punkt/english.pickle', 'punkt')  # Ensure English tokenizer
+        ]
+        
+        # Download each resource if needed
+        for resource_path, resource_name in required_resources:
+            try:
+                nltk.data.find(resource_path)
+                logger.info(f"✓ NLTK resource found: {resource_path}")
+            except LookupError:
+                logger.info(f"Downloading NLTK resource: {resource_name}")
+                nltk.download(resource_name, download_dir=nltk_data_dir, quiet=True)
+        
+        # Verify downloads
+        for resource_path, _ in required_resources:
+            try:
+                nltk.data.find(resource_path)
+            except LookupError as e:
+                raise Exception(f"Failed to verify NLTK resource: {resource_path}")
+        
+        logger.info("✅ All NLTK resources loaded successfully")
         return True
+        
     except Exception as e:
-        st.warning(f"NLTK setup failed: {str(e)}")
+        error_msg = f"NLTK setup failed: {str(e)}"
+        logger.error(error_msg)
+        st.error(error_msg)
         return False
 
 try:
