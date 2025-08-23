@@ -90,13 +90,31 @@ class FinancialHybridRetriever:
             self.embedding_model = SentenceTransformer(self.embedding_model_name)
             logger.info(f"✓ Loaded embedding model: {self.embedding_model_name}")
             
-            # Load ChromaDB
-            self.chroma_client = chromadb.PersistentClient(
-                path=str(self.chroma_db_dir),
-                settings=Settings(anonymized_telemetry=False)
-            )
-            self.collection = self.chroma_client.get_collection("financial_chunks_100")
-            logger.info("✓ Loaded ChromaDB collection")
+            # Load ChromaDB with SQLite compatibility fallback
+            try:
+                # Try to patch sqlite3 if needed
+                try:
+                    import pysqlite3 as sqlite3
+                    import sys
+                    sys.modules['sqlite3'] = sqlite3
+                except ImportError:
+                    pass
+                
+                self.chroma_client = chromadb.PersistentClient(
+                    path=str(self.chroma_db_dir),
+                    settings=Settings(anonymized_telemetry=False)
+                )
+                self.collection = self.chroma_client.get_collection("financial_chunks_100")
+                logger.info("✓ Loaded ChromaDB collection")
+                
+            except Exception as chroma_error:
+                logger.warning(f"ChromaDB failed: {str(chroma_error)}")
+                logger.info("⚠️  Falling back to BM25-only retrieval (dense search disabled)")
+                self.chroma_client = None
+                self.collection = None
+                # Adjust weights to rely only on sparse retrieval
+                self.dense_weight = 0.0
+                self.sparse_weight = 1.0
             
             # Load BM25 index
             bm25_file = self.indexes_dir / "bm25_index.pkl"
@@ -184,6 +202,11 @@ class FinancialHybridRetriever:
     def dense_retrieval(self, query_data: Dict[str, Any], top_k: int = 10) -> List[Dict[str, Any]]:
         """Perform dense (semantic) retrieval using ChromaDB."""
         try:
+            # Check if ChromaDB is available
+            if not self.collection:
+                logger.info("Dense retrieval skipped: ChromaDB not available")
+                return []
+            
             # Use expanded query for better semantic matching
             query_text = query_data['expanded_query']
             

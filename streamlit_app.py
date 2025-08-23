@@ -23,6 +23,22 @@ sys.path.append(str(Path(__file__).parent / "src"))
 RAG_SYSTEM_AVAILABLE = True
 IMPORT_ERROR_DETAILS = None
 
+def setup_sqlite_for_chromadb():
+    """Setup SQLite compatibility for ChromaDB"""
+    try:
+        # Try to patch sqlite3 with pysqlite3 for ChromaDB compatibility
+        import sys
+        try:
+            import pysqlite3 as sqlite3
+            sys.modules['sqlite3'] = sqlite3
+            return True
+        except ImportError:
+            # pysqlite3 not available, use system sqlite3
+            return True
+    except Exception as e:
+        st.warning(f"SQLite setup failed: {str(e)}")
+        return False
+
 def setup_nltk_data():
     """Download required NLTK data if not present"""
     try:
@@ -41,7 +57,10 @@ def setup_nltk_data():
         return False
 
 try:
-    # Setup NLTK data first
+    # Setup SQLite compatibility for ChromaDB
+    setup_sqlite_for_chromadb()
+    
+    # Setup NLTK data
     setup_nltk_data()
     
     # Import RAG components
