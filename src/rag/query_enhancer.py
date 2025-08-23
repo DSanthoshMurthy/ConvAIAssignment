@@ -18,40 +18,46 @@ class FinancialQueryEnhancer:
         """Initialize the Financial Query Enhancer."""
         
         # Financial terms dictionary with common variations and misspellings
+        # Note: Removed substring matches to prevent false corrections (e.g., 'revenu' in 'revenue')
         self.financial_terms_corrections = {
-            # Revenue variations
+            # Revenue variations (only clear misspellings)
             'revunue': 'revenue',
             'reveune': 'revenue',
             'revanue': 'revenue',
-            'revenu': 'revenue',
-            'revenues': 'revenue',
+            'revinue': 'revenue',
+            # Removed 'revenu': 'revenue' - substring of correct word
             'sales': 'revenue',
             'income': 'revenue',
             'turnover': 'revenue',
             
-            # Profit variations
+            # Profit variations (only clear misspellings)
             'proffit': 'profit',
             'prfit': 'profit',
-            'profits': 'profit',
+            'profi': 'profit',
             'earnings': 'profit',
             'net income': 'profit',
             'bottom line': 'profit',
             
-            # Expense variations
+            # Expense variations (only clear misspellings)
             'expence': 'expense',
             'expens': 'expense',
+            'expanse': 'expense',
+            # Keep 'expenses': 'expense' for singular standardization
             'expenses': 'expense',
             'costs': 'expense',
             'expenditure': 'expense',
             'outgoings': 'expense',
             
-            # Asset variations
+            # Asset variations (only clear misspellings)
             'assests': 'assets',
-            'asset': 'assets',
+            'aseets': 'assets', 
+            # Removed 'asset': 'assets' to avoid singular/plural conflicts
             'holdings': 'assets',
             
-            # Liability variations
+            # Liability variations (only clear misspellings)
             'liabilties': 'liabilities',
+            'liabilites': 'liabilities',
+            # Keep 'liability': 'liabilities' as it's a standardization, not a substring issue
             'liability': 'liabilities',
             'debts': 'liabilities',
             'obligations': 'liabilities',
@@ -157,7 +163,7 @@ class FinancialQueryEnhancer:
         return enhancement_metadata
     
     def apply_spell_corrections(self, query: str) -> Tuple[str, List[Dict[str, str]]]:
-        """Apply spell corrections to financial terms.
+        """Apply spell corrections to financial terms using word boundaries.
         
         Args:
             query: Query to correct
@@ -168,33 +174,53 @@ class FinancialQueryEnhancer:
         corrected_query = query
         corrections = []
         
-        # Direct mapping corrections
+        # Direct mapping corrections with word boundaries
         for incorrect, correct in self.financial_terms_corrections.items():
-            if incorrect in corrected_query:
-                corrected_query = corrected_query.replace(incorrect, correct)
-                corrections.append({
-                    'original': incorrect,
-                    'corrected': correct,
-                    'type': 'direct_mapping'
-                })
+            # Use word boundaries to avoid substring matches
+            pattern = r'\b' + re.escape(incorrect) + r'\b'
+            if re.search(pattern, corrected_query, re.IGNORECASE):
+                # Only correct if it's not already the correct word
+                if incorrect.lower() != correct.lower():
+                    corrected_query = re.sub(pattern, correct, corrected_query, flags=re.IGNORECASE)
+                    corrections.append({
+                        'original': incorrect,
+                        'corrected': correct,
+                        'type': 'direct_mapping'
+                    })
         
-        # Fuzzy matching for remaining terms
+        # Fuzzy matching for remaining terms (more conservative)
         words = corrected_query.split()
         for i, word in enumerate(words):
-            if word not in self.standard_financial_terms:
-                # Find close matches
-                close_matches = get_close_matches(
-                    word, self.standard_financial_terms, 
-                    n=1, cutoff=0.7
-                )
+            word_lower = word.lower()
+            
+            # Skip if word is already in standard terms (case insensitive)
+            if any(word_lower == term.lower() for term in self.standard_financial_terms):
+                continue
                 
-                if close_matches:
-                    best_match = close_matches[0]
+            # Skip if word is too short or looks like a proper word
+            if len(word) < 4 or word.isdigit():
+                continue
+                
+            # Find close matches with higher cutoff to avoid false positives
+            close_matches = get_close_matches(
+                word_lower, [term.lower() for term in self.standard_financial_terms], 
+                n=1, cutoff=0.85  # Increased from 0.7 to 0.85 for fewer false positives
+            )
+            
+            if close_matches:
+                best_match_lower = close_matches[0]
+                # Find the original case version
+                best_match = next(term for term in self.standard_financial_terms if term.lower() == best_match_lower)
+                
+                # Only apply if the similarity is significant and words are clearly different
+                similarity = SequenceMatcher(None, word_lower, best_match_lower).ratio()
+                if similarity < 0.95:  # Only correct if words are significantly different
                     words[i] = best_match
                     corrections.append({
                         'original': word,
                         'corrected': best_match,
-                        'type': 'fuzzy_matching'
+                        'type': 'fuzzy_matching',
+                        'similarity': round(similarity, 2)
                     })
         
         corrected_query = ' '.join(words)
