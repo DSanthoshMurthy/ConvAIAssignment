@@ -1,0 +1,38 @@
+{
+  "total_chunks": 1520,
+  "avg_tokens_per_chunk": 54.26907894736842,
+  "chunks_by_section": {
+    "other": 521,
+    "ratios": 28,
+    "revenue": 251,
+    "expenses": 216,
+    "profit_loss": 129,
+    "equity": 35,
+    "assets": 180,
+    "liabilities": 24,
+    "qa_memory": 136
+  },
+  "chunks_by_quarter": {
+    "Q3 FY2023-24": 150,
+    "Q3 FY2022-23": 150,
+    "Q1 FY2023-24": 90,
+    "Q1 FY2022-23": 88,
+    "Q2 FY2023-24": 224,
+    "Q2 FY2022-23": 224,
+    "Q4 FY2022-23": 229,
+    "Q4 FY2023-24": 229,
+    "Dec 2023": 17,
+    "Dec 2022": 17,
+    "Jun 2023": 17,
+    "Jun 2022": 17,
+    "Sep 2023": 17,
+    "Sep 2022": 17,
+    "March 2023": 17,
+    "Marc 2024": 17
+  },
+  "chunks_by_fiscal_year": {
+    "FY2023-24": 922,
+    "FY2022-23": 462,
+    "FY2022-24": 136
+  }
+}

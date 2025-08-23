@@ -1,0 +1,405 @@
+Sr.No.,Element Name,Period,Unit,Decimals,Fact Value
+1,ScripCode,01-01-2023 To 31-03-2023,,,532532
+2,Symbol,01-01-2023 To 31-03-2023,,,JPASSOCIAT
+3,MSEISymbol,01-01-2023 To 31-03-2023,,,NOTLISTED
+4,NameOfTheCompany,01-01-2023 To 31-03-2023,,,Jaiprakash Associates Limited
+5,ClassOfSecurity,01-01-2023 To 31-03-2023,,,Equity
+6,DateOfStartOfFinancialYear,01-01-2023 To 31-03-2023,,,2022-04-01
+7,DateOfEndOfFinancialYear,01-01-2023 To 31-03-2023,,,2023-03-31
+8,DateOfBoardMeetingWhenFinancialResultsWereApproved,01-01-2023 To 31-03-2023,,,2023-05-27
+9,DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange,01-01-2023 To 31-03-2023,,,2023-05-19
+10,DescriptionOfPresentationCurrency,01-01-2023 To 31-03-2023,,,INR
+11,LevelOfRoundingUsedInFinancialStatements,01-01-2023 To 31-03-2023,,,Lakhs
+12,ReportingQuarter,01-01-2023 To 31-03-2023,,,Yearly
+13,StartTimeOfBoardMeeting,01-01-2023 To 31-03-2023,,,16:00:00
+14,EndTimeOfBoardMeeting,01-01-2023 To 31-03-2023,,,17:18:00
+15,DateOfStartOfBoardMeeting,01-01-2023 To 31-03-2023,,,2023-05-27
+16,DateOfEndOfBoardMeeting,01-01-2023 To 31-03-2023,,,2023-05-27
+17,WhetherCashFlowStatementIsApplicableOnCompany,01-01-2023 To 31-03-2023,,,true
+18,TypeOfCashFlowStatement,01-01-2023 To 31-03-2023,,,Cash Flow Indirect
+19,DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification,01-01-2023 To 31-03-2023,,,Statement on impact of audit qualification
+20,IsCompanyReportingMultisegmentOrSingleSegment,01-01-2023 To 31-03-2023,,,Multi segment
+21,DateOfStartOfReportingPeriod,01-01-2023 To 31-03-2023,,,2023-01-01
+22,DateOfEndOfReportingPeriod,01-01-2023 To 31-03-2023,,,2023-03-31
+23,WhetherResultsAreAuditedOrUnaudited,01-01-2023 To 31-03-2023,,,Audited
+24,NatureOfReportStandaloneConsolidated,01-01-2023 To 31-03-2023,,,Consolidated
+25,RevenueFromOperations,01-01-2023 To 31-03-2023,OneD,-5.0,19077400000.00
+26,OtherIncome,01-01-2023 To 31-03-2023,OneD,-5.0,421300000.00
+27,Income,01-01-2023 To 31-03-2023,OneD,-5.0,19498700000.00
+28,CostOfMaterialsConsumed,01-01-2023 To 31-03-2023,OneD,-5.0,8418100000.00
+29,PurchasesOfStockInTrade,01-01-2023 To 31-03-2023,OneD,-5.0,-432000000.00
+30,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-01-2023 To 31-03-2023,OneD,-5.0,-36600000.00
+31,EmployeeBenefitExpense,01-01-2023 To 31-03-2023,OneD,-5.0,1064000000.00
+32,FinanceCosts,01-01-2023 To 31-03-2023,OneD,-5.0,1739100000.00
+33,DepreciationDepletionAndAmortisationExpense,01-01-2023 To 31-03-2023,OneD,-5.0,771100000.00
+34,OtherExpenses,01-01-2023 To 31-03-2023,OneD,-5.0,7457900000.00
+35,Expenses,01-01-2023 To 31-03-2023,OneD,-5.0,18981600000.00
+36,ProfitBeforeExceptionalItemsAndTax,01-01-2023 To 31-03-2023,OneD,-5.0,517100000.00
+37,ExceptionalItemsBeforeTax,01-01-2023 To 31-03-2023,OneD,-5.0,-2005300000.00
+38,ProfitBeforeTax,01-01-2023 To 31-03-2023,OneD,-5.0,-1488200000.00
+39,CurrentTax,01-01-2023 To 31-03-2023,OneD,-5.0,77400000.00
+40,DeferredTax,01-01-2023 To 31-03-2023,OneD,-5.0,-8200000.00
+41,TaxExpense,01-01-2023 To 31-03-2023,OneD,-5.0,69200000.00
+42,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-01-2023 To 31-03-2023,OneD,-5.0,0.00
+43,ProfitLossForPeriodFromContinuingOperations,01-01-2023 To 31-03-2023,OneD,-5.0,-1557400000.00
+44,ProfitLossFromDiscontinuedOperationsBeforeTax,01-01-2023 To 31-03-2023,OneD,-5.0,-1496000000.00
+45,TaxExpenseOfDiscontinuedOperations,01-01-2023 To 31-03-2023,OneD,-5.0,-400000.00
+46,ProfitLossFromDiscontinuedOperationsAfterTax,01-01-2023 To 31-03-2023,OneD,-5.0,-1495600000.00
+47,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-01-2023 To 31-03-2023,OneD,-5.0,-103700000.00
+48,ProfitLossForPeriod,01-01-2023 To 31-03-2023,OneD,-5.0,-3156700000.00
+49,OtherComprehensiveIncomeNetOfTaxes,01-01-2023 To 31-03-2023,OneD,-5.0,44300000.00
+50,ComprehensiveIncomeForThePeriod,01-01-2023 To 31-03-2023,OneD,-5.0,-3112400000.00
+51,ProfitOrLossAttributableToOwnersOfParent,01-01-2023 To 31-03-2023,OneD,-5.0,-3217800000.00
+52,ProfitOrLossAttributableToNonControllingInterests,01-01-2023 To 31-03-2023,OneD,-5.0,61100000.00
+53,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-01-2023 To 31-03-2023,OneD,-5.0,-3172900000.00
+54,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-01-2023 To 31-03-2023,OneD,-5.0,60500000.00
+55,PaidUpValueOfEquityShareCapital,01-01-2023 To 31-03-2023,OneD,-5.0,4909200000.00
+56,FaceValueOfEquityShareCapital,01-01-2023 To 31-03-2023,OneD,,2
+57,BasicEarningsLossPerShareFromContinuingOperations,01-01-2023 To 31-03-2023,OneD,,-0.70
+58,DilutedEarningsLossPerShareFromContinuingOperations,01-01-2023 To 31-03-2023,OneD,,-0.70
+59,BasicEarningsLossPerShareFromDiscontinuedOperations,01-01-2023 To 31-03-2023,OneD,,-0.61
+60,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-01-2023 To 31-03-2023,OneD,,-0.61
+61,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2023 To 31-03-2023,OneD,,-1.31
+62,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2023 To 31-03-2023,OneD,,-1.31
+63,DebtServiceCoverageRatio,01-01-2023 To 31-03-2023,OneD,,0.00
+64,InterestServiceCoverageRatio,01-01-2023 To 31-03-2023,OneD,,0.01
+65,IsCompanyReportingMultisegmentOrSingleSegment,01-01-2023 To 31-03-2023,,,Multi segment
+66,DateOfStartOfReportingPeriod,01-01-2023 To 31-03-2023,,,2022-04-01
+67,DateOfEndOfReportingPeriod,01-01-2023 To 31-03-2023,,,2023-03-31
+68,WhetherResultsAreAuditedOrUnaudited,01-01-2023 To 31-03-2023,,,Audited
+69,NatureOfReportStandaloneConsolidated,01-01-2023 To 31-03-2023,,,Consolidated
+70,RevenueFromOperations,01-01-2023 To 31-03-2023,FourD,-5.0,72631200000.00
+71,OtherIncome,01-01-2023 To 31-03-2023,FourD,-5.0,1950700000.00
+72,Income,01-01-2023 To 31-03-2023,FourD,-5.0,74581900000.00
+73,CostOfMaterialsConsumed,01-01-2023 To 31-03-2023,FourD,-5.0,36501700000.00
+74,PurchasesOfStockInTrade,01-01-2023 To 31-03-2023,FourD,-5.0,432700000.00
+75,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-01-2023 To 31-03-2023,FourD,-5.0,-185100000.00
+76,EmployeeBenefitExpense,01-01-2023 To 31-03-2023,FourD,-5.0,4055900000.00
+77,FinanceCosts,01-01-2023 To 31-03-2023,FourD,-5.0,10358500000.00
+78,DepreciationDepletionAndAmortisationExpense,01-01-2023 To 31-03-2023,FourD,-5.0,3813500000.00
+79,OtherExpenses,01-01-2023 To 31-03-2023,FourD,-5.0,25577500000.00
+80,Expenses,01-01-2023 To 31-03-2023,FourD,-5.0,80554700000.00
+81,ProfitBeforeExceptionalItemsAndTax,01-01-2023 To 31-03-2023,FourD,-5.0,-5972800000.00
+82,ExceptionalItemsBeforeTax,01-01-2023 To 31-03-2023,FourD,-5.0,-2005300000.00
+83,ProfitBeforeTax,01-01-2023 To 31-03-2023,FourD,-5.0,-7978100000.00
+84,CurrentTax,01-01-2023 To 31-03-2023,FourD,-5.0,229800000.00
+85,DeferredTax,01-01-2023 To 31-03-2023,FourD,-5.0,162100000.00
+86,TaxExpense,01-01-2023 To 31-03-2023,FourD,-5.0,391900000.00
+87,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+88,ProfitLossForPeriodFromContinuingOperations,01-01-2023 To 31-03-2023,FourD,-5.0,-8370000000.00
+89,ProfitLossFromDiscontinuedOperationsBeforeTax,01-01-2023 To 31-03-2023,FourD,-5.0,-5272600000.00
+90,TaxExpenseOfDiscontinuedOperations,01-01-2023 To 31-03-2023,FourD,-5.0,-400000.00
+91,ProfitLossFromDiscontinuedOperationsAfterTax,01-01-2023 To 31-03-2023,FourD,-5.0,-5272200000.00
+92,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-01-2023 To 31-03-2023,FourD,-5.0,126200000.00
+93,ProfitLossForPeriod,01-01-2023 To 31-03-2023,FourD,-5.0,-13516000000.00
+94,OtherComprehensiveIncomeNetOfTaxes,01-01-2023 To 31-03-2023,FourD,-5.0,50200000.00
+95,ComprehensiveIncomeForThePeriod,01-01-2023 To 31-03-2023,FourD,-5.0,-13465800000.00
+96,ProfitOrLossAttributableToOwnersOfParent,01-01-2023 To 31-03-2023,FourD,-5.0,-13418300000.00
+97,ProfitOrLossAttributableToNonControllingInterests,01-01-2023 To 31-03-2023,FourD,-5.0,-97700000.00
+98,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-01-2023 To 31-03-2023,FourD,-5.0,-13368900000.00
+99,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-01-2023 To 31-03-2023,FourD,-5.0,-96900000.00
+100,PaidUpValueOfEquityShareCapital,01-01-2023 To 31-03-2023,FourD,-5.0,4909200000.00
+101,FaceValueOfEquityShareCapital,01-01-2023 To 31-03-2023,FourD,,2
+102,ReserveExcludingRevaluationReserves,01-01-2023 To 31-03-2023,FourD,-5.0,-17423100000.00
+103,BasicEarningsLossPerShareFromContinuingOperations,01-01-2023 To 31-03-2023,FourD,,-3.32
+104,DilutedEarningsLossPerShareFromContinuingOperations,01-01-2023 To 31-03-2023,FourD,,-3.32
+105,BasicEarningsLossPerShareFromDiscontinuedOperations,01-01-2023 To 31-03-2023,FourD,,-2.15
+106,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-01-2023 To 31-03-2023,FourD,,-2.15
+107,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2023 To 31-03-2023,FourD,,-5.47
+108,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2023 To 31-03-2023,FourD,,-5.47
+109,DebtServiceCoverageRatio,01-01-2023 To 31-03-2023,FourD,,0.00
+110,InterestServiceCoverageRatio,01-01-2023 To 31-03-2023,FourD,,0.00
+111,DescriptionOfOtherExpenses,01-01-2023 To 31-03-2023,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+112,OtherExpenses,01-01-2023 To 31-03-2023,OneOperatingExpenses01D,-5.0,6596700000.00
+113,DescriptionOfOtherExpenses,01-01-2023 To 31-03-2023,,,Other Expenses
+114,OtherExpenses,01-01-2023 To 31-03-2023,OneOperatingExpenses02D,-5.0,861200000.00
+115,DescriptionOfOtherExpenses,01-01-2023 To 31-03-2023,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+116,OtherExpenses,01-01-2023 To 31-03-2023,FourOperatingExpenses01D,-5.0,22092300000.00
+117,DescriptionOfOtherExpenses,01-01-2023 To 31-03-2023,,,Other Expenses
+118,OtherExpenses,01-01-2023 To 31-03-2023,FourOperatingExpenses02D,-5.0,3485200000.00
+119,NonControllingInterest,31-03-2023,OneI,-5.0,-517200000.00
+120,PropertyPlantAndEquipment,31-03-2023,OneI,-5.0,46378100000.00
+121,CapitalWorkInProgress,31-03-2023,OneI,-5.0,1926300000.00
+122,InvestmentProperty,31-03-2023,OneI,-5.0,0.00
+123,Goodwill,31-03-2023,OneI,-5.0,0.00
+124,OtherIntangibleAssets,31-03-2023,OneI,-5.0,3205600000.00
+125,NoncurrentInvestments,31-03-2023,OneI,-5.0,14917700000.00
+126,TradeReceivablesNoncurrent,31-03-2023,OneI,-5.0,16793300000.00
+127,LoansNoncurrent,31-03-2023,OneI,-5.0,0.00
+128,OtherNoncurrentFinancialAssets,31-03-2023,OneI,-5.0,2849700000.00
+129,NoncurrentFinancialAssets,31-03-2023,OneI,-5.0,34560700000.00
+130,DeferredTaxAssetsNet,31-03-2023,OneI,-5.0,0.00
+131,OtherNoncurrentAssets,31-03-2023,OneI,-5.0,12395400000.00
+132,NoncurrentAssets,31-03-2023,OneI,-5.0,98466100000.00
+133,Inventories,31-03-2023,OneI,-5.0,152082400000.00
+134,CurrentInvestments,31-03-2023,OneI,-5.0,0.00
+135,TradeReceivablesCurrent,31-03-2023,OneI,-5.0,24128000000.00
+136,CashAndCashEquivalents,31-03-2023,OneI,-5.0,3276700000.00
+137,BankBalanceOtherThanCashAndCashEquivalents,31-03-2023,OneI,-5.0,1692100000.00
+138,LoansCurrent,31-03-2023,OneI,-5.0,0.00
+139,OtherCurrentFinancialAssets,31-03-2023,OneI,-5.0,20685100000.00
+140,CurrentFinancialAssets,31-03-2023,OneI,-5.0,49781900000.00
+141,CurrentTaxAssets,31-03-2023,OneI,-5.0,0.00
+142,OtherCurrentAssets,31-03-2023,OneI,-5.0,31589000000.00
+143,CurrentAssets,31-03-2023,OneI,-5.0,233453300000.00
+144,NoncurrentAssetsClassifiedAsHeldForSale,31-03-2023,OneI,-5.0,45757000000.00
+145,Assets,31-03-2023,OneI,-5.0,377676400000.00
+146,EquityShareCapital,31-03-2023,OneI,-5.0,4909200000.00
+147,OtherEquity,31-03-2023,OneI,-5.0,-17423100000.00
+148,EquityAttributableToOwnersOfParent,31-03-2023,OneI,-5.0,-12513900000.00
+149,Equity,31-03-2023,OneI,-5.0,-13031100000.00
+150,BorrowingsNoncurrent,31-03-2023,OneI,-5.0,133933200000.00
+151,TradePayablesNoncurrent,31-03-2023,OneI,-5.0,770700000.00
+152,OtherNoncurrentFinancialLiabilities,31-03-2023,OneI,-5.0,71198600000.00
+153,NoncurrentFinancialLiabilities,31-03-2023,OneI,-5.0,205902500000.00
+154,ProvisionsNoncurrent,31-03-2023,OneI,-5.0,723900000.00
+155,DeferredTaxLiabilitiesNet,31-03-2023,OneI,-5.0,1539200000.00
+156,OtherNoncurrentLiabilities,31-03-2023,OneI,-5.0,3397500000.00
+157,NoncurrentLiabilities,31-03-2023,OneI,-5.0,211563100000.00
+158,BorrowingsCurrent,31-03-2023,OneI,-5.0,30651100000.00
+159,TradePayablesCurrent,31-03-2023,OneI,-5.0,21513100000.00
+160,OtherCurrentFinancialLiabilities,31-03-2023,OneI,-5.0,45851600000.00
+161,CurrentFinancialLiabilities,31-03-2023,OneI,-5.0,98015800000.00
+162,OtherCurrentLiabilities,31-03-2023,OneI,-5.0,27823500000.00
+163,ProvisionsCurrent,31-03-2023,OneI,-5.0,8358600000.00
+164,CurrentTaxLiabilities,31-03-2023,OneI,-5.0,46900000.00
+165,CurrentLiabilities,31-03-2023,OneI,-5.0,134244800000.00
+166,LiabilitiesDirectlyAssociatedWithAssetsInDisposalGroupClassifiedAsHeldForSale,31-03-2023,OneI,-5.0,44899600000.00
+167,RegulatoryDeferralAccountCreditBalancesAndRelatedDeferredTaxLiability,31-03-2023,OneI,-5.0,0.00
+168,Liabilities,31-03-2023,OneI,-5.0,390707500000.00
+169,EquityAndLiabilities,31-03-2023,OneI,-5.0,377676400000.00
+170,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+171,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue01D,-5.0,94900000.00
+172,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+173,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue02D,-5.0,7466500000.00
+174,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+175,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue03D,-5.0,6976700000.00
+176,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+177,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue04D,-5.0,1055300000.00
+178,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+179,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue05D,-5.0,119200000.00
+180,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+181,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue06D,-5.0,0.00
+182,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+183,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue07D,-5.0,350600000.00
+184,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+185,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue08D,-5.0,0.00
+186,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+187,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue09D,-5.0,2764900000.00
+188,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+189,SegmentRevenue,01-01-2023 To 31-03-2023,OneReportableSegmentRevenue10D,-5.0,395200000.00
+190,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+191,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue01D,-5.0,759100000.00
+192,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+193,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue02D,-5.0,26645200000.00
+194,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+195,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue03D,-5.0,32005300000.00
+196,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+197,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue04D,-5.0,3532500000.00
+198,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+199,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue05D,-5.0,550300000.00
+200,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+201,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue06D,-5.0,0.00
+202,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+203,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue07D,-5.0,1008200000.00
+204,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+205,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue08D,-5.0,0.00
+206,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+207,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue09D,-5.0,8425700000.00
+208,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+209,SegmentRevenue,01-01-2023 To 31-03-2023,FourReportableSegmentRevenue10D,-5.0,420600000.00
+210,SegmentRevenue,01-01-2023 To 31-03-2023,OneD,-5.0,19223300000.00
+211,SegmentRevenue,01-01-2023 To 31-03-2023,FourD,-5.0,73346900000.00
+212,InterSegmentRevenue,01-01-2023 To 31-03-2023,OneD,-5.0,145900000.00
+213,InterSegmentRevenue,01-01-2023 To 31-03-2023,FourD,-5.0,715700000.00
+214,SegmentRevenueFromOperations,01-01-2023 To 31-03-2023,OneD,-5.0,19077400000.00
+215,SegmentRevenueFromOperations,01-01-2023 To 31-03-2023,FourD,-5.0,72631200000.00
+216,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+217,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults01D,-5.0,-590900000.00
+218,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+219,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults02D,-5.0,188000000.00
+220,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+221,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults03D,-5.0,212200000.00
+222,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+223,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults04D,-5.0,270600000.00
+224,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+225,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults05D,-5.0,548800000.00
+226,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+227,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults06D,-5.0,-7800000.00
+228,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+229,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults07D,-5.0,142600000.00
+230,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+231,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults08D,-5.0,0.00
+232,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+233,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults09D,-5.0,790700000.00
+234,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+235,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneReportableSegmentResults10D,-5.0,0.00
+236,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+237,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults01D,-5.0,-1009700000.00
+238,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+239,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults02D,-5.0,1046100000.00
+240,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+241,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults03D,-5.0,1056000000.00
+242,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+243,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults04D,-5.0,785900000.00
+244,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+245,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults05D,-5.0,483900000.00
+246,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+247,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults06D,-5.0,137000000.00
+248,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+249,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults07D,-5.0,-112900000.00
+250,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+251,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults08D,-5.0,0.00
+252,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+253,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults09D,-5.0,919000000.00
+254,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+255,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourReportableSegmentResults10D,-5.0,0.00
+256,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,OneD,-5.0,1554200000.00
+257,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2023 To 31-03-2023,FourD,-5.0,3305300000.00
+258,SegmentFinanceCosts,01-01-2023 To 31-03-2023,OneD,-5.0,1739100000.00
+259,SegmentFinanceCosts,01-01-2023 To 31-03-2023,FourD,-5.0,10358500000.00
+260,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-01-2023 To 31-03-2023,OneD,-5.0,-702000000.00
+261,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-01-2023 To 31-03-2023,FourD,-5.0,-1080400000.00
+262,SegmentProfitBeforeTax,01-01-2023 To 31-03-2023,OneD,-5.0,517100000.00
+263,SegmentProfitBeforeTax,01-01-2023 To 31-03-2023,FourD,-5.0,-5972800000.00
+264,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+265,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets01D,-5.0,50412700000.00
+266,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+267,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets02D,-5.0,61762600000.00
+268,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+269,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets03D,-5.0,12676200000.00
+270,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+271,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets04D,-5.0,7729300000.00
+272,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+273,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets05D,-5.0,3282500000.00
+274,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+275,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets06D,-5.0,14917700000.00
+276,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+277,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets07D,-5.0,3527100000.00
+278,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+279,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets08D,-5.0,17555000000.00
+280,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+281,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets09D,-5.0,186941500000.00
+282,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+283,SegmentAssets,01-01-2023 To 31-03-2023,OneReportableSegmentAssets10D,-5.0,0.00
+284,SegmentAssets,01-01-2023 To 31-03-2023,OneD,-5.0,358804600000.00
+285,UnAllocableAssets,31-03-2023,OneI,-5.0,18871800000.00
+286,NetSegmentAssets,31-03-2023,OneI,-5.0,377676400000.00
+287,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Cement & Cement Products
+288,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities01I,-5.0,12908500000.00
+289,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Construction
+290,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities02I,-5.0,21624900000.00
+291,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Fertilizers
+292,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities03I,-5.0,8577400000.00
+293,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Hotel/Hospitality & Golf Course
+294,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities04I,-5.0,2140700000.00
+295,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Infrastructure
+296,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities05I,-5.0,856400000.00
+297,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Investments
+298,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities06I,-5.0,0.00
+299,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Others
+300,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities07I,-5.0,1070500000.00
+301,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Power
+302,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities08I,-5.0,841100000.00
+303,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Real Estate
+304,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities09I,-5.0,42785900000.00
+305,DescriptionOfReportableSegment,01-01-2023 To 31-03-2023,,,Unallocated
+306,SegmentLiabilities,31-03-2023,OneReportableSegmentLiabilities10I,-5.0,0.00
+307,SegmentLiabilities,31-03-2023,OneI,-5.0,90805400000.00
+308,UnAllocableLiabilities,31-03-2023,OneI,-5.0,299902100000.00
+309,NetSegmentLiabilities,31-03-2023,OneI,-5.0,390707500000.00
+310,AdjustmentsForFinanceCosts,01-01-2023 To 31-03-2023,FourD,-5.0,10945000000.00
+311,AdjustmentsForDecreaseIncreaseInInventories,01-01-2023 To 31-03-2023,FourD,-5.0,-2855200000.00
+312,AdjustmentsForDecreaseIncreaseInTradeReceivablesCurrent,01-01-2023 To 31-03-2023,FourD,-5.0,4507100000.00
+313,AdjustmentsForDecreaseIncreaseInTradeReceivablesNoncurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+314,AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,01-01-2023 To 31-03-2023,FourD,-5.0,3177800000.00
+315,AdjustmentsForDecreaseIncreaseInOtherNoncurrentAssets,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+316,AdjustmentsForOtherFinancialAssetsNoncurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+317,AdjustmentsForOtherFinancialAssetsCurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+318,AdjustmentsForOtherBankBalances,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+319,AdjustmentsForIncreaseDecreaseInTradePayablesCurrent,01-01-2023 To 31-03-2023,FourD,-5.0,3235600000.00
+320,AdjustmentsForIncreaseDecreaseInTradePayablesNoncurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+321,AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+322,AdjustmentsForIncreaseDecreaseInOtherNoncurrentLiabilities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+323,AdjustmentsForDepreciationAndAmortisationExpense,01-01-2023 To 31-03-2023,FourD,-5.0,5126400000.00
+324,AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+325,AdjustmentsForProvisionsCurrent,01-01-2023 To 31-03-2023,FourD,-5.0,1061200000.00
+326,AdjustmentsForProvisionsNoncurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+327,AdjustmentsForOtherFinancialLiabilitiesCurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+328,AdjustmentsForOtherFinancialLiabilitiesNoncurrent,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+329,AdjustmentsForUnrealisedForeignExchangeLossesGains,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+330,AdjustmentsForDividendIncome,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+331,AdjustmentsForInterestIncome,01-01-2023 To 31-03-2023,FourD,-5.0,1584500000.00
+332,AdjustmentsForSharebasedPayments,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+333,AdjustmentsForFairValueGainsLosses,01-01-2023 To 31-03-2023,FourD,-5.0,-168000000.00
+334,AdjustmentsForUndistributedProfitsOfAssociates,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+335,OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow,01-01-2023 To 31-03-2023,FourD,-5.0,-147000000.00
+336,OtherAdjustmentsToReconcileProfitLoss,01-01-2023 To 31-03-2023,FourD,-5.0,-5272600000.00
+337,OtherAdjustmentsForNoncashItems,01-01-2023 To 31-03-2023,FourD,-5.0,-1753400000.00
+338,ShareOfProfitAndLossFromPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+339,AdjustmentsForReconcileProfitLoss,01-01-2023 To 31-03-2023,FourD,-5.0,16272400000.00
+340,CashFlowsFromUsedInOperations,01-01-2023 To 31-03-2023,FourD,-5.0,8294300000.00
+341,DividendsReceivedClassifiedAsOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+342,InterestPaidClassifiedAsOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+343,InterestReceivedClassifiedAsOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+344,IncomeTaxesPaidRefundClassifiedAsOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,686400000.00
+345,OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+346,CashFlowsFromUsedInOperatingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,7607900000.00
+347,CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+348,CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+349,OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+350,OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+351,OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+352,OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+353,CashReceiptsFromShareOfProfitsOfPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+354,CashPaymentForInvestmentInPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+355,ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,523800000.00
+356,PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,1153000000.00
+357,ProceedsFromSalesOfInvestmentPropertyClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+358,PurchaseOfInvestmentPropertyClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+359,ProceedsFromSalesOfIntangibleAssetsUnderDevelopment,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+360,PurchaseOfIntangibleAssetsUnderDevelopment,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+361,ProceedsFromSalesOfGoodwillClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+362,PurchaseOfGoodwillClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+363,ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+364,PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+365,ProceedsFromBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+366,PurchaseOfBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+367,ProceedsFromSalesOfOtherLongTermAssetsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+368,PurchaseOfOtherLongTermAssetsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,-1000000.00
+369,CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+370,CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+371,CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+372,CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+373,DividendsReceivedClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+374,InterestReceivedClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,216600000.00
+375,IncomeTaxesPaidRefundClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+376,OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,-750800000.00
+377,ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+378,CashFlowsFromUsedInInvestingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,-1162400000.00
+379,ProceedsFromChangesInOwnershipInterestsInSubsidiaries,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+380,PaymentsFromChangesInOwnershipInterestsInSubsidiaries,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+381,ProceedsFromIssuingSharesClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+382,ProceedsFromIssuingOtherEquityInstruments,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+383,PaymentsToAcquireOrRedeemEntitysShares,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+384,PaymentsOfOtherEquityInstruments,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+385,ProceedsFromExerciseOfStockOptions,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+386,ProceedsFromIssuingDebenturesNotesBondsEtc,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+387,ProceedsFromBorrowingsClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+388,RepaymentsOfBorrowingsClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,3593600000.00
+389,PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,59200000.00
+390,PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+391,DividendsPaidClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+392,InterestPaidClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,2595300000.00
+393,IncomeTaxesPaidRefundClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+394,OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+395,CashFlowsFromUsedInFinancingActivities,01-01-2023 To 31-03-2023,FourD,-5.0,-6248100000.00
+396,IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,01-01-2023 To 31-03-2023,FourD,-5.0,197400000.00
+397,EffectOfExchangeRateChangesOnCashAndCashEquivalents,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+398,IncreaseDecreaseInCashAndCashEquivalents,01-01-2023 To 31-03-2023,FourD,-5.0,197400000.00
+399,CashAndCashEquivalentsCashFlowStatement,01-01-2023 To 31-03-2023,FourD,-5.0,0.00
+400,CashAndCashEquivalentsCashFlowStatement,01-01-2023 To 31-03-2023,FourD,-5.0,197400000.00
+401,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-01-2023 To 31-03-2023,OneD,-5.0,44600000.00
+402,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-01-2023 To 31-03-2023,FourD,-5.0,50700000.00
+403,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-01-2023 To 31-03-2023,OneD,-5.0,300000.00
+404,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-01-2023 To 31-03-2023,FourD,-5.0,500000.00

@@ -1,0 +1,24 @@
+{
+  "total_qa_pairs": 136,
+  "quarters_covered": 8,
+  "quarter_list": [
+    "Dec 2022",
+    "Dec 2023",
+    "Jun 2022",
+    "Jun 2023",
+    "Marc 2024",
+    "March 2023",
+    "Sep 2022",
+    "Sep 2023"
+  ],
+  "qa_by_quarter": {
+    "Jun 2023": 17,
+    "March 2023": 17,
+    "Sep 2022": 17,
+    "Dec 2022": 17,
+    "Marc 2024": 17,
+    "Sep 2023": 17,
+    "Jun 2022": 17,
+    "Dec 2023": 17
+  }
+}

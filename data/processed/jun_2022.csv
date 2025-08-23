@@ -1,0 +1,166 @@
+Sr.No.,Element Name,Period,Unit,Decimals,Fact Value
+1,ScripCode,01-04-2022 To 30-06-2022,,,532532
+2,Symbol,01-04-2022 To 30-06-2022,,,JPASSOCIAT
+3,ISIN,01-04-2022 To 30-06-2022,,,INE455F01025
+4,NameOfTheCompany,01-04-2022 To 30-06-2022,,,JPASSOCIAT
+5,ClassOfSecurity,01-04-2022 To 30-06-2022,,,Equity
+6,DateOfStartOfFinancialYear,01-04-2022 To 30-06-2022,,,2022-04-01
+7,DateOfEndOfFinancialYear,01-04-2022 To 30-06-2022,,,2023-03-31
+8,DateOfBoardMeetingWhenFinancialResultsWereApproved,01-04-2022 To 30-06-2022,,,2022-08-10
+9,DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange,01-04-2022 To 30-06-2022,,,2022-08-01
+10,DescriptionOfPresentationCurrency,01-04-2022 To 30-06-2022,,,INR
+11,LevelOfRoundingUsedInFinancialStatements,01-04-2022 To 30-06-2022,,,Lakhs
+12,ReportingQuarter,01-04-2022 To 30-06-2022,,,First quarter
+13,IsCompanyReportingMultisegmentOrSingleSegment,01-04-2022 To 30-06-2022,,,Multi segment
+14,DateOfStartOfBoardMeeting,01-04-2022 To 30-06-2022,,,2022-08-10
+15,StartTimeOfBoardMeeting,01-04-2022 To 30-06-2022,,,17:00:00
+16,DateOfEndOfBoardMeeting,01-04-2022 To 30-06-2022,,,2022-08-10
+17,EndTimeOfBoardMeeting,01-04-2022 To 30-06-2022,,,20:35:00
+18,DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification,01-04-2022 To 30-06-2022,,,Not applicable
+19,DateOfStartOfReportingPeriod,01-04-2022 To 30-06-2022,,,2022-04-01
+20,DateOfEndOfReportingPeriod,01-04-2022 To 30-06-2022,,,2022-06-30
+21,WhetherResultsAreAuditedOrUnaudited,01-04-2022 To 30-06-2022,,,Unaudited
+22,NatureOfReportStandaloneConsolidated,01-04-2022 To 30-06-2022,,,Consolidated
+23,RevenueFromOperations,01-04-2022 To 30-06-2022,OneD,-5.0,18397600000
+24,OtherIncome,01-04-2022 To 30-06-2022,OneD,-5.0,420000000
+25,Income,01-04-2022 To 30-06-2022,OneD,-5.0,18817600000
+26,CostOfMaterialsConsumed,01-04-2022 To 30-06-2022,OneD,-5.0,10254100000
+27,PurchasesOfStockInTrade,01-04-2022 To 30-06-2022,OneD,-5.0,151900000
+28,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-04-2022 To 30-06-2022,OneD,-5.0,-308700000
+29,EmployeeBenefitExpense,01-04-2022 To 30-06-2022,OneD,-5.0,1423700000
+30,FinanceCosts,01-04-2022 To 30-06-2022,OneD,-5.0,2979100000
+31,DepreciationDepletionAndAmortisationExpense,01-04-2022 To 30-06-2022,OneD,-5.0,1416900000
+32,OtherExpenses,01-04-2022 To 30-06-2022,OneD,-5.0,7027800000
+33,Expenses,01-04-2022 To 30-06-2022,OneD,-5.0,22944800000
+34,ProfitBeforeExceptionalItemsAndTax,01-04-2022 To 30-06-2022,OneD,-5.0,-4127200000
+35,ExceptionalItemsBeforeTax,01-04-2022 To 30-06-2022,OneD,-5.0,0
+36,ProfitBeforeTax,01-04-2022 To 30-06-2022,OneD,-5.0,-4127200000
+37,CurrentTax,01-04-2022 To 30-06-2022,OneD,-5.0,19500000
+38,DeferredTax,01-04-2022 To 30-06-2022,OneD,-5.0,238900000
+39,TaxExpense,01-04-2022 To 30-06-2022,OneD,-5.0,258400000
+40,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-04-2022 To 30-06-2022,OneD,-5.0,0
+41,ProfitLossForPeriodFromContinuingOperations,01-04-2022 To 30-06-2022,OneD,-5.0,-4385600000
+42,ProfitLossFromDiscontinuedOperationsBeforeTax,01-04-2022 To 30-06-2022,OneD,-5.0,0
+43,TaxExpenseOfDiscontinuedOperations,01-04-2022 To 30-06-2022,OneD,-5.0,0
+44,ProfitLossFromDiscontinuedOperationsAfterTax,01-04-2022 To 30-06-2022,OneD,-5.0,0
+45,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-04-2022 To 30-06-2022,OneD,-5.0,571900000
+46,ProfitLossForPeriod,01-04-2022 To 30-06-2022,OneD,-5.0,-3813700000
+47,OtherComprehensiveIncomeNetOfTaxes,01-04-2022 To 30-06-2022,OneD,-5.0,-100000
+48,ComprehensiveIncomeForThePeriod,01-04-2022 To 30-06-2022,OneD,-5.0,-3813800000
+49,ProfitOrLossAttributableToOwnersOfParent,01-04-2022 To 30-06-2022,OneD,-5.0,-3760700000
+50,ProfitOrLossAttributableToNonControllingInterests,01-04-2022 To 30-06-2022,OneD,-5.0,-53000000
+51,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-04-2022 To 30-06-2022,OneD,-5.0,-3760900000
+52,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-04-2022 To 30-06-2022,OneD,-5.0,-52900000
+53,PaidUpValueOfEquityShareCapital,01-04-2022 To 30-06-2022,OneD,-5.0,4909200000
+54,FaceValueOfEquityShareCapital,01-04-2022 To 30-06-2022,OneD,,2
+55,BasicEarningsLossPerShareFromContinuingOperations,01-04-2022 To 30-06-2022,OneD,,1.53
+56,DilutedEarningsLossPerShareFromContinuingOperations,01-04-2022 To 30-06-2022,OneD,,1.53
+57,BasicEarningsLossPerShareFromDiscontinuedOperations,01-04-2022 To 30-06-2022,OneD,,0
+58,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-04-2022 To 30-06-2022,OneD,,0
+59,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-04-2022 To 30-06-2022,OneD,,1.53
+60,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-04-2022 To 30-06-2022,OneD,,1.53
+61,DescriptionOfOtherExpenses,01-04-2022 To 30-06-2022,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+62,OtherExpenses,01-04-2022 To 30-06-2022,OneExpenses1D,-5.0,5531500000
+63,DescriptionOfOtherExpenses,01-04-2022 To 30-06-2022,,,Other Expenses
+64,OtherExpenses,01-04-2022 To 30-06-2022,OneExpenses2D,-5.0,1496300000
+65,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Cement & Cement Products
+66,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable1D,-5.0,2364300000
+67,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Construction
+68,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable2D,-5.0,6462600000
+69,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Power
+70,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable3D,-5.0,7800000
+71,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Hotel/Hospitality & Golf Course
+72,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable4D,-5.0,859100000
+73,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Real Estate
+74,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable5D,-5.0,965900000
+75,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Investments
+76,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable6D,-5.0,0
+77,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Infrastructure
+78,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable7D,-5.0,113900000
+79,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Fertilizers
+80,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable8D,-5.0,7874400000
+81,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Others
+82,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable9D,-5.0,191000000
+83,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Unallocated
+84,SegmentRevenue,01-04-2022 To 30-06-2022,OneReportable10D,-5.0,9800000
+85,SegmentRevenue,01-04-2022 To 30-06-2022,OneD,-5.0,18848800000
+86,InterSegmentRevenue,01-04-2022 To 30-06-2022,OneD,-5.0,451200000
+87,SegmentRevenueFromOperations,01-04-2022 To 30-06-2022,OneD,-5.0,18397600000
+88,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Cement & Cement Products
+89,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance1D,-5.0,-1225300000
+90,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Construction
+91,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance2D,-5.0,107000000
+92,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Power
+93,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance3D,-5.0,-206100000
+94,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Hotel/Hospitality & Golf Course
+95,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance4D,-5.0,215500000
+96,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Real Estate
+97,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance5D,-5.0,-288700000
+98,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Investments
+99,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance6D,-5.0,-7800000
+100,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Infrastructure
+101,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance7D,-5.0,-79600000
+102,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Fertilizers
+103,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance8D,-5.0,308800000
+104,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Others
+105,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance9D,-5.0,-67300000
+106,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Unallocated
+107,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneReportableFinance10D,-5.0,0
+108,SegmentProfitLossBeforeTaxAndFinanceCosts,01-04-2022 To 30-06-2022,OneD,-5.0,-1243500000
+109,SegmentFinanceCosts,01-04-2022 To 30-06-2022,OneD,-5.0,2979100000
+110,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-04-2022 To 30-06-2022,OneD,-5.0,-95400000
+111,SegmentProfitBeforeTax,01-04-2022 To 30-06-2022,OneD,-5.0,-4127200000
+112,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Cement & Cement Products
+113,SegmentAssets,30-06-2022,OneReportable31I,-5.0,55342700000
+114,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Construction
+115,SegmentAssets,30-06-2022,OneReportable32I,-5.0,62438900000
+116,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Power
+117,SegmentAssets,30-06-2022,OneReportable33I,-5.0,17988300000
+118,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Hotel/Hospitality & Golf Course
+119,SegmentAssets,30-06-2022,OneReportable34I,-5.0,7618300000
+120,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Real Estate
+121,SegmentAssets,30-06-2022,OneReportable35I,-5.0,176964700000
+122,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Investments
+123,SegmentAssets,30-06-2022,OneReportable36I,-5.0,15195500000
+124,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Infrastructure
+125,SegmentAssets,30-06-2022,OneReportable37I,-5.0,3080800000
+126,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Fertilizers
+127,SegmentAssets,30-06-2022,OneReportable38I,-5.0,19193700000
+128,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Others
+129,SegmentAssets,30-06-2022,OneReportable39I,-5.0,3616600000
+130,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Unallocated
+131,SegmentAssets,30-06-2022,OneReportable310I,-5.0,0
+132,SegmentAssets,30-06-2022,OneI,-5.0,361439500000
+133,UnAllocableAssets,30-06-2022,OneI,-5.0,17729200000
+134,NetSegmentAssets,30-06-2022,OneI,-5.0,379168700000
+135,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Cement & Cement Products
+136,SegmentLiabilities,30-06-2022,OneReportable41I,-5.0,12810800000
+137,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Construction
+138,SegmentLiabilities,30-06-2022,OneReportable42I,-5.0,22009200000
+139,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Power
+140,SegmentLiabilities,30-06-2022,OneReportable43I,-5.0,1186000000
+141,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Hotel/Hospitality & Golf Course
+142,SegmentLiabilities,30-06-2022,OneReportable44I,-5.0,2062400000
+143,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Real Estate
+144,SegmentLiabilities,30-06-2022,OneReportable45I,-5.0,39616200000
+145,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Investments
+146,SegmentLiabilities,30-06-2022,OneReportable46I,-5.0,0
+147,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Infrastructure
+148,SegmentLiabilities,30-06-2022,OneReportable47I,-5.0,977500000
+149,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Fertilizers
+150,SegmentLiabilities,30-06-2022,OneReportable48I,-5.0,11228500000
+151,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Others
+152,SegmentLiabilities,30-06-2022,OneReportable49I,-5.0,699600000
+153,DescriptionOfReportableSegment,01-04-2022 To 30-06-2022,,,Unallocated
+154,SegmentLiabilities,30-06-2022,OneReportable410I,-5.0,0
+155,SegmentLiabilities,30-06-2022,OneI,-5.0,90590200000
+156,UnAllocableLiabilities,30-06-2022,OneI,-5.0,291957600000
+157,NetSegmentLiabilities,30-06-2022,OneI,-5.0,382547800000
+158,DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,,,Items that will not be reclassified to Profit/(Loss)
+159,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,D_ItemsThatWillNotBeReclassifiedToProfitAndLoss11,-5.0,-400000
+160,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,OneD,-5.0,-400000
+161,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-04-2022 To 30-06-2022,OneD,-5.0,-300000
+162,DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,,,Items that will be reclassified to Profit/(Loss)
+163,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,D_ItemsThatWillBeReclassifiedToProfitAndLoss11,-5.0,0
+164,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-04-2022 To 30-06-2022,OneD,-5.0,0
+165,IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss,01-04-2022 To 30-06-2022,OneD,-5.0,0

@@ -1,0 +1,47 @@
+{
+  "creation_timestamp": "2025-08-23T16:29:19.776526",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "total_chunks": 1520,
+  "dense_index": {
+    "collection_name": "financial_chunks_100",
+    "embedding_dimension": 384,
+    "storage_type": "ChromaDB"
+  },
+  "sparse_index": {
+    "algorithm": "BM25Okapi",
+    "tokenized_chunks": 1520,
+    "preprocessing": "stopwords_removed_financial_terms_filtered"
+  },
+  "chunk_statistics": {
+    "sections": [
+      "liabilities",
+      "ratios",
+      "assets",
+      "profit_loss",
+      "expenses",
+      "qa_memory",
+      "equity",
+      "revenue",
+      "other"
+    ],
+    "quarters": [
+      "Marc 2024",
+      "Q2 FY2022-23",
+      "Dec 2023",
+      "Q1 FY2023-24",
+      "March 2023",
+      "Q1 FY2022-23",
+      "Q2 FY2023-24",
+      "Jun 2023",
+      "Q4 FY2022-23",
+      "Q3 FY2023-24",
+      "Sep 2022",
+      "Jun 2022",
+      "Q3 FY2022-23",
+      "Sep 2023",
+      "Dec 2022",
+      "Q4 FY2023-24"
+    ],
+    "avg_tokens": 54.26907894736842
+  }
+}

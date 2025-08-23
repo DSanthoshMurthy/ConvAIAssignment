@@ -1,0 +1,268 @@
+Sr.No.,Element Name,Period,Unit,Decimals,Fact Value
+1,ScripCode,01-10-2023 To 31-12-2023,,,532532
+2,Symbol,01-10-2023 To 31-12-2023,,,JPASSOCIAT
+3,MSEISymbol,01-10-2023 To 31-12-2023,,,NOTLISTED
+4,NameOfTheCompany,01-10-2023 To 31-12-2023,,,Jaiprakash Associates Limited
+5,ClassOfSecurity,01-10-2023 To 31-12-2023,,,Equity
+6,DateOfStartOfFinancialYear,01-10-2023 To 31-12-2023,,,2023-04-01
+7,DateOfEndOfFinancialYear,01-10-2023 To 31-12-2023,,,2024-03-31
+8,DateOfBoardMeetingWhenFinancialResultsWereApproved,01-10-2023 To 31-12-2023,,,2024-01-30
+9,DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange,01-10-2023 To 31-12-2023,,,2024-01-23
+10,DescriptionOfPresentationCurrency,01-10-2023 To 31-12-2023,,,INR
+11,LevelOfRoundingUsedInFinancialStatements,01-10-2023 To 31-12-2023,,,Lakhs
+12,ReportingQuarter,01-10-2023 To 31-12-2023,,,Third quarter
+13,StartTimeOfBoardMeeting,01-10-2023 To 31-12-2023,,,16:30:00
+14,EndTimeOfBoardMeeting,01-10-2023 To 31-12-2023,,,18:05:00
+15,DateOfStartOfBoardMeeting,01-10-2023 To 31-12-2023,,,2024-01-30
+16,DateOfEndOfBoardMeeting,01-10-2023 To 31-12-2023,,,2024-01-30
+17,DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification,01-10-2023 To 31-12-2023,,,Not applicable
+18,IsCompanyReportingMultisegmentOrSingleSegment,01-10-2023 To 31-12-2023,,,Multi segment
+19,DateOfStartOfReportingPeriod,01-10-2023 To 31-12-2023,,,2023-10-01
+20,DateOfEndOfReportingPeriod,01-10-2023 To 31-12-2023,,,2023-12-31
+21,WhetherResultsAreAuditedOrUnaudited,01-10-2023 To 31-12-2023,,,Unaudited
+22,NatureOfReportStandaloneConsolidated,01-10-2023 To 31-12-2023,,,Consolidated
+23,RevenueFromOperations,01-10-2023 To 31-12-2023,OneD,-5.0,15025900000.00
+24,OtherIncome,01-10-2023 To 31-12-2023,OneD,-5.0,559900000.00
+25,Income,01-10-2023 To 31-12-2023,OneD,-5.0,15585800000.00
+26,CostOfMaterialsConsumed,01-10-2023 To 31-12-2023,OneD,-5.0,7595500000.00
+27,PurchasesOfStockInTrade,01-10-2023 To 31-12-2023,OneD,-5.0,315400000.00
+28,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-10-2023 To 31-12-2023,OneD,-5.0,-122500000.00
+29,EmployeeBenefitExpense,01-10-2023 To 31-12-2023,OneD,-5.0,986000000.00
+30,FinanceCosts,01-10-2023 To 31-12-2023,OneD,-5.0,2705000000.00
+31,DepreciationDepletionAndAmortisationExpense,01-10-2023 To 31-12-2023,OneD,-5.0,963100000.00
+32,OtherExpenses,01-10-2023 To 31-12-2023,OneD,-5.0,5282300000.00
+33,Expenses,01-10-2023 To 31-12-2023,OneD,-5.0,17724800000.00
+34,ProfitBeforeExceptionalItemsAndTax,01-10-2023 To 31-12-2023,OneD,-5.0,-2139000000.00
+35,ExceptionalItemsBeforeTax,01-10-2023 To 31-12-2023,OneD,-5.0,-2378000000.00
+36,ProfitBeforeTax,01-10-2023 To 31-12-2023,OneD,-5.0,-4517000000.00
+37,CurrentTax,01-10-2023 To 31-12-2023,OneD,-5.0,179600000.00
+38,DeferredTax,01-10-2023 To 31-12-2023,OneD,-5.0,-11100000.00
+39,TaxExpense,01-10-2023 To 31-12-2023,OneD,-5.0,168500000.00
+40,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-10-2023 To 31-12-2023,OneD,-5.0,0.00
+41,ProfitLossForPeriodFromContinuingOperations,01-10-2023 To 31-12-2023,OneD,-5.0,-4685500000.00
+42,ProfitLossFromDiscontinuedOperationsBeforeTax,01-10-2023 To 31-12-2023,OneD,-5.0,-650300000.00
+43,TaxExpenseOfDiscontinuedOperations,01-10-2023 To 31-12-2023,OneD,-5.0,0.00
+44,ProfitLossFromDiscontinuedOperationsAfterTax,01-10-2023 To 31-12-2023,OneD,-5.0,-650300000.00
+45,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-10-2023 To 31-12-2023,OneD,-5.0,574600000.00
+46,ProfitLossForPeriod,01-10-2023 To 31-12-2023,OneD,-5.0,-4761200000.00
+47,OtherComprehensiveIncomeNetOfTaxes,01-10-2023 To 31-12-2023,OneD,-5.0,-100000.00
+48,ComprehensiveIncomeForThePeriod,01-10-2023 To 31-12-2023,OneD,-5.0,-4761300000.00
+49,ProfitOrLossAttributableToOwnersOfParent,01-10-2023 To 31-12-2023,OneD,-5.0,-4738300000.00
+50,ProfitOrLossAttributableToNonControllingInterests,01-10-2023 To 31-12-2023,OneD,-5.0,-22900000.00
+51,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-10-2023 To 31-12-2023,OneD,-5.0,-4738400000.00
+52,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-10-2023 To 31-12-2023,OneD,-5.0,-22900000.00
+53,PaidUpValueOfEquityShareCapital,01-10-2023 To 31-12-2023,OneD,-5.0,4909200000.00
+54,FaceValueOfEquityShareCapital,01-10-2023 To 31-12-2023,OneD,,2
+55,BasicEarningsLossPerShareFromContinuingOperations,01-10-2023 To 31-12-2023,OneD,,-1.67
+56,DilutedEarningsLossPerShareFromContinuingOperations,01-10-2023 To 31-12-2023,OneD,,-1.67
+57,BasicEarningsLossPerShareFromDiscontinuedOperations,01-10-2023 To 31-12-2023,OneD,,-0.26
+58,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-10-2023 To 31-12-2023,OneD,,-0.26
+59,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-10-2023 To 31-12-2023,OneD,,-1.93
+60,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-10-2023 To 31-12-2023,OneD,,-1.93
+61,IsCompanyReportingMultisegmentOrSingleSegment,01-10-2023 To 31-12-2023,,,Multi segment
+62,DateOfStartOfReportingPeriod,01-10-2023 To 31-12-2023,,,2023-04-01
+63,DateOfEndOfReportingPeriod,01-10-2023 To 31-12-2023,,,2023-12-31
+64,WhetherResultsAreAuditedOrUnaudited,01-10-2023 To 31-12-2023,,,Unaudited
+65,NatureOfReportStandaloneConsolidated,01-10-2023 To 31-12-2023,,,Consolidated
+66,RevenueFromOperations,01-10-2023 To 31-12-2023,FourD,-5.0,48271600000.00
+67,OtherIncome,01-10-2023 To 31-12-2023,FourD,-5.0,1795500000.00
+68,Income,01-10-2023 To 31-12-2023,FourD,-5.0,50067100000.00
+69,CostOfMaterialsConsumed,01-10-2023 To 31-12-2023,FourD,-5.0,21100100000.00
+70,PurchasesOfStockInTrade,01-10-2023 To 31-12-2023,FourD,-5.0,471100000.00
+71,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-10-2023 To 31-12-2023,FourD,-5.0,166200000.00
+72,EmployeeBenefitExpense,01-10-2023 To 31-12-2023,FourD,-5.0,2993600000.00
+73,FinanceCosts,01-10-2023 To 31-12-2023,FourD,-5.0,7492800000.00
+74,DepreciationDepletionAndAmortisationExpense,01-10-2023 To 31-12-2023,FourD,-5.0,2894400000.00
+75,OtherExpenses,01-10-2023 To 31-12-2023,FourD,-5.0,20891000000.00
+76,Expenses,01-10-2023 To 31-12-2023,FourD,-5.0,56009200000.00
+77,ProfitBeforeExceptionalItemsAndTax,01-10-2023 To 31-12-2023,FourD,-5.0,-5942100000.00
+78,ExceptionalItemsBeforeTax,01-10-2023 To 31-12-2023,FourD,-5.0,-2276400000.00
+79,ProfitBeforeTax,01-10-2023 To 31-12-2023,FourD,-5.0,-8218500000.00
+80,CurrentTax,01-10-2023 To 31-12-2023,FourD,-5.0,388100000.00
+81,DeferredTax,01-10-2023 To 31-12-2023,FourD,-5.0,-114800000.00
+82,TaxExpense,01-10-2023 To 31-12-2023,FourD,-5.0,273300000.00
+83,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-10-2023 To 31-12-2023,FourD,-5.0,0.00
+84,ProfitLossForPeriodFromContinuingOperations,01-10-2023 To 31-12-2023,FourD,-5.0,-8491800000.00
+85,ProfitLossFromDiscontinuedOperationsBeforeTax,01-10-2023 To 31-12-2023,FourD,-5.0,-1620400000.00
+86,TaxExpenseOfDiscontinuedOperations,01-10-2023 To 31-12-2023,FourD,-5.0,0.00
+87,ProfitLossFromDiscontinuedOperationsAfterTax,01-10-2023 To 31-12-2023,FourD,-5.0,-1620400000.00
+88,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-10-2023 To 31-12-2023,FourD,-5.0,1035200000.00
+89,ProfitLossForPeriod,01-10-2023 To 31-12-2023,FourD,-5.0,-9077000000.00
+90,OtherComprehensiveIncomeNetOfTaxes,01-10-2023 To 31-12-2023,FourD,-5.0,800000.00
+91,ComprehensiveIncomeForThePeriod,01-10-2023 To 31-12-2023,FourD,-5.0,-9076200000.00
+92,ProfitOrLossAttributableToOwnersOfParent,01-10-2023 To 31-12-2023,FourD,-5.0,-9005500000.00
+93,ProfitOrLossAttributableToNonControllingInterests,01-10-2023 To 31-12-2023,FourD,-5.0,-71500000.00
+94,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-10-2023 To 31-12-2023,FourD,-5.0,-9004800000.00
+95,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-10-2023 To 31-12-2023,FourD,-5.0,-71400000.00
+96,PaidUpValueOfEquityShareCapital,01-10-2023 To 31-12-2023,FourD,-5.0,4909200000.00
+97,FaceValueOfEquityShareCapital,01-10-2023 To 31-12-2023,FourD,,2
+98,BasicEarningsLossPerShareFromContinuingOperations,01-10-2023 To 31-12-2023,FourD,,-3.01
+99,DilutedEarningsLossPerShareFromContinuingOperations,01-10-2023 To 31-12-2023,FourD,,-3.01
+100,BasicEarningsLossPerShareFromDiscontinuedOperations,01-10-2023 To 31-12-2023,FourD,,-0.66
+101,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-10-2023 To 31-12-2023,FourD,,-0.66
+102,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-10-2023 To 31-12-2023,FourD,,-3.67
+103,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-10-2023 To 31-12-2023,FourD,,-3.67
+104,DescriptionOfOtherExpenses,01-10-2023 To 31-12-2023,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+105,OtherExpenses,01-10-2023 To 31-12-2023,OneOperatingExpenses01D,-5.0,4278200000.00
+106,DescriptionOfOtherExpenses,01-10-2023 To 31-12-2023,,,Other Expenses
+107,OtherExpenses,01-10-2023 To 31-12-2023,OneOperatingExpenses02D,-5.0,1004100000.00
+108,DescriptionOfOtherExpenses,01-10-2023 To 31-12-2023,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+109,OtherExpenses,01-10-2023 To 31-12-2023,FourOperatingExpenses01D,-5.0,17713800000.00
+110,DescriptionOfOtherExpenses,01-10-2023 To 31-12-2023,,,Other Expenses
+111,OtherExpenses,01-10-2023 To 31-12-2023,FourOperatingExpenses02D,-5.0,3177200000.00
+112,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+113,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue01D,-5.0,5400000.00
+114,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+115,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue02D,-5.0,4817300000.00
+116,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+117,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue03D,-5.0,7760700000.00
+118,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+119,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue04D,-5.0,1012900000.00
+120,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+121,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue05D,-5.0,125100000.00
+122,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+123,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue06D,-5.0,0.00
+124,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+125,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue07D,-5.0,332000000.00
+126,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+127,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue08D,-5.0,0.00
+128,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+129,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue09D,-5.0,1076600000.00
+130,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+131,SegmentRevenue,01-10-2023 To 31-12-2023,OneReportableSegmentRevenue10D,-5.0,5000000.00
+132,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+133,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue01D,-5.0,38400000.00
+134,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+135,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue02D,-5.0,15658300000.00
+136,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+137,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue03D,-5.0,21683600000.00
+138,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+139,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue04D,-5.0,2515000000.00
+140,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+141,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue05D,-5.0,352700000.00
+142,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+143,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue06D,-5.0,0.00
+144,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+145,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue07D,-5.0,789300000.00
+146,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+147,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue08D,-5.0,0.00
+148,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+149,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue09D,-5.0,7465200000.00
+150,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+151,SegmentRevenue,01-10-2023 To 31-12-2023,FourReportableSegmentRevenue10D,-5.0,14800000.00
+152,SegmentRevenue,01-10-2023 To 31-12-2023,OneD,-5.0,15135000000.00
+153,SegmentRevenue,01-10-2023 To 31-12-2023,FourD,-5.0,48517300000.00
+154,InterSegmentRevenue,01-10-2023 To 31-12-2023,OneD,-5.0,109100000.00
+155,InterSegmentRevenue,01-10-2023 To 31-12-2023,FourD,-5.0,245700000.00
+156,SegmentRevenueFromOperations,01-10-2023 To 31-12-2023,OneD,-5.0,15025900000.00
+157,SegmentRevenueFromOperations,01-10-2023 To 31-12-2023,FourD,-5.0,48271600000.00
+158,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+159,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults01D,-5.0,-171900000.00
+160,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+161,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults02D,-5.0,563800000.00
+162,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+163,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults03D,-5.0,110000000.00
+164,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+165,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults04D,-5.0,288500000.00
+166,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+167,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults05D,-5.0,16200000.00
+168,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+169,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults06D,-5.0,-7700000.00
+170,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+171,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults07D,-5.0,-111300000.00
+172,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+173,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults08D,-5.0,0.00
+174,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+175,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults09D,-5.0,-330300000.00
+176,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+177,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneReportableSegmentResults10D,-5.0,0.00
+178,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+179,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults01D,-5.0,-568700000.00
+180,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+181,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults02D,-5.0,1446200000.00
+182,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+183,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults03D,-5.0,331100000.00
+184,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+185,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults04D,-5.0,445900000.00
+186,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+187,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults05D,-5.0,76900000.00
+188,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+189,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults06D,-5.0,301600000.00
+190,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+191,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults07D,-5.0,-190500000.00
+192,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+193,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults08D,-5.0,0.00
+194,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+195,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults09D,-5.0,-757300000.00
+196,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+197,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourReportableSegmentResults10D,-5.0,0.00
+198,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,OneD,-5.0,357300000.00
+199,SegmentProfitLossBeforeTaxAndFinanceCosts,01-10-2023 To 31-12-2023,FourD,-5.0,1085200000.00
+200,SegmentFinanceCosts,01-10-2023 To 31-12-2023,OneD,-5.0,2705000000.00
+201,SegmentFinanceCosts,01-10-2023 To 31-12-2023,FourD,-5.0,7492800000.00
+202,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-10-2023 To 31-12-2023,OneD,-5.0,-208700000.00
+203,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-10-2023 To 31-12-2023,FourD,-5.0,-465500000.00
+204,SegmentProfitBeforeTax,01-10-2023 To 31-12-2023,OneD,-5.0,-2139000000.00
+205,SegmentProfitBeforeTax,01-10-2023 To 31-12-2023,FourD,-5.0,-5942100000.00
+206,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+207,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets01D,-5.0,47367400000.00
+208,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+209,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets02D,-5.0,60403400000.00
+210,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+211,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets03D,-5.0,11981200000.00
+212,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+213,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets04D,-5.0,7735800000.00
+214,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+215,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets05D,-5.0,3060100000.00
+216,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+217,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets06D,-5.0,10412600000.00
+218,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+219,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets07D,-5.0,3525600000.00
+220,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+221,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets08D,-5.0,17527000000.00
+222,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+223,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets09D,-5.0,189906200000.00
+224,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+225,SegmentAssets,01-10-2023 To 31-12-2023,OneReportableSegmentAssets10D,-5.0,0.00
+226,SegmentAssets,01-10-2023 To 31-12-2023,OneD,-5.0,351919300000.00
+227,UnAllocableAssets,31-12-2023,OneI,-5.0,10123200000.00
+228,NetSegmentAssets,31-12-2023,OneI,-5.0,362042500000.00
+229,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Cement & Cement Products
+230,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities01I,-5.0,12897100000.00
+231,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Construction
+232,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities02I,-5.0,17304500000.00
+233,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Fertilizers
+234,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities03I,-5.0,7791300000.00
+235,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Hotel/Hospitality & Golf Course
+236,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities04I,-5.0,2358200000.00
+237,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Infrastructure
+238,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities05I,-5.0,812300000.00
+239,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Investments
+240,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities06I,-5.0,0.00
+241,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Others
+242,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities07I,-5.0,1627400000.00
+243,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Power
+244,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities08I,-5.0,713200000.00
+245,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Real Estate
+246,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities09I,-5.0,38453900000.00
+247,DescriptionOfReportableSegment,01-10-2023 To 31-12-2023,,,Unallocated
+248,SegmentLiabilities,31-12-2023,OneReportableSegmentLiabilities10I,-5.0,0.00
+249,SegmentLiabilities,31-12-2023,OneI,-5.0,81957900000.00
+250,UnAllocableLiabilities,31-12-2023,OneI,-5.0,302191900000.00
+251,NetSegmentLiabilities,31-12-2023,OneI,-5.0,384149800000.00
+252,DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,,,Items that will not be reclassified to Profit or Loss
+253,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,OneItemsThatWillNotBeReclassifiedToProfitAndLoss01D,-5.0,-200000.00
+254,DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,,,Items that will not be reclassified to Profit or Loss
+255,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,FourItemsThatWillNotBeReclassifiedToProfitAndLoss01D,-5.0,1200000.00
+256,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,OneD,-5.0,-200000.00
+257,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,FourD,-5.0,1200000.00
+258,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-10-2023 To 31-12-2023,OneD,-5.0,-100000.00
+259,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-10-2023 To 31-12-2023,FourD,-5.0,400000.00
+260,DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,,,Items that will be reclassified to Profit/(Loss)
+261,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,OneItemsThatWillBeReclassifiedToProfitAndLoss01D,-5.0,0.00
+262,DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,,,Items that will be reclassified to Profit/(Loss)
+263,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,FourItemsThatWillBeReclassifiedToProfitAndLoss01D,-5.0,0.00
+264,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,OneD,-5.0,0.00
+265,AmountOfItemThatWillBeReclassifiedToProfitAndLoss,01-10-2023 To 31-12-2023,FourD,-5.0,0.00
+266,IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss,01-10-2023 To 31-12-2023,OneD,-5.0,0.00
+267,IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss,01-10-2023 To 31-12-2023,FourD,-5.0,0.00

@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Large model files (optional - uncomment if models are too large)
+# *.safetensors
+# *.bin
+# *.onnx
+
+# ChromaDB persistence (cloud incompatible)
+data/indexes/chroma_db/
+
+# Local testing files  
+test_*.py
+debug_*.py
+fix_*.py
+test_corrected_system.py
+
+# Requirements backup
+requirements_full.txt
+
+# Notebook checkpoints
+.ipynb_checkpoints/

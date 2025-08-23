@@ -1,0 +1,702 @@
+{
+  "timestamp": "2025-08-23T16:45:00.594916",
+  "system_stats": {
+    "total_queries": 5,
+    "retrieval_time": 0.1900190830230713,
+    "generation_time": 0.00013399124145507812,
+    "total_time": 0.1901824,
+    "avg_confidence": 0.8799999999999999,
+    "query_types": {
+      "revenue": 1,
+      "profit": 1,
+      "expenses": 1,
+      "general": 2
+    },
+    "retrieval_stats": {
+      "total_queries": 5,
+      "hybrid_retrieval_time": 0.10993285179138183,
+      "reranking_time": 0.0799990177154541,
+      "total_time": 0.18998432159423828,
+      "reranking_improvements": [
+        8.129374363212355,
+        4.499293502886688,
+        3.4185739368290275,
+        2.7534931937167713,
+        -10.613544438112253
+      ],
+      "cross_encoder_stats": {
+        "total_queries": 5,
+        "total_candidates_processed": 100,
+        "avg_reranking_time": 0.07994298934936524,
+        "score_improvements": [
+          8.153392791748047,
+          8.173411229822468,
+          8.061319068066547,
+          7.637190618466862,
+          6.8492622889905705,
+          6.550547101299022,
+          6.533183303559701,
+          6.053552607284362,
+          4.019118580668257,
+          3.962542380652982,
+          3.4519412606521778,
+          3.299449866261757,
+          2.778738216944448,
+          1.3719446580329215,
+          1.2983550333273317,
+          1.3063303771711825,
+          0.6592608228790244,
+          0.7903264454502353,
+          -0.06433946998643725,
+          0.02214024038359097,
+          4.633448045932669,
+          4.55341734444791,
+          4.311015118279484,
+          4.2402951530848725,
+          4.419443392043704,
+          3.9849500520393613,
+          3.8978701135255855,
+          3.444552421569824,
+          -2.4728079564090715,
+          -2.482119384164262,
+          -3.8684771314994215,
+          -4.052019980827593,
+          -4.087270188859499,
+          -5.558256853168269,
+          -5.910171180917251,
+          -8.465663755744243,
+          -8.635440631808239,
+          -8.924346075445134,
+          -9.165171604275963,
+          -9.302213831672063,
+          3.5336324772543017,
+          3.5337010732618728,
+          3.188388259970909,
+          3.0644040489688846,
+          3.011883802553042,
+          2.827382097502291,
+          2.797576427459717,
+          2.5664043340740026,
+          -8.721011154840168,
+          -8.76092963254131,
+          -9.038774465505952,
+          -9.151546883028434,
+          -9.237788002407283,
+          -9.425715075158736,
+          -9.474880661313184,
+          -9.894809967480898,
+          -9.993968437178788,
+          -10.123214534496016,
+          -10.44501772381936,
+          -10.98601027287713,
+          3.294191114346104,
+          2.571409082816118,
+          2.394879383988093,
+          1.6045128588278215,
+          0.5630581378936768,
+          -0.11306772137197552,
+          -0.18940943253808662,
+          -1.0149601937238972,
+          -2.7730283792830583,
+          -2.9075729785382816,
+          -3.1468561452061445,
+          -3.4870173869550296,
+          -4.5057902274549075,
+          -4.664358132880933,
+          -5.142230504554517,
+          -7.89349078902769,
+          -8.326496471223038,
+          -8.335769069367837,
+          -9.659386751963742,
+          -9.648895617086852,
+          -10.679318591240866,
+          -10.532200525831232,
+          -10.62911419726466,
+          -11.260759722069682,
+          -11.049111780776956,
+          -11.215188219292775,
+          -11.090197551303667,
+          -11.24209520479975,
+          -11.101290662154295,
+          -11.245735104418229,
+          -11.410578346252441,
+          -11.102004906842241,
+          -11.67458381652832,
+          -11.67729606628418,
+          -11.68685474395752,
+          -11.687405967712403,
+          -11.695684814453125,
+          -11.701118850708008,
+          -11.715960884094239,
+          -11.716679000854493
+        ],
+        "score_improvement_stats": {
+          "mean": -3.36755051981938,
+          "std": 6.5522422242815255,
+          "min": -11.716679000854493,
+          "max": 8.173411229822468,
+          "positive_improvements": 40,
+          "negative_improvements": 60
+        }
+      },
+      "hybrid_retriever_config": {
+        "dense_weight": 0.6,
+        "sparse_weight": 0.4,
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
+      }
+    },
+    "generation_stats": {
+      "total_responses": 5,
+      "template_usage": {
+        "revenue": 1,
+        "profit": 1,
+        "expenses": 1,
+        "general": 2
+      },
+      "avg_confidence": 0.8799999999999999,
+      "response_types": {}
+    },
+    "system_config": {
+      "cross_encoder_enabled": true,
+      "cross_encoder_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "response_method": "template_based"
+    }
+  },
+  "conversation": [
+    {
+      "query": "What was the revenue from operations in Q3 2023?",
+      "answer": "The revenue from operations was \u20b915.03 billion. (Data from Dec 2023)",
+      "confidence": 0.95,
+      "sources": [
+        {
+          "source_id": 1,
+          "chunk_id": "QA_PAIR_1387",
+          "content_preview": "Question: What was the revenue from operations in Dec 2023? Answer: The revenue from operations was \u20b915.03 billion",
+          "quarter": "Dec 2023",
+          "section": "qa_memory",
+          "relevance_score": 9.153392791748047,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 9.153392791748047,
+          "original_score": 1.0,
+          "score_improvement": 8.153392791748047
+        },
+        {
+          "source_id": 2,
+          "chunk_id": "QA_PAIR_1421",
+          "content_preview": "Question: What was the revenue from operations in Jun 2023? Answer: The revenue from operations was \u20b914.29 billion",
+          "quarter": "Jun 2023",
+          "section": "qa_memory",
+          "relevance_score": 9.150367736816406,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 9.150367736816406,
+          "original_score": 0.9769565069939377,
+          "score_improvement": 8.173411229822468
+        },
+        {
+          "source_id": 3,
+          "chunk_id": "QA_PAIR_1455",
+          "content_preview": "Question: What was the revenue from operations in Sep 2023? Answer: The revenue from operations was \u20b918.96 billion",
+          "quarter": "Sep 2023",
+          "section": "qa_memory",
+          "relevance_score": 9.050701141357422,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 9.050701141357422,
+          "original_score": 0.9893820732908744,
+          "score_improvement": 8.061319068066547
+        }
+      ],
+      "retrieval_metadata": {
+        "chunks_found": 3,
+        "fusion_method": "weighted",
+        "reranking_enabled": true,
+        "retrieval_time": 0.3485908508300781
+      },
+      "generation_metadata": {
+        "generation_time": 0.000281,
+        "response_method": "direct_qa",
+        "template_category": "revenue"
+      },
+      "query_analysis": {
+        "primary_category": "revenue",
+        "matched_keywords": [
+          "revenue",
+          "ratio"
+        ]
+      },
+      "performance": {
+        "total_time": 0.348933,
+        "retrieval_time": 0.3485908508300781,
+        "generation_time": 0.00031185150146484375,
+        "retrieval_percentage": 99.90194416408828,
+        "generation_percentage": 0.08937288862470553
+      },
+      "timestamp": "2025-08-23T16:44:59.992646",
+      "explanation": {
+        "retrieval_explanation": {
+          "search_process": {
+            "stage_1": "Hybrid retrieval combining dense semantic search and sparse keyword matching",
+            "stage_2": "Cross-encoder re-ranking for precise relevance scoring"
+          },
+          "query_analysis": {
+            "original_query": "What was the revenue from operations in Q3 2023?",
+            "processed_tokens": "Tokenized and filtered for financial terms",
+            "expansion": "Financial synonyms added for better recall"
+          },
+          "retrieval_pipeline": {
+            "fusion_method": "weighted",
+            "candidates_retrieved": 20,
+            "final_results": 3,
+            "reranking_enabled": true
+          },
+          "performance_breakdown": {
+            "hybrid_retrieval": "0.194s",
+            "cross_encoder_reranking": "0.155s",
+            "total_time": "0.349s"
+          },
+          "reranking_impact": {
+            "position_changes": 1,
+            "top_result_changed": false,
+            "avg_score_improvement": 8.129374363212355
+          }
+        },
+        "response_explanation": {
+          "method_used": "direct_qa",
+          "data_sources_analyzed": {
+            "chunks_used": 3,
+            "qa_pairs_found": 3,
+            "financial_amounts": 3,
+            "periods_mentioned": 3
+          },
+          "template_category": "revenue"
+        }
+      }
+    },
+    {
+      "query": "How much profit before tax did the company achieve?",
+      "answer": "The loss before tax was \u20b94.52 billion. (Data from Dec 2023)",
+      "confidence": 0.95,
+      "sources": [
+        {
+          "source_id": 1,
+          "chunk_id": "QA_PAIR_1393",
+          "content_preview": "Question: What was the profit before tax in Dec 2023? Answer: The loss before tax was \u20b94.52 billion",
+          "quarter": "Dec 2023",
+          "section": "qa_memory",
+          "relevance_score": 5.31480073928833,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 5.31480073928833,
+          "original_score": 0.6813526933556611,
+          "score_improvement": 4.633448045932669
+        },
+        {
+          "source_id": 2,
+          "chunk_id": "QA_PAIR_1410",
+          "content_preview": "Question: What was the profit before tax in Dec 2022? Answer: The loss before tax was \u20b92.47 billion",
+          "quarter": "Dec 2022",
+          "section": "qa_memory",
+          "relevance_score": 5.294044494628906,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 5.294044494628906,
+          "original_score": 0.7406271501809967,
+          "score_improvement": 4.55341734444791
+        },
+        {
+          "source_id": 3,
+          "chunk_id": "QA_PAIR_1427",
+          "content_preview": "Question: What was the profit before tax in Jun 2023? Answer: The loss before tax was \u20b91.68 billion",
+          "quarter": "Jun 2023",
+          "section": "qa_memory",
+          "relevance_score": 5.2700581550598145,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 5.2700581550598145,
+          "original_score": 0.95904303678033,
+          "score_improvement": 4.311015118279484
+        }
+      ],
+      "retrieval_metadata": {
+        "chunks_found": 3,
+        "fusion_method": "weighted",
+        "reranking_enabled": true,
+        "retrieval_time": 0.2058727741241455
+      },
+      "generation_metadata": {
+        "generation_time": 7e-05,
+        "response_method": "direct_qa",
+        "template_category": "profit"
+      },
+      "query_analysis": {
+        "primary_category": "profit",
+        "matched_keywords": [
+          "profit",
+          "profit before tax"
+        ]
+      },
+      "performance": {
+        "total_time": 0.205993,
+        "retrieval_time": 0.2058727741241455,
+        "generation_time": 9.083747863769531e-05,
+        "retrieval_percentage": 99.94163594109776,
+        "generation_percentage": 0.044097361870401086
+      },
+      "timestamp": "2025-08-23T16:45:00.198699",
+      "explanation": {
+        "retrieval_explanation": {
+          "search_process": {
+            "stage_1": "Hybrid retrieval combining dense semantic search and sparse keyword matching",
+            "stage_2": "Cross-encoder re-ranking for precise relevance scoring"
+          },
+          "query_analysis": {
+            "original_query": "How much profit before tax did the company achieve?",
+            "processed_tokens": "Tokenized and filtered for financial terms",
+            "expansion": "Financial synonyms added for better recall"
+          },
+          "retrieval_pipeline": {
+            "fusion_method": "weighted",
+            "candidates_retrieved": 20,
+            "final_results": 3,
+            "reranking_enabled": true
+          },
+          "performance_breakdown": {
+            "hybrid_retrieval": "0.091s",
+            "cross_encoder_reranking": "0.115s",
+            "total_time": "0.206s"
+          },
+          "reranking_impact": {
+            "position_changes": 3,
+            "top_result_changed": true,
+            "avg_score_improvement": 4.499293502886688
+          }
+        },
+        "response_explanation": {
+          "method_used": "direct_qa",
+          "data_sources_analyzed": {
+            "chunks_used": 3,
+            "qa_pairs_found": 3,
+            "financial_amounts": 3,
+            "periods_mentioned": 3
+          },
+          "template_category": "profit"
+        }
+      }
+    },
+    {
+      "query": "Tell me about employee benefit expenses",
+      "answer": "The employee benefit expense was \u20b91.35 billion. (Data from Dec 2022)",
+      "confidence": 0.95,
+      "sources": [
+        {
+          "source_id": 1,
+          "chunk_id": "QA_PAIR_1408",
+          "content_preview": "Question: What was the employee benefit expense in Dec 2022? Answer: The employee benefit expense was \u20b91.35 billion",
+          "quarter": "Dec 2022",
+          "section": "qa_memory",
+          "relevance_score": 4.4804792404174805,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 4.4804792404174805,
+          "original_score": 0.9468467631631788,
+          "score_improvement": 3.5336324772543017
+        },
+        {
+          "source_id": 2,
+          "chunk_id": "QA_PAIR_1391",
+          "content_preview": "Question: What was the employee benefit expense in Dec 2023? Answer: The employee benefit expense was \u20b998.60 crores",
+          "quarter": "Dec 2023",
+          "section": "qa_memory",
+          "relevance_score": 4.467349052429199,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 4.467349052429199,
+          "original_score": 0.9336479791673263,
+          "score_improvement": 3.5337010732618728
+        },
+        {
+          "source_id": 3,
+          "chunk_id": "QA_PAIR_1442",
+          "content_preview": "Question: What was the employee benefit expense in Jun 2022? Answer: The employee benefit expense was \u20b91.42 billion",
+          "quarter": "Jun 2022",
+          "section": "qa_memory",
+          "relevance_score": 4.140031337738037,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 4.140031337738037,
+          "original_score": 0.951643077767128,
+          "score_improvement": 3.188388259970909
+        }
+      ],
+      "retrieval_metadata": {
+        "chunks_found": 3,
+        "fusion_method": "weighted",
+        "reranking_enabled": true,
+        "retrieval_time": 0.14177513122558594
+      },
+      "generation_metadata": {
+        "generation_time": 7.7e-05,
+        "response_method": "direct_qa",
+        "template_category": "expenses"
+      },
+      "query_analysis": {
+        "primary_category": "expenses",
+        "matched_keywords": [
+          "expenses",
+          "employee benefit"
+        ]
+      },
+      "performance": {
+        "total_time": 0.141903,
+        "retrieval_time": 0.14177513122558594,
+        "generation_time": 9.703636169433594e-05,
+        "retrieval_percentage": 99.90989001330904,
+        "generation_percentage": 0.06838217775123566
+      },
+      "timestamp": "2025-08-23T16:45:00.340661",
+      "explanation": {
+        "retrieval_explanation": {
+          "search_process": {
+            "stage_1": "Hybrid retrieval combining dense semantic search and sparse keyword matching",
+            "stage_2": "Cross-encoder re-ranking for precise relevance scoring"
+          },
+          "query_analysis": {
+            "original_query": "Tell me about employee benefit expenses",
+            "processed_tokens": "Tokenized and filtered for financial terms",
+            "expansion": "Financial synonyms added for better recall"
+          },
+          "retrieval_pipeline": {
+            "fusion_method": "weighted",
+            "candidates_retrieved": 20,
+            "final_results": 3,
+            "reranking_enabled": true
+          },
+          "performance_breakdown": {
+            "hybrid_retrieval": "0.091s",
+            "cross_encoder_reranking": "0.051s",
+            "total_time": "0.142s"
+          },
+          "reranking_impact": {
+            "position_changes": 3,
+            "top_result_changed": true,
+            "avg_score_improvement": 3.4185739368290275
+          }
+        },
+        "response_explanation": {
+          "method_used": "direct_qa",
+          "data_sources_analyzed": {
+            "chunks_used": 3,
+            "qa_pairs_found": 3,
+            "financial_amounts": 3,
+            "periods_mentioned": 3
+          },
+          "template_category": "expenses"
+        }
+      }
+    },
+    {
+      "query": "What were the major financial highlights for Dec 2023?",
+      "answer": "The finance costs were \u20b92.71 billion. (Data from Dec 2023)",
+      "confidence": 0.95,
+      "sources": [
+        {
+          "source_id": 1,
+          "chunk_id": "QA_PAIR_1401",
+          "content_preview": "Question: What were the main factors contributing to the loss in Dec 2023? Answer: The main factors contributing to the loss included finance costs of...",
+          "quarter": "Dec 2023",
+          "section": "qa_memory",
+          "relevance_score": 3.5913045406341553,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 3.5913045406341553,
+          "original_score": 0.29711342628805165,
+          "score_improvement": 3.294191114346104
+        },
+        {
+          "source_id": 2,
+          "chunk_id": "QA_PAIR_1390",
+          "content_preview": "Question: What were the finance costs in Dec 2023? Answer: The finance costs were \u20b92.71 billion",
+          "quarter": "Dec 2023",
+          "section": "qa_memory",
+          "relevance_score": 2.7714052200317383,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 2.7714052200317383,
+          "original_score": 0.19999613721562023,
+          "score_improvement": 2.571409082816118
+        },
+        {
+          "source_id": 3,
+          "chunk_id": "QA_PAIR_1418",
+          "content_preview": "Question: What were the main factors contributing to the loss in Dec 2022? Answer: The main factors contributing to the loss included finance costs of...",
+          "quarter": "Dec 2022",
+          "section": "qa_memory",
+          "relevance_score": 2.678104877471924,
+          "retrieval_method": "hybrid",
+          "cross_encoder_score": 2.678104877471924,
+          "original_score": 0.28322549348383086,
+          "score_improvement": 2.394879383988093
+        }
+      ],
+      "retrieval_metadata": {
+        "chunks_found": 3,
+        "fusion_method": "weighted",
+        "reranking_enabled": true,
+        "retrieval_time": 0.1390857696533203
+      },
+      "generation_metadata": {
+        "generation_time": 7.5e-05,
+        "response_method": "direct_qa",
+        "template_category": "general"
+      },
+      "query_analysis": {
+        "primary_category": "general",
+        "matched_keywords": []
+      },
+      "performance": {
+        "total_time": 0.13921,
+        "retrieval_time": 0.1390857696533203,
+        "generation_time": 9.703636169433594e-05,
+        "retrieval_percentage": 99.91076047217895,
+        "generation_percentage": 0.06970502240811431
+      },
+      "timestamp": "2025-08-23T16:45:00.479929",
+      "explanation": {
+        "retrieval_explanation": {
+          "search_process": {
+            "stage_1": "Hybrid retrieval combining dense semantic search and sparse keyword matching",
+            "stage_2": "Cross-encoder re-ranking for precise relevance scoring"
+          },
+          "query_analysis": {
+            "original_query": "What were the major financial highlights for Dec 2023?",
+            "processed_tokens": "Tokenized and filtered for financial terms",
+            "expansion": "Financial synonyms added for better recall"
+          },
+          "retrieval_pipeline": {
+            "fusion_method": "weighted",
+            "candidates_retrieved": 20,
+            "final_results": 3,
+            "reranking_enabled": true
+          },
+          "performance_breakdown": {
+            "hybrid_retrieval": "0.092s",
+            "cross_encoder_reranking": "0.047s",
+            "total_time": "0.139s"
+          },
+          "reranking_impact": {
+            "position_changes": 3,
+            "top_result_changed": true,
+            "avg_score_improvement": 2.7534931937167713
+          }
+        },
+        "response_explanation": {
+          "method_used": "direct_qa",
+          "data_sources_analyzed": {
+            "chunks_used": 3,
+            "qa_pairs_found": 3,
+            "financial_amounts": 5,
+            "periods_mentioned": 2
+          },
+          "template_category": "general"
+        }
+      }
+    },
+    {
+      "query": "Compare the financial performance across quarters",
+      "answer": "Based on the financial data for 2022, there are 6 financial figures available covering various metrics.",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "source_id": 1,
+          "chunk_id": "Q1_FY2022-23_expenses_0397",
+          "content_preview": "in q1 fy2022 - 23 ( 01 - 04 - 2022 to 30 - 06 - 2022 ), employeebenefitexpense was \u20b91. 42 billion. in q1 fy2022 - 23 ( 01 - 04 - 2022 to 30 - 06 - 202...",
+          "quarter": "Q1 FY2022-23",
+          "section": "expenses",
+          "relevance_score": -10.20388412475586,
+          "retrieval_method": "dense_only",
+          "cross_encoder_score": -10.20388412475586,
+          "original_score": 0.4754344664850063,
+          "score_improvement": -10.679318591240866
+        },
+        {
+          "source_id": 2,
+          "chunk_id": "Q2_FY2022-23_expenses_0729",
+          "content_preview": "in q2 fy2022 - 23 ( 01 - 04 - 2022 to 30 - 09 - 2022 ), employeebenefitexpense was \u20b92. 81 billion. in q2 fy2022 - 23 ( 01 - 04 - 2022 to 30 - 09 - 202...",
+          "quarter": "Q2 FY2022-23",
+          "section": "expenses",
+          "relevance_score": -10.258535385131836,
+          "retrieval_method": "dense_only",
+          "cross_encoder_score": -10.258535385131836,
+          "original_score": 0.2736651406993959,
+          "score_improvement": -10.532200525831232
+        },
+        {
+          "source_id": 3,
+          "chunk_id": "Q2_FY2022-23_expenses_0710",
+          "content_preview": "in q2 fy2022 - 23 ( 01 - 07 - 2022 to 30 - 09 - 2022 ), employeebenefitexpense was \u20b91. 39 billion. in q2 fy2022 - 23 ( 01 - 07 - 2022 to 30 - 09 - 202...",
+          "quarter": "Q2 FY2022-23",
+          "section": "expenses",
+          "relevance_score": -10.300132751464844,
+          "retrieval_method": "dense_only",
+          "cross_encoder_score": -10.300132751464844,
+          "original_score": 0.32898144579981514,
+          "score_improvement": -10.62911419726466
+        }
+      ],
+      "retrieval_metadata": {
+        "chunks_found": 3,
+        "fusion_method": "weighted",
+        "reranking_enabled": true,
+        "retrieval_time": 0.11477088928222656
+      },
+      "generation_metadata": {
+        "generation_time": 5.6e-05,
+        "response_method": "template_based",
+        "template_category": "general"
+      },
+      "query_analysis": {
+        "primary_category": "general",
+        "matched_keywords": []
+      },
+      "performance": {
+        "total_time": 0.114873,
+        "retrieval_time": 0.11477088928222656,
+        "generation_time": 7.319450378417969e-05,
+        "retrieval_percentage": 99.91110990591919,
+        "generation_percentage": 0.06371776116596561
+      },
+      "timestamp": "2025-08-23T16:45:00.594858",
+      "explanation": {
+        "retrieval_explanation": {
+          "search_process": {
+            "stage_1": "Hybrid retrieval combining dense semantic search and sparse keyword matching",
+            "stage_2": "Cross-encoder re-ranking for precise relevance scoring"
+          },
+          "query_analysis": {
+            "original_query": "Compare the financial performance across quarters",
+            "processed_tokens": "Tokenized and filtered for financial terms",
+            "expansion": "Financial synonyms added for better recall"
+          },
+          "retrieval_pipeline": {
+            "fusion_method": "weighted",
+            "candidates_retrieved": 20,
+            "final_results": 3,
+            "reranking_enabled": true
+          },
+          "performance_breakdown": {
+            "hybrid_retrieval": "0.082s",
+            "cross_encoder_reranking": "0.032s",
+            "total_time": "0.115s"
+          },
+          "reranking_impact": {
+            "position_changes": 3,
+            "top_result_changed": true,
+            "avg_score_improvement": -10.613544438112253
+          }
+        },
+        "response_explanation": {
+          "method_used": "template_based",
+          "data_sources_analyzed": {
+            "chunks_used": 3,
+            "qa_pairs_found": 0,
+            "financial_amounts": 6,
+            "periods_mentioned": 1
+          },
+          "template_category": "general"
+        }
+      }
+    }
+  ]
+}

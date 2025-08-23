@@ -1,0 +1,413 @@
+Sr.No.,Element Name,Period,Unit,Decimals,Fact Value
+1,ScripCode,01-01-2024 To 31-03-2024,,,532532
+2,Symbol,01-01-2024 To 31-03-2024,,,JPASSOCIAT
+3,MSEISymbol,01-01-2024 To 31-03-2024,,,NOTLISTED
+4,NameOfTheCompany,01-01-2024 To 31-03-2024,,,Jaiprakash Associates Limited
+5,ClassOfSecurity,01-01-2024 To 31-03-2024,,,Equity
+6,DateOfStartOfFinancialYear,01-01-2024 To 31-03-2024,,,2023-04-01
+7,DateOfEndOfFinancialYear,01-01-2024 To 31-03-2024,,,2024-03-31
+8,DateOfBoardMeetingWhenFinancialResultsWereApproved,01-01-2024 To 31-03-2024,,,2024-05-11
+9,DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange,01-01-2024 To 31-03-2024,,,2024-05-04
+10,DescriptionOfPresentationCurrency,01-01-2024 To 31-03-2024,,,INR
+11,LevelOfRoundingUsedInFinancialStatements,01-01-2024 To 31-03-2024,,,Lakhs
+12,ReportingQuarter,01-01-2024 To 31-03-2024,,,Yearly
+13,StartTimeOfBoardMeeting,01-01-2024 To 31-03-2024,,,16:00:00
+14,EndTimeOfBoardMeeting,01-01-2024 To 31-03-2024,,,18:40:00
+15,DateOfStartOfBoardMeeting,01-01-2024 To 31-03-2024,,,2024-05-11
+16,DateOfEndOfBoardMeeting,01-01-2024 To 31-03-2024,,,2024-05-11
+17,WhetherCashFlowStatementIsApplicableOnCompany,01-01-2024 To 31-03-2024,,,true
+18,TypeOfCashFlowStatement,01-01-2024 To 31-03-2024,,,Cash Flow Indirect
+19,DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification,01-01-2024 To 31-03-2024,,,Statement on impact of audit qualification
+20,IsCompanyReportingMultisegmentOrSingleSegment,01-01-2024 To 31-03-2024,,,Multi segment
+21,DateOfStartOfReportingPeriod,01-01-2024 To 31-03-2024,,,2024-01-01
+22,DateOfEndOfReportingPeriod,01-01-2024 To 31-03-2024,,,2024-03-31
+23,WhetherResultsAreAuditedOrUnaudited,01-01-2024 To 31-03-2024,,,Audited
+24,NatureOfReportStandaloneConsolidated,01-01-2024 To 31-03-2024,,,Consolidated
+25,RevenueFromOperations,01-01-2024 To 31-03-2024,OneD,-5.0,17409300000.00
+26,OtherIncome,01-01-2024 To 31-03-2024,OneD,-5.0,341500000.00
+27,Income,01-01-2024 To 31-03-2024,OneD,-5.0,17750800000.00
+28,CostOfMaterialsConsumed,01-01-2024 To 31-03-2024,OneD,-5.0,8086100000.00
+29,PurchasesOfStockInTrade,01-01-2024 To 31-03-2024,OneD,-5.0,22800000.00
+30,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-01-2024 To 31-03-2024,OneD,-5.0,-32800000.00
+31,EmployeeBenefitExpense,01-01-2024 To 31-03-2024,OneD,-5.0,1154600000.00
+32,FinanceCosts,01-01-2024 To 31-03-2024,OneD,-5.0,2748700000.00
+33,DepreciationDepletionAndAmortisationExpense,01-01-2024 To 31-03-2024,OneD,-5.0,945400000.00
+34,OtherExpenses,01-01-2024 To 31-03-2024,OneD,-5.0,7171400000.00
+35,Expenses,01-01-2024 To 31-03-2024,OneD,-5.0,20096200000.00
+36,ProfitBeforeExceptionalItemsAndTax,01-01-2024 To 31-03-2024,OneD,-5.0,-2345400000.00
+37,ExceptionalItemsBeforeTax,01-01-2024 To 31-03-2024,OneD,-5.0,-1131400000.00
+38,ProfitBeforeTax,01-01-2024 To 31-03-2024,OneD,-5.0,-3476800000.00
+39,CurrentTax,01-01-2024 To 31-03-2024,OneD,-5.0,157100000.00
+40,DeferredTax,01-01-2024 To 31-03-2024,OneD,-5.0,-43100000.00
+41,TaxExpense,01-01-2024 To 31-03-2024,OneD,-5.0,114000000.00
+42,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-01-2024 To 31-03-2024,OneD,-5.0,0.00
+43,ProfitLossForPeriodFromContinuingOperations,01-01-2024 To 31-03-2024,OneD,-5.0,-3590800000.00
+44,ProfitLossFromDiscontinuedOperationsBeforeTax,01-01-2024 To 31-03-2024,OneD,-5.0,-2134700000.00
+45,TaxExpenseOfDiscontinuedOperations,01-01-2024 To 31-03-2024,OneD,-5.0,0.00
+46,ProfitLossFromDiscontinuedOperationsAfterTax,01-01-2024 To 31-03-2024,OneD,-5.0,-2134700000.00
+47,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-01-2024 To 31-03-2024,OneD,-5.0,1412700000.00
+48,ProfitLossForPeriod,01-01-2024 To 31-03-2024,OneD,-5.0,-4312800000.00
+49,OtherComprehensiveIncomeNetOfTaxes,01-01-2024 To 31-03-2024,OneD,-5.0,-30900000.00
+50,ComprehensiveIncomeForThePeriod,01-01-2024 To 31-03-2024,OneD,-5.0,-4343700000.00
+51,ProfitOrLossAttributableToOwnersOfParent,01-01-2024 To 31-03-2024,OneD,-5.0,-4394500000.00
+52,ProfitOrLossAttributableToNonControllingInterests,01-01-2024 To 31-03-2024,OneD,-5.0,81700000.00
+53,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-01-2024 To 31-03-2024,OneD,-5.0,-4424600000.00
+54,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-01-2024 To 31-03-2024,OneD,-5.0,80900000.00
+55,PaidUpValueOfEquityShareCapital,01-01-2024 To 31-03-2024,OneD,-5.0,4909200000.00
+56,FaceValueOfEquityShareCapital,01-01-2024 To 31-03-2024,OneD,,2
+57,BasicEarningsLossPerShareFromContinuingOperations,01-01-2024 To 31-03-2024,OneD,,-0.92
+58,DilutedEarningsLossPerShareFromContinuingOperations,01-01-2024 To 31-03-2024,OneD,,-0.92
+59,BasicEarningsLossPerShareFromDiscontinuedOperations,01-01-2024 To 31-03-2024,OneD,,-0.87
+60,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-01-2024 To 31-03-2024,OneD,,-0.87
+61,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2024 To 31-03-2024,OneD,,-1.79
+62,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2024 To 31-03-2024,OneD,,-1.79
+63,DebtEquityRatio,01-01-2024 To 31-03-2024,OneD,,-0.08
+64,DebtServiceCoverageRatio,01-01-2024 To 31-03-2024,OneD,,0.00
+65,InterestServiceCoverageRatio,01-01-2024 To 31-03-2024,OneD,,0.00
+66,IsCompanyReportingMultisegmentOrSingleSegment,01-01-2024 To 31-03-2024,,,Multi segment
+67,DateOfStartOfReportingPeriod,01-01-2024 To 31-03-2024,,,2023-04-01
+68,DateOfEndOfReportingPeriod,01-01-2024 To 31-03-2024,,,2024-03-31
+69,WhetherResultsAreAuditedOrUnaudited,01-01-2024 To 31-03-2024,,,Audited
+70,NatureOfReportStandaloneConsolidated,01-01-2024 To 31-03-2024,,,Consolidated
+71,RevenueFromOperations,01-01-2024 To 31-03-2024,FourD,-5.0,65680900000.00
+72,OtherIncome,01-01-2024 To 31-03-2024,FourD,-5.0,2137000000.00
+73,Income,01-01-2024 To 31-03-2024,FourD,-5.0,67817900000.00
+74,CostOfMaterialsConsumed,01-01-2024 To 31-03-2024,FourD,-5.0,29186200000.00
+75,PurchasesOfStockInTrade,01-01-2024 To 31-03-2024,FourD,-5.0,493900000.00
+76,ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade,01-01-2024 To 31-03-2024,FourD,-5.0,133400000.00
+77,EmployeeBenefitExpense,01-01-2024 To 31-03-2024,FourD,-5.0,4148200000.00
+78,FinanceCosts,01-01-2024 To 31-03-2024,FourD,-5.0,10241500000.00
+79,DepreciationDepletionAndAmortisationExpense,01-01-2024 To 31-03-2024,FourD,-5.0,3839800000.00
+80,OtherExpenses,01-01-2024 To 31-03-2024,FourD,-5.0,28062400000.00
+81,Expenses,01-01-2024 To 31-03-2024,FourD,-5.0,76105400000.00
+82,ProfitBeforeExceptionalItemsAndTax,01-01-2024 To 31-03-2024,FourD,-5.0,-8287500000.00
+83,ExceptionalItemsBeforeTax,01-01-2024 To 31-03-2024,FourD,-5.0,-3407800000.00
+84,ProfitBeforeTax,01-01-2024 To 31-03-2024,FourD,-5.0,-11695300000.00
+85,CurrentTax,01-01-2024 To 31-03-2024,FourD,-5.0,545200000.00
+86,DeferredTax,01-01-2024 To 31-03-2024,FourD,-5.0,-157900000.00
+87,TaxExpense,01-01-2024 To 31-03-2024,FourD,-5.0,387300000.00
+88,NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+89,ProfitLossForPeriodFromContinuingOperations,01-01-2024 To 31-03-2024,FourD,-5.0,-12082600000.00
+90,ProfitLossFromDiscontinuedOperationsBeforeTax,01-01-2024 To 31-03-2024,FourD,-5.0,-3755100000.00
+91,TaxExpenseOfDiscontinuedOperations,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+92,ProfitLossFromDiscontinuedOperationsAfterTax,01-01-2024 To 31-03-2024,FourD,-5.0,-3755100000.00
+93,ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,01-01-2024 To 31-03-2024,FourD,-5.0,2447900000.00
+94,ProfitLossForPeriod,01-01-2024 To 31-03-2024,FourD,-5.0,-13389800000.00
+95,OtherComprehensiveIncomeNetOfTaxes,01-01-2024 To 31-03-2024,FourD,-5.0,-30100000.00
+96,ComprehensiveIncomeForThePeriod,01-01-2024 To 31-03-2024,FourD,-5.0,-13419900000.00
+97,ProfitOrLossAttributableToOwnersOfParent,01-01-2024 To 31-03-2024,FourD,-5.0,-13400000000.00
+98,ProfitOrLossAttributableToNonControllingInterests,01-01-2024 To 31-03-2024,FourD,-5.0,10200000.00
+99,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent,01-01-2024 To 31-03-2024,FourD,-5.0,9500000.00
+100,ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests,01-01-2024 To 31-03-2024,FourD,-5.0,-13429400000.00
+101,PaidUpValueOfEquityShareCapital,01-01-2024 To 31-03-2024,FourD,-5.0,4909200000.00
+102,FaceValueOfEquityShareCapital,01-01-2024 To 31-03-2024,FourD,,2
+103,ReserveExcludingRevaluationReserves,01-01-2024 To 31-03-2024,FourD,-5.0,-30852500000.00
+104,BasicEarningsLossPerShareFromContinuingOperations,01-01-2024 To 31-03-2024,FourD,,-3.93
+105,DilutedEarningsLossPerShareFromContinuingOperations,01-01-2024 To 31-03-2024,FourD,,-3.93
+106,BasicEarningsLossPerShareFromDiscontinuedOperations,01-01-2024 To 31-03-2024,FourD,,-1.53
+107,DilutedEarningsLossPerShareFromDiscontinuedOperations,01-01-2024 To 31-03-2024,FourD,,-1.53
+108,BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2024 To 31-03-2024,FourD,,-5.46
+109,DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations,01-01-2024 To 31-03-2024,FourD,,-5.46
+110,DebtEquityRatio,01-01-2024 To 31-03-2024,FourD,,-0.08
+111,DebtServiceCoverageRatio,01-01-2024 To 31-03-2024,FourD,,0.00
+112,InterestServiceCoverageRatio,01-01-2024 To 31-03-2024,FourD,,0.00
+113,DescriptionOfOtherExpenses,01-01-2024 To 31-03-2024,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+114,OtherExpenses,01-01-2024 To 31-03-2024,OneOperatingExpenses01D,-5.0,5226900000.00
+115,DescriptionOfOtherExpenses,01-01-2024 To 31-03-2024,,,Other Expenses
+116,OtherExpenses,01-01-2024 To 31-03-2024,OneOperatingExpenses02D,-5.0,1944500000.00
+117,DescriptionOfOtherExpenses,01-01-2024 To 31-03-2024,,,"Direct Construction, Manufacturing, Real Estate, Infrastructure, Hotel/Hospitality, Event & Power Expenses"
+118,OtherExpenses,01-01-2024 To 31-03-2024,FourOperatingExpenses01D,-5.0,22940700000.00
+119,DescriptionOfOtherExpenses,01-01-2024 To 31-03-2024,,,Other Expenses
+120,OtherExpenses,01-01-2024 To 31-03-2024,FourOperatingExpenses02D,-5.0,5121700000.00
+121,NonControllingInterest,31-03-2024,OneI,-5.0,-507700000.00
+122,PropertyPlantAndEquipment,31-03-2024,OneI,-5.0,43892900000.00
+123,CapitalWorkInProgress,31-03-2024,OneI,-5.0,2886900000.00
+124,InvestmentProperty,31-03-2024,OneI,-5.0,0.00
+125,Goodwill,31-03-2024,OneI,-5.0,0.00
+126,OtherIntangibleAssets,31-03-2024,OneI,-5.0,2176500000.00
+127,IntangibleAssetsUnderDevelopment,31-03-2024,OneI,-5.0,0.00
+128,BiologicalAssetsOtherThanBearerPlants,31-03-2024,OneI,-5.0,0.00
+129,InvestmentsAccountedForUsingEquityMethod,31-03-2024,OneI,-5.0,0.00
+130,NoncurrentInvestments,31-03-2024,OneI,-5.0,11924200000.00
+131,TradeReceivablesNoncurrent,31-03-2024,OneI,-5.0,12140000000.00
+132,LoansNoncurrent,31-03-2024,OneI,-5.0,0.00
+133,OtherNoncurrentFinancialAssets,31-03-2024,OneI,-5.0,2790900000.00
+134,NoncurrentFinancialAssets,31-03-2024,OneI,-5.0,26855100000.00
+135,DeferredTaxAssetsNet,31-03-2024,OneI,-5.0,0.00
+136,OtherNoncurrentAssets,31-03-2024,OneI,-5.0,12502900000.00
+137,NoncurrentAssets,31-03-2024,OneI,-5.0,88314300000.00
+138,Inventories,31-03-2024,OneI,-5.0,157329200000.00
+139,CurrentInvestments,31-03-2024,OneI,-5.0,104700000.00
+140,TradeReceivablesCurrent,31-03-2024,OneI,-5.0,23200300000.00
+141,CashAndCashEquivalents,31-03-2024,OneI,-5.0,6727800000.00
+142,BankBalanceOtherThanCashAndCashEquivalents,31-03-2024,OneI,-5.0,2344200000.00
+143,LoansCurrent,31-03-2024,OneI,-5.0,0.00
+144,OtherCurrentFinancialAssets,31-03-2024,OneI,-5.0,18485900000.00
+145,CurrentFinancialAssets,31-03-2024,OneI,-5.0,50862900000.00
+146,CurrentTaxAssets,31-03-2024,OneI,-5.0,7100000.00
+147,OtherCurrentAssets,31-03-2024,OneI,-5.0,20343500000.00
+148,CurrentAssets,31-03-2024,OneI,-5.0,228542700000.00
+149,NoncurrentAssetsClassifiedAsHeldForSale,31-03-2024,OneI,-5.0,44549200000.00
+150,RegulatoryDeferralAccountDebitBalancesAndRelatedDeferredTaxAssets,31-03-2024,OneI,-5.0,0.00
+151,Assets,31-03-2024,OneI,-5.0,361406200000.00
+152,EquityShareCapital,31-03-2024,OneI,-5.0,4909200000.00
+153,OtherEquity,31-03-2024,OneI,-5.0,-30852500000.00
+154,EquityAttributableToOwnersOfParent,31-03-2024,OneI,-5.0,-25943300000.00
+155,Equity,31-03-2024,OneI,-5.0,-26451000000.00
+156,BorrowingsNoncurrent,31-03-2024,OneI,-5.0,123033000000.00
+157,TradePayablesNoncurrent,31-03-2024,OneI,-5.0,720900000.00
+158,OtherNoncurrentFinancialLiabilities,31-03-2024,OneI,-5.0,80642000000.00
+159,NoncurrentFinancialLiabilities,31-03-2024,OneI,-5.0,204395900000.00
+160,ProvisionsNoncurrent,31-03-2024,OneI,-5.0,614300000.00
+161,DeferredTaxLiabilitiesNet,31-03-2024,OneI,-5.0,1382100000.00
+162,DeferredGovernmentGrantsNoncurrent,31-03-2024,OneI,-5.0,0.00
+163,OtherNoncurrentLiabilities,31-03-2024,OneI,-5.0,2732500000.00
+164,NoncurrentLiabilities,31-03-2024,OneI,-5.0,209124800000.00
+165,BorrowingsCurrent,31-03-2024,OneI,-5.0,31083800000.00
+166,TradePayablesCurrent,31-03-2024,OneI,-5.0,22009700000.00
+167,OtherCurrentFinancialLiabilities,31-03-2024,OneI,-5.0,49461800000.00
+168,CurrentFinancialLiabilities,31-03-2024,OneI,-5.0,102555300000.00
+169,OtherCurrentLiabilities,31-03-2024,OneI,-5.0,22740200000.00
+170,ProvisionsCurrent,31-03-2024,OneI,-5.0,8480300000.00
+171,CurrentTaxLiabilities,31-03-2024,OneI,-5.0,0.00
+172,DeferredGovernmentGrantsCurrent,31-03-2024,OneI,-5.0,0.00
+173,CurrentLiabilities,31-03-2024,OneI,-5.0,133775800000.00
+174,LiabilitiesDirectlyAssociatedWithAssetsInDisposalGroupClassifiedAsHeldForSale,31-03-2024,OneI,-5.0,44956600000.00
+175,RegulatoryDeferralAccountCreditBalancesAndRelatedDeferredTaxLiability,31-03-2024,OneI,-5.0,0.00
+176,Liabilities,31-03-2024,OneI,-5.0,387857200000.00
+177,EquityAndLiabilities,31-03-2024,OneI,-5.0,361406200000.00
+178,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+179,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue01D,-5.0,43800000.00
+180,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+181,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue02D,-5.0,5500200000.00
+182,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+183,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue03D,-5.0,7868400000.00
+184,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+185,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue04D,-5.0,1097800000.00
+186,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+187,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue05D,-5.0,122100000.00
+188,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+189,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue06D,-5.0,0.00
+190,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+191,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue07D,-5.0,419100000.00
+192,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+193,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue08D,-5.0,0.00
+194,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+195,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue09D,-5.0,2352900000.00
+196,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+197,SegmentRevenue,01-01-2024 To 31-03-2024,OneReportableSegmentRevenue10D,-5.0,79900000.00
+198,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+199,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue01D,-5.0,82200000.00
+200,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+201,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue02D,-5.0,21158500000.00
+202,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+203,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue03D,-5.0,29552000000.00
+204,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+205,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue04D,-5.0,3612800000.00
+206,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+207,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue05D,-5.0,474800000.00
+208,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+209,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue06D,-5.0,0.00
+210,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+211,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue07D,-5.0,1208400000.00
+212,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+213,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue08D,-5.0,0.00
+214,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+215,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue09D,-5.0,9818100000.00
+216,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+217,SegmentRevenue,01-01-2024 To 31-03-2024,FourReportableSegmentRevenue10D,-5.0,94700000.00
+218,SegmentRevenue,01-01-2024 To 31-03-2024,OneD,-5.0,17484200000.00
+219,SegmentRevenue,01-01-2024 To 31-03-2024,FourD,-5.0,66001500000.00
+220,InterSegmentRevenue,01-01-2024 To 31-03-2024,OneD,-5.0,74900000.00
+221,InterSegmentRevenue,01-01-2024 To 31-03-2024,FourD,-5.0,320600000.00
+222,SegmentRevenueFromOperations,01-01-2024 To 31-03-2024,OneD,-5.0,17409300000.00
+223,SegmentRevenueFromOperations,01-01-2024 To 31-03-2024,FourD,-5.0,65680900000.00
+224,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+225,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults01D,-5.0,-35800000.00
+226,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+227,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults02D,-5.0,568300000.00
+228,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+229,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults03D,-5.0,146500000.00
+230,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+231,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults04D,-5.0,285300000.00
+232,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+233,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults05D,-5.0,-676500000.00
+234,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+235,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults06D,-5.0,-7800000.00
+236,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+237,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults07D,-5.0,68800000.00
+238,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+239,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults08D,-5.0,0.00
+240,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+241,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults09D,-5.0,-85900000.00
+242,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+243,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneReportableSegmentResults10D,-5.0,0.00
+244,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+245,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults01D,-5.0,-604500000.00
+246,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+247,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults02D,-5.0,2014500000.00
+248,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+249,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults03D,-5.0,477600000.00
+250,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+251,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults04D,-5.0,731200000.00
+252,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+253,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults05D,-5.0,-599600000.00
+254,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+255,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults06D,-5.0,293800000.00
+256,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+257,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults07D,-5.0,-121700000.00
+258,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+259,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults08D,-5.0,0.00
+260,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+261,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults09D,-5.0,-843200000.00
+262,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+263,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourReportableSegmentResults10D,-5.0,0.00
+264,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,OneD,-5.0,262900000.00
+265,SegmentProfitLossBeforeTaxAndFinanceCosts,01-01-2024 To 31-03-2024,FourD,-5.0,1348100000.00
+266,SegmentFinanceCosts,01-01-2024 To 31-03-2024,OneD,-5.0,2748700000.00
+267,SegmentFinanceCosts,01-01-2024 To 31-03-2024,FourD,-5.0,10241500000.00
+268,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-01-2024 To 31-03-2024,OneD,-5.0,-140400000.00
+269,OtherUnallocableExpenditureNetOffUnAllocableIncome,01-01-2024 To 31-03-2024,FourD,-5.0,-605900000.00
+270,SegmentProfitBeforeTax,01-01-2024 To 31-03-2024,OneD,-5.0,-2345400000.00
+271,SegmentProfitBeforeTax,01-01-2024 To 31-03-2024,FourD,-5.0,-8287500000.00
+272,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+273,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets01D,-5.0,46358100000.00
+274,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+275,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets02D,-5.0,57173900000.00
+276,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+277,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets03D,-5.0,11726900000.00
+278,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+279,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets04D,-5.0,7800200000.00
+280,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+281,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets05D,-5.0,2317900000.00
+282,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+283,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets06D,-5.0,12028900000.00
+284,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+285,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets07D,-5.0,3685300000.00
+286,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+287,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets08D,-5.0,17241000000.00
+288,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+289,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets09D,-5.0,191192400000.00
+290,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+291,SegmentAssets,01-01-2024 To 31-03-2024,OneReportableSegmentAssets10D,-5.0,0.00
+292,SegmentAssets,01-01-2024 To 31-03-2024,OneD,-5.0,349524600000.00
+293,UnAllocableAssets,31-03-2024,OneI,-5.0,11881600000.00
+294,NetSegmentAssets,31-03-2024,OneI,-5.0,361406200000.00
+295,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Cement & Cement Products
+296,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities01I,-5.0,13653400000.00
+297,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Construction
+298,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities02I,-5.0,16666000000.00
+299,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Fertilizers
+300,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities03I,-5.0,7995200000.00
+301,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Hotel/Hospitality & Golf Course
+302,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities04I,-5.0,2363400000.00
+303,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Infrastructure
+304,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities05I,-5.0,768400000.00
+305,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Investments
+306,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities06I,-5.0,0.00
+307,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Others
+308,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities07I,-5.0,1525800000.00
+309,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Power
+310,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities08I,-5.0,669700000.00
+311,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Real Estate
+312,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities09I,-5.0,37903100000.00
+313,DescriptionOfReportableSegment,01-01-2024 To 31-03-2024,,,Unallocated
+314,SegmentLiabilities,31-03-2024,OneReportableSegmentLiabilities10I,-5.0,0.00
+315,SegmentLiabilities,31-03-2024,OneI,-5.0,81545000000.00
+316,UnAllocableLiabilities,31-03-2024,OneI,-5.0,306312200000.00
+317,NetSegmentLiabilities,31-03-2024,OneI,-5.0,387857200000.00
+318,AdjustmentsForFinanceCosts,01-01-2024 To 31-03-2024,FourD,-5.0,10279300000.00
+319,AdjustmentsForDecreaseIncreaseInInventories,01-01-2024 To 31-03-2024,FourD,-5.0,5333700000.00
+320,AdjustmentsForDecreaseIncreaseInTradeReceivablesCurrent,01-01-2024 To 31-03-2024,FourD,-5.0,3996300000.00
+321,AdjustmentsForDecreaseIncreaseInTradeReceivablesNoncurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+322,AdjustmentsForDecreaseIncreaseInOtherCurrentAssets,01-01-2024 To 31-03-2024,FourD,-5.0,11456700000.00
+323,AdjustmentsForDecreaseIncreaseInOtherNoncurrentAssets,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+324,AdjustmentsForOtherFinancialAssetsNoncurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+325,AdjustmentsForOtherFinancialAssetsCurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+326,AdjustmentsForOtherBankBalances,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+327,AdjustmentsForIncreaseDecreaseInTradePayablesCurrent,01-01-2024 To 31-03-2024,FourD,-5.0,-9906500000.00
+328,AdjustmentsForIncreaseDecreaseInTradePayablesNoncurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+329,AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+330,AdjustmentsForIncreaseDecreaseInOtherNoncurrentLiabilities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+331,AdjustmentsForDepreciationAndAmortisationExpense,01-01-2024 To 31-03-2024,FourD,-5.0,4920400000.00
+332,AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+333,AdjustmentsForProvisionsCurrent,01-01-2024 To 31-03-2024,FourD,-5.0,1124000000.00
+334,AdjustmentsForProvisionsNoncurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+335,AdjustmentsForOtherFinancialLiabilitiesCurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+336,AdjustmentsForOtherFinancialLiabilitiesNoncurrent,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+337,AdjustmentsForUnrealisedForeignExchangeLossesGains,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+338,AdjustmentsForDividendIncome,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+339,AdjustmentsForInterestIncome,01-01-2024 To 31-03-2024,FourD,-5.0,1497700000.00
+340,AdjustmentsForSharebasedPayments,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+341,AdjustmentsForFairValueGainsLosses,01-01-2024 To 31-03-2024,FourD,-5.0,-324800000.00
+342,AdjustmentsForUndistributedProfitsOfAssociates,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+343,OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow,01-01-2024 To 31-03-2024,FourD,-5.0,250700000.00
+344,OtherAdjustmentsToReconcileProfitLoss,01-01-2024 To 31-03-2024,FourD,-5.0,-3755100000.00
+345,OtherAdjustmentsForNoncashItems,01-01-2024 To 31-03-2024,FourD,-5.0,2373600000.00
+346,ShareOfProfitAndLossFromPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+347,AdjustmentsForReconcileProfitLoss,01-01-2024 To 31-03-2024,FourD,-5.0,24250600000.00
+348,CashFlowsFromUsedInOperations,01-01-2024 To 31-03-2024,FourD,-5.0,12555300000.00
+349,DividendsReceivedClassifiedAsOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+350,InterestPaidClassifiedAsOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+351,InterestReceivedClassifiedAsOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+352,IncomeTaxesPaidRefundClassifiedAsOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,858200000.00
+353,OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+354,CashFlowsFromUsedInOperatingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,11697100000.00
+355,CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+356,CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+357,OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+358,OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+359,OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+360,OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+361,CashReceiptsFromShareOfProfitsOfPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+362,CashPaymentForInvestmentInPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+363,ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,619500000.00
+364,PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,2291400000.00
+365,ProceedsFromSalesOfInvestmentPropertyClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+366,PurchaseOfInvestmentPropertyClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+367,ProceedsFromSalesOfIntangibleAssetsUnderDevelopment,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+368,PurchaseOfIntangibleAssetsUnderDevelopment,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+369,ProceedsFromSalesOfGoodwillClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+370,PurchaseOfGoodwillClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+371,ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+372,PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+373,ProceedsFromBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+374,PurchaseOfBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+375,ProceedsFromSalesOfOtherLongTermAssetsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,3283200000.00
+376,PurchaseOfOtherLongTermAssetsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+377,CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+378,CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+379,CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+380,CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+381,DividendsReceivedClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+382,InterestReceivedClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,312400000.00
+383,IncomeTaxesPaidRefundClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+384,OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,-582900000.00
+385,ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+386,CashFlowsFromUsedInInvestingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,1340800000.00
+387,ProceedsFromChangesInOwnershipInterestsInSubsidiaries,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+388,PaymentsFromChangesInOwnershipInterestsInSubsidiaries,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+389,ProceedsFromIssuingSharesClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+390,ProceedsFromIssuingOtherEquityInstruments,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+391,PaymentsToAcquireOrRedeemEntitysShares,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+392,PaymentsOfOtherEquityInstruments,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+393,ProceedsFromExerciseOfStockOptions,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+394,ProceedsFromIssuingDebenturesNotesBondsEtc,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+395,ProceedsFromBorrowingsClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,50000000.00
+396,RepaymentsOfBorrowingsClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,8300000000.00
+397,PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,84700000.00
+398,PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+399,DividendsPaidClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+400,InterestPaidClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,1265900000.00
+401,IncomeTaxesPaidRefundClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+402,OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+403,CashFlowsFromUsedInFinancingActivities,01-01-2024 To 31-03-2024,FourD,-5.0,-9600600000.00
+404,IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,01-01-2024 To 31-03-2024,FourD,-5.0,3437300000.00
+405,EffectOfExchangeRateChangesOnCashAndCashEquivalents,01-01-2024 To 31-03-2024,FourD,-5.0,0.00
+406,IncreaseDecreaseInCashAndCashEquivalents,01-01-2024 To 31-03-2024,FourD,-5.0,3437300000.00
+407,CashAndCashEquivalentsCashFlowStatement,01-01-2024 To 31-03-2024,FourD,-5.0,3300500000.00
+408,CashAndCashEquivalentsCashFlowStatement,01-01-2024 To 31-03-2024,FourD,-5.0,6737800000.00
+409,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-01-2024 To 31-03-2024,OneD,-5.0,-30500000.00
+410,AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss,01-01-2024 To 31-03-2024,FourD,-5.0,-29400000.00
+411,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-01-2024 To 31-03-2024,OneD,-5.0,400000.00
+412,IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss,01-01-2024 To 31-03-2024,FourD,-5.0,700000.00
