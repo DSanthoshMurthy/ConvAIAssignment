@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Financial RAG System - Streamlit Web Interface
-Production-Ready Deployment with Comprehensive Features
+Cloud-Optimized Production Deployment with Full RAG Features
 """
 
 import streamlit as st
@@ -14,17 +14,25 @@ from pathlib import Path
 from datetime import datetime, timedelta
 import json
 import logging
+import os
 
 # Add src directory to path for imports
 sys.path.append(str(Path(__file__).parent / "src"))
 
+# Cloud-compatible import handling
+RAG_SYSTEM_AVAILABLE = True
 try:
     from src.rag.secured_rag_pipeline import SecuredFinancialRAG
     from src.rag.guardrails import FinancialRAGGuardrails
     from src.rag.query_enhancer import FinancialQueryEnhancer
-except ImportError:
-    st.error("❌ Failed to import RAG system components. Please ensure all dependencies are installed.")
-    st.stop()
+    st.success("✅ Full RAG system components loaded")
+except ImportError as e:
+    st.warning(f"⚠️ Full RAG system unavailable: {str(e)}")
+    RAG_SYSTEM_AVAILABLE = False
+    # Cloud fallback - create lightweight alternatives
+    SecuredFinancialRAG = None
+    FinancialRAGGuardrails = None
+    FinancialQueryEnhancer = None
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -99,22 +107,148 @@ st.markdown("""
 
 @st.cache_resource
 def load_rag_system():
-    """Load the secured RAG system with caching."""
+    """Load the secured RAG system with caching and cloud fallback."""
+    if not RAG_SYSTEM_AVAILABLE:
+        return load_cloud_fallback_system()
+    
     with st.spinner("🚀 Loading Financial RAG System..."):
         try:
+            # Try to load full system with memory management
             rag_system = SecuredFinancialRAG(enable_strict_guardrails=True)
+            
+            # Set cloud-friendly parameters
+            os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
+            
             success = rag_system.load_system()
             
             if success:
-                st.success("✅ Financial RAG System loaded successfully!")
+                st.success("✅ Full Financial RAG System loaded successfully!")
                 return rag_system
             else:
-                st.error("❌ Failed to load RAG system")
-                return None
+                st.warning("⚠️ Full RAG failed, using fallback system")
+                return load_cloud_fallback_system()
                 
         except Exception as e:
-            st.error(f"❌ Error loading RAG system: {str(e)}")
-            return None
+            st.warning(f"⚠️ Full RAG system error: {str(e)}, using fallback")
+            return load_cloud_fallback_system()
+
+@st.cache_resource
+def load_cloud_fallback_system():
+    """Load a cloud-compatible fallback system."""
+    from typing import Dict, List, Any
+    import re
+    
+    class CloudFallbackRAG:
+        def __init__(self):
+            self.qa_data = None
+            self.spell_corrections = {
+                'revunue': 'revenue', 'reveune': 'revenue', 'revanue': 'revenue',
+                'proffit': 'profit', 'prfit': 'profit',
+                'expences': 'expenses', 'expence': 'expenses',
+                'assests': 'assets', 'aseets': 'assets',
+            }
+            self.stats = {'queries_processed': 0, 'avg_response_time': 0.0}
+        
+        def load_system(self):
+            """Load Q&A data for fallback system."""
+            try:
+                possible_paths = [
+                    'data/processed/xbrl_qa_pairs.json',
+                    'xbrl_qa_pairs.json'
+                ]
+                
+                for path in possible_paths:
+                    try:
+                        with open(path, 'r') as f:
+                            self.qa_data = json.load(f)
+                        st.info(f"✅ Loaded {len(self.qa_data)} Q&A pairs (Cloud Mode)")
+                        return True
+                    except FileNotFoundError:
+                        continue
+                
+                # Create sample data if no files found
+                self.qa_data = self.create_sample_data()
+                st.warning("⚠️ Using sample data - Q&A file not found")
+                return True
+                
+            except Exception as e:
+                st.error(f"❌ Fallback system error: {str(e)}")
+                return False
+        
+        def create_sample_data(self):
+            return [
+                {
+                    "question": "What was the revenue from operations in Dec 2023?",
+                    "answer": "The revenue from operations was ₹15.03 billion",
+                    "quarter": "Dec 2023"
+                },
+                {
+                    "question": "What was the revenue from operations in Sep 2023?",
+                    "answer": "The revenue from operations was ₹18.96 billion",
+                    "quarter": "Sep 2023"
+                }
+            ]
+        
+        def secure_query_processing(self, query, user_id, top_k=5, fusion_method='weighted', include_explanation=True):
+            """Process query with simple search."""
+            start_time = time.time()
+            
+            # Simple spell correction
+            corrected_query = query.lower()
+            for incorrect, correct in self.spell_corrections.items():
+                corrected_query = corrected_query.replace(incorrect, correct)
+            
+            # Simple similarity search
+            best_match = None
+            best_score = 0
+            
+            if self.qa_data:
+                for qa in self.qa_data:
+                    question = qa['question'].lower()
+                    query_words = set(corrected_query.split())
+                    question_words = set(question.split())
+                    
+                    overlap = len(query_words.intersection(question_words))
+                    total = len(query_words.union(question_words))
+                    score = overlap / total if total > 0 else 0
+                    
+                    # Boost for financial terms
+                    for term in ['revenue', 'profit', 'loss']:
+                        if term in corrected_query and term in question:
+                            score += 0.3
+                    
+                    if score > best_score:
+                        best_score = score
+                        best_match = qa
+            
+            response_time = time.time() - start_time
+            self.stats['queries_processed'] += 1
+            
+            if best_match and best_score > 0.2:
+                return {
+                    'status': 'approved',
+                    'answer': best_match['answer'],
+                    'confidence': min(0.95, best_score * 1.5),
+                    'sources': [{'content_preview': best_match['question'][:100], 
+                               'quarter': best_match['quarter'], 'relevance_score': best_score}],
+                    'processing_time': response_time,
+                    'system_mode': 'Cloud Fallback',
+                    'query_enhancement': {'enhanced_query': corrected_query, 'improvement_count': 0}
+                }
+            else:
+                return {
+                    'status': 'approved',
+                    'answer': "I don't have specific information about that in the available financial data.",
+                    'confidence': 0.1,
+                    'sources': [],
+                    'processing_time': response_time,
+                    'system_mode': 'Cloud Fallback'
+                }
+    
+    fallback_system = CloudFallbackRAG()
+    fallback_system.load_system()
+    st.info("🔄 Running in Cloud Fallback Mode - Core Q&A functionality available")
+    return fallback_system
 
 def format_confidence_badge(confidence):
     """Format confidence score with color coding."""
@@ -144,6 +278,15 @@ def main_query_interface():
     if not rag_system:
         st.error("RAG system not available. Please check system status.")
         return
+    
+    # Show system mode
+    system_mode = getattr(rag_system, '__class__', type(rag_system)).__name__
+    if system_mode == 'CloudFallbackRAG':
+        st.info("🔄 **Running in Cloud Fallback Mode** - Core Q&A functionality with your financial data")
+    elif RAG_SYSTEM_AVAILABLE:
+        st.success("🎯 **Running Full RAG System** - Advanced retrieval with cross-encoder re-ranking")
+    else:
+        st.warning("⚠️ **Limited Mode** - Basic functionality available")
     
     # Query input
     col1, col2 = st.columns([3, 1])
