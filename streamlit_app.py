@@ -22,6 +22,7 @@ sys.path.append(str(Path(__file__).parent / "src"))
 # Cloud-compatible import handling with NLTK setup
 RAG_SYSTEM_AVAILABLE = True
 IMPORT_ERROR_DETAILS = None
+DATA_DIAGNOSTIC = {"error": "Not run yet"}
 
 def setup_sqlite_for_chromadb():
     """Setup SQLite compatibility for ChromaDB"""
@@ -63,6 +64,16 @@ try:
     # Setup NLTK data
     setup_nltk_data()
     
+    # Run data loading diagnostic
+    try:
+        from src.rag.data_loader_diagnostic import DataLoadingDiagnostic
+        diagnostic = DataLoadingDiagnostic()
+        diagnostic_results = diagnostic.run_complete_diagnostic()
+        DATA_DIAGNOSTIC = diagnostic_results
+    except Exception as e:
+        st.warning(f"Diagnostic failed: {str(e)}")
+        DATA_DIAGNOSTIC = {"error": str(e)}
+    
     # Import RAG components
     from src.rag.secured_rag_pipeline import SecuredFinancialRAG
     from src.rag.guardrails import FinancialRAGGuardrails
@@ -72,6 +83,7 @@ try:
 except ImportError as e:
     IMPORT_ERROR_DETAILS = str(e)
     st.error(f"⚠️ RAG system import failed: {IMPORT_ERROR_DETAILS}")
+    st.error(f"🔍 Check System Diagnostic Information below for detailed analysis")
     RAG_SYSTEM_AVAILABLE = False
     # Cloud fallback - create lightweight alternatives
     SecuredFinancialRAG = None
@@ -81,6 +93,7 @@ except ImportError as e:
 except Exception as e:
     IMPORT_ERROR_DETAILS = f"Unexpected error: {str(e)}"
     st.error(f"⚠️ RAG system initialization failed: {IMPORT_ERROR_DETAILS}")
+    st.error(f"🔍 Check System Diagnostic Information below for detailed analysis")
     RAG_SYSTEM_AVAILABLE = False
     SecuredFinancialRAG = None
     FinancialRAGGuardrails = None
@@ -932,44 +945,83 @@ def documentation():
     st.markdown("### 🔧 System Status & Troubleshooting")
     
     with st.expander("🔍 System Diagnostic Information"):
-        # Check data availability
-        data_status = {}
-        base_dir = Path(__file__).parent
+        st.markdown("### 📊 Comprehensive System Analysis")
         
-        # Check critical data files
-        critical_files = {
-            "ChromaDB": base_dir / "data/indexes/chroma_db/chroma.sqlite3",
-            "BM25 Index": base_dir / "data/indexes/bm25_index.pkl", 
-            "Chunk Mapping": base_dir / "data/indexes/bm25_chunk_mapping.json",
-            "Q&A Pairs": base_dir / "data/processed/xbrl_qa_pairs.json",
-            "Index Metadata": base_dir / "data/indexes/index_metadata.json"
-        }
+        # Display diagnostic results
+        if DATA_DIAGNOSTIC and "error" not in DATA_DIAGNOSTIC:
+            diag = DATA_DIAGNOSTIC
+            
+            st.markdown(f"""
+            **🌍 Deployment Mode**: {diag.get('deployment_mode', 'Unknown').title()}
+            
+            **📁 Base Directory**: `{diag.get('base_directory', 'Unknown')}`
+            
+            **🐍 Python Version**: {sys.version.split()[0]}
+            
+            **🤖 RAG System Status**: {"✅ Available" if RAG_SYSTEM_AVAILABLE else "❌ Unavailable"}
+            
+            **❗ Import Error Details**: {IMPORT_ERROR_DETAILS if IMPORT_ERROR_DETAILS else "None"}
+            """)
+            
+            # Critical Files Status
+            st.markdown("### 📋 Critical Files Status")
+            critical_files = diag.get('critical_files_check', {})
+            
+            for filename, info in critical_files.items():
+                status = info.get('status', 'unknown')
+                if status == 'available':
+                    size = info.get('size_mb', 0)
+                    loadable = info.get('loadable', info.get('valid_json', True))
+                    loadable_icon = "✅" if loadable else "⚠️"
+                    st.markdown(f"- **{filename}**: ✅ Available ({size}MB) {loadable_icon}")
+                elif status == 'missing':
+                    st.markdown(f"- **{filename}**: ❌ Missing")
+                else:
+                    st.markdown(f"- **{filename}**: ⚠️ Error - {info.get('error', 'Unknown')}")
+            
+            # Data Integrity
+            integrity = diag.get('data_integrity_check', {})
+            if integrity:
+                st.markdown("### 🔗 Data Integrity")
+                
+                chunk_consistency = integrity.get('chunk_consistency', {})
+                if 'error' not in chunk_consistency:
+                    chunks_count = chunk_consistency.get('chunks_count', 0)
+                    mapping_count = chunk_consistency.get('mapping_count', 0) 
+                    consistent = chunk_consistency.get('consistent', False)
+                    
+                    consistency_icon = "✅" if consistent else "❌"
+                    st.markdown(f"- **Chunk Consistency**: {consistency_icon} {chunks_count} chunks, {mapping_count} mappings")
+                
+                qa_data = integrity.get('qa_data', {})
+                if 'error' not in qa_data:
+                    qa_pairs = qa_data.get('total_pairs', 0)
+                    has_revenue = qa_data.get('has_revenue_data', False)
+                    revenue_icon = "✅" if has_revenue else "❌"
+                    st.markdown(f"- **Q&A Data**: {revenue_icon} {qa_pairs} pairs (Revenue data: {has_revenue})")
+            
+        else:
+            st.error(f"❌ Diagnostic Error: {DATA_DIAGNOSTIC.get('error', 'Unknown error')}")
+            
+        # Recovery suggestions for cloud issues
+        if DATA_DIAGNOSTIC and DATA_DIAGNOSTIC.get('deployment_mode') == 'cloud':
+            st.markdown("### 🛠️ Cloud Deployment Issues")
+            missing_files = []
+            if 'critical_files_check' in DATA_DIAGNOSTIC:
+                for filename, info in DATA_DIAGNOSTIC['critical_files_check'].items():
+                    if info.get('status') in ['missing', 'error']:
+                        missing_files.append(filename)
+            
+            if missing_files:
+                st.error(f"🚨 Missing critical files in cloud: {', '.join(missing_files)}")
+                st.markdown("""
+                **Suggested Solutions:**
+                1. Ensure all data files are committed to git (check .gitignore)
+                2. Verify cloud deployment includes data/ directory 
+                3. Check file size limits for your cloud provider
+                4. Consider using alternative data loading mechanisms
+                """)
         
-        for name, path in critical_files.items():
-            if path.exists():
-                size = path.stat().st_size / (1024*1024)  # MB
-                data_status[name] = f"✅ Available ({size:.1f}MB)"
-            else:
-                data_status[name] = f"❌ Missing"
-        
-        st.markdown(f"""
-        **RAG System Status**: {"✅ Available" if RAG_SYSTEM_AVAILABLE else "❌ Unavailable"}
-        
-        **Python Version**: {sys.version.split()[0]}
-        
-        **Import Error Details**: {IMPORT_ERROR_DETAILS if IMPORT_ERROR_DETAILS else "None"}
-        
-        **Data Availability:**
-        - **ChromaDB**: {data_status.get('ChromaDB', 'Unknown')}
-        - **BM25 Index**: {data_status.get('BM25 Index', 'Unknown')}
-        - **Q&A Pairs**: {data_status.get('Q&A Pairs', 'Unknown')}
-        - **Chunk Mapping**: {data_status.get('Chunk Mapping', 'Unknown')}
-        - **Metadata**: {data_status.get('Index Metadata', 'Unknown')}
-        
-        **Deployment Mode**: {"🏠 Local" if str(base_dir).startswith('/Users') else "☁️ Cloud"}
-        
-        **Confidence Enhancement**: {"🔧 Active" if not RAG_SYSTEM_AVAILABLE or "❌" in str(data_status.values()) else "💎 Full System"}
-        """)
     
     with st.expander("❓ Common Issues"):
         st.markdown("""

@@ -82,13 +82,17 @@ class FinancialHybridRetriever:
         }
     
     def load_models_and_indexes(self) -> bool:
-        """Load all required models and indexes."""
+        """Load all required models and indexes with comprehensive error handling."""
         try:
             logger.info("Loading embedding model and indexes...")
             
             # Load embedding model
-            self.embedding_model = SentenceTransformer(self.embedding_model_name)
-            logger.info(f"✓ Loaded embedding model: {self.embedding_model_name}")
+            try:
+                self.embedding_model = SentenceTransformer(self.embedding_model_name)
+                logger.info(f"✓ Loaded embedding model: {self.embedding_model_name}")
+            except Exception as e:
+                logger.error(f"❌ Failed to load embedding model: {str(e)}")
+                return False
             
             # Load ChromaDB with SQLite compatibility fallback
             try:
@@ -100,11 +104,21 @@ class FinancialHybridRetriever:
                 except ImportError:
                     pass
                 
+                # Check if ChromaDB directory exists
+                if not self.chroma_db_dir.exists():
+                    raise Exception(f"ChromaDB directory not found: {self.chroma_db_dir}")
+                
                 self.chroma_client = chromadb.PersistentClient(
                     path=str(self.chroma_db_dir),
                     settings=Settings(anonymized_telemetry=False)
                 )
                 self.collection = self.chroma_client.get_collection("financial_chunks_100")
+                
+                # Test ChromaDB with a simple query
+                test_result = self.collection.query(query_texts=["test"], n_results=1)
+                if not test_result or not test_result.get('documents'):
+                    raise Exception("ChromaDB collection is empty or inaccessible")
+                
                 logger.info("✓ Loaded ChromaDB collection")
                 
             except Exception as chroma_error:
@@ -116,29 +130,89 @@ class FinancialHybridRetriever:
                 self.dense_weight = 0.0
                 self.sparse_weight = 1.0
             
-            # Load BM25 index
-            bm25_file = self.indexes_dir / "bm25_index.pkl"
-            with open(bm25_file, 'rb') as f:
-                self.bm25_index = pickle.load(f)
-            logger.info("✓ Loaded BM25 index")
+            # Load BM25 index with detailed error checking
+            try:
+                bm25_file = self.indexes_dir / "bm25_index.pkl"
+                if not bm25_file.exists():
+                    raise Exception(f"BM25 index file not found: {bm25_file}")
+                
+                with open(bm25_file, 'rb') as f:
+                    self.bm25_index = pickle.load(f)
+                
+                if not hasattr(self.bm25_index, 'corpus_size') and not hasattr(self.bm25_index, 'k1'):
+                    raise Exception("BM25 index appears to be corrupted or invalid")
+                
+                logger.info("✓ Loaded BM25 index")
+                
+            except Exception as bm25_error:
+                logger.error(f"❌ Failed to load BM25 index: {str(bm25_error)}")
+                # Critical failure - can't proceed without BM25
+                return False
             
-            # Load chunk mapping
-            mapping_file = self.indexes_dir / "bm25_chunk_mapping.json"
-            with open(mapping_file, 'r', encoding='utf-8') as f:
-                self.chunk_mapping = json.load(f)
-            logger.info(f"✓ Loaded chunk mapping ({len(self.chunk_mapping)} chunks)")
+            # Load chunk mapping with validation
+            try:
+                mapping_file = self.indexes_dir / "bm25_chunk_mapping.json"
+                if not mapping_file.exists():
+                    raise Exception(f"Chunk mapping file not found: {mapping_file}")
+                
+                with open(mapping_file, 'r', encoding='utf-8') as f:
+                    self.chunk_mapping = json.load(f)
+                
+                if not isinstance(self.chunk_mapping, list) or len(self.chunk_mapping) == 0:
+                    raise Exception("Chunk mapping is empty or invalid")
+                
+                # Validate that chunks contain expected data
+                sample_chunks = self.chunk_mapping[:3]
+                has_revenue_data = any('revenue' in str(chunk).lower() for chunk in sample_chunks)
+                
+                logger.info(f"✓ Loaded chunk mapping ({len(self.chunk_mapping)} chunks)")
+                if has_revenue_data:
+                    logger.info("✓ Revenue data detected in chunks")
+                else:
+                    logger.warning("⚠️  No obvious revenue data in sample chunks")
+                    
+            except Exception as mapping_error:
+                logger.error(f"❌ Failed to load chunk mapping: {str(mapping_error)}")
+                # Critical failure - can't proceed without chunk mapping
+                return False
             
-            # Load metadata
-            metadata_file = self.indexes_dir / "index_metadata.json"
-            if metadata_file.exists():
-                with open(metadata_file, 'r', encoding='utf-8') as f:
-                    self.metadata = json.load(f)
-                logger.info("✓ Loaded index metadata")
+            # Load metadata (optional)
+            try:
+                metadata_file = self.indexes_dir / "index_metadata.json"
+                if metadata_file.exists():
+                    with open(metadata_file, 'r', encoding='utf-8') as f:
+                        self.metadata = json.load(f)
+                    logger.info("✓ Loaded index metadata")
+                else:
+                    logger.info("⚠️  Index metadata not found (optional)")
+            except Exception as e:
+                logger.warning(f"⚠️  Failed to load metadata: {str(e)} (continuing without metadata)")
             
-            return True
+            # Final validation
+            system_status = {
+                'embedding_model': self.embedding_model is not None,
+                'chromadb_available': self.collection is not None,
+                'bm25_available': self.bm25_index is not None,
+                'chunk_mapping_available': len(self.chunk_mapping) > 0 if self.chunk_mapping else False,
+                'total_chunks': len(self.chunk_mapping) if self.chunk_mapping else 0
+            }
+            
+            logger.info(f"📊 System Status: {system_status}")
+            
+            # Must have at least BM25 and chunks to function
+            if system_status['bm25_available'] and system_status['chunk_mapping_available']:
+                retrieval_mode = "hybrid" if system_status['chromadb_available'] else "bm25_only"
+                logger.info(f"✅ Financial Retrieval System ready in {retrieval_mode} mode")
+                return True
+            else:
+                logger.error("❌ Critical components missing - system cannot function")
+                return False
             
         except Exception as e:
-            logger.error(f"Error loading models/indexes: {str(e)}")
+            logger.error(f"❌ Unexpected error loading models/indexes: {str(e)}")
+            logger.error(f"   Error type: {type(e).__name__}")
+            import traceback
+            logger.error(f"   Traceback: {traceback.format_exc()}")
             return False
     
     def preprocess_query(self, query: str) -> Dict[str, Any]:
