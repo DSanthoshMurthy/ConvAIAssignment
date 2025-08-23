@@ -12,7 +12,7 @@ numpy>=1.24.3
 # NLP & ML (Lightweight versions for cloud)
 sentence-transformers>=2.2.2
 transformers>=4.35.0
-torch>=2.0.0,<2.2.0
+torch>=2.0.0
 
 # Vector Storage & Search
 chromadb>=0.4.15
