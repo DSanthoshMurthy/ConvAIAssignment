@@ -1,35 +1,39 @@
 # Financial RAG System - Cloud-Compatible Requirements
-# Streamlit Cloud Optimized with Full RAG Fallback Support
+# Python 3.11 Compatible - Streamlit Cloud Optimized
 
 # Core Streamlit
-streamlit>=1.48.0
-plotly>=5.15.0
+streamlit>=1.48.0,<2.0.0
+plotly>=5.15.0,<6.0.0
 
 # Essential Data Processing
-pandas>=2.0.3
-numpy>=1.24.3
+pandas>=2.0.3,<2.5.0
+numpy>=1.24.3,<2.0.0
 
-# NLP & ML (Lightweight versions for cloud)
-sentence-transformers>=2.2.2
-transformers>=4.35.0
+# NLP & ML - Cloud Compatible Versions
+sentence-transformers>=2.2.2,<3.0.0
+transformers>=4.35.0,<5.0.0
 torch>=2.0.0
+tokenizers>=0.13.0
 
 # Vector Storage & Search
-chromadb>=0.4.15
-faiss-cpu>=1.7.4
+chromadb>=0.4.15,<1.0.0
+faiss-cpu>=1.7.4,<2.0.0
 rank-bm25>=0.2.2
 
 # Text Processing
 nltk>=3.8.1
 python-dateutil>=2.8.2
+regex>=2023.0.0
 
-# Utilities
-tqdm>=4.65.0
+# HTTP & Utilities
 requests>=2.31.0
-pathlib2>=2.3.7
-
-# Optional: GPU support (commented out for cloud)
-# torch>=2.0.0
+tqdm>=4.65.0
+urllib3>=1.26.0,<3.0.0
 
 # Development & Monitoring  
 python-dotenv>=1.0.0
+
+# Additional dependencies for cloud stability
+setuptools>=65.0.0
+wheel>=0.38.0
+packaging>=21.0
