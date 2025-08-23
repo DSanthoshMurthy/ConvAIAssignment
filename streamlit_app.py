@@ -19,6 +19,14 @@ import os
 # Add src directory to path for imports
 sys.path.append(str(Path(__file__).parent / "src"))
 
+# Configure logging
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 # Cloud-compatible import handling with NLTK setup
 RAG_SYSTEM_AVAILABLE = True
 IMPORT_ERROR_DETAILS = None
@@ -126,9 +134,7 @@ except Exception as e:
     FinancialRAGGuardrails = None
     FinancialQueryEnhancer = None
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+# Configure logging is already done at the top of the file
 
 # Page configuration
 st.set_page_config(
