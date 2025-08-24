@@ -177,15 +177,6 @@ Try these sample financial questions:
 - **Guardrails Effectiveness**: Rate limiting, content filtering performance
 - **Response Quality**: Confidence distribution, performance trends
 
-### **Admin Panel**
-
-- **Authentication**: Admin password protection (default: `admin123`)
-- **Emergency Controls**: System lockdown, user access management
-- **Configuration**: Security settings, rate limits, system parameters
-- **Logging**: Download system logs and audit trails
-
----
-
 ## 🔒 **Security Features**
 
 ### **Input Validation**
