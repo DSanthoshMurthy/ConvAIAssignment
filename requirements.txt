@@ -33,3 +33,5 @@ PyYAML==6.0.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
 requests==2.32.4
+jsonschema==4.25.0
+jsonschema-specifications==2023.7.1
