@@ -7,7 +7,10 @@ plotly==6.3.0
 scikit-learn==1.7.1
 sentence-transformers==5.1.0
 
-# RAG and embeddings
+# NLP and RAG
+spacy==3.8.7
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
 chromadb==1.0.17
 pysqlite3-binary==0.5.2  # Required for ChromaDB in cloud environments
 faiss-cpu==1.12.0
