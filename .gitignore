@@ -65,9 +65,6 @@ debug_*.py
 fix_*.py
 test_corrected_system.py
 
-# Requirements backup
-requirements_full.txt
-
 # Notebook checkpoints
 .ipynb_checkpoints/
 

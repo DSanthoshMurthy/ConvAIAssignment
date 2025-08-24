@@ -215,15 +215,15 @@ def train_model(
 def main():
     # Load configuration with memory optimizations
     config = {
-        # Reduced batch size and model size for memory efficiency
-        'batch_size': 4,
-        'learning_rate': 2e-5,
-        'num_epochs': 10,
-        'warmup_steps': 50,
+        # Improved training configuration
+        'batch_size': 8,
+        'learning_rate': 1e-4,  # Increased learning rate
+        'num_epochs': 20,  # More epochs
+        'warmup_steps': 100,
         'max_grad_norm': 1.0,
         'weight_decay': 0.01,
-        'hidden_size': 384,  # Reduced from 768
-        'dropout': 0.1,
+        'hidden_size': 768,  # Full size
+        'dropout': 0.2,  # Increased dropout
         'expert_types': [
             'company_info',
             'revenue_metrics',
@@ -232,15 +232,15 @@ def main():
             'segment_analysis'
         ],
         'use_wandb': False,
-        'patience': 3,
+        'patience': 5,  # Increased patience
         
-        # Memory optimization settings
-        'gradient_accumulation_steps': 8,  # Increased for smaller batches
-        'max_length': 256,  # Reduced sequence length
-        'eval_batch_size': 2,  # Smaller eval batch size
-        'num_workers': 0,  # Disable multiprocessing
-        'pin_memory': False,  # Disable pin memory
-        'use_gradient_checkpointing': True  # Enable gradient checkpointing
+        # Better data handling
+        'gradient_accumulation_steps': 4,
+        'max_length': 512,  # Full sequence length
+        'eval_batch_size': 4,
+        'num_workers': 0,
+        'pin_memory': False,
+        'use_gradient_checkpointing': True
     }
     
     # Setup device
