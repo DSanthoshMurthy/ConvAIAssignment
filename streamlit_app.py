@@ -61,13 +61,13 @@ def setup_nltk_data():
         
         # List of required NLTK resources
         required_resources = [
-            ('tokenizers/punkt', 'punkt'),  # Main tokenizer
-            ('corpora/stopwords', 'stopwords'),  # Stopwords
-            ('tokenizers/punkt/PY3/english.pickle', 'punkt')  # English-specific tokenizer
+            'punkt',  # Main tokenizer
+            'stopwords',  # Stopwords
+            'punkt_tab'  # Tab-separated punkt data
         ]
         
         # Download and verify each resource
-        for resource_name in ['punkt', 'stopwords']:
+        for resource_name in required_resources:
             try:
                 nltk.download(resource_name, download_dir=nltk_data_dir, quiet=True)
                 logger.info(f"✓ NLTK resource downloaded/verified: {resource_name}")
