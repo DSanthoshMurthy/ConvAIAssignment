@@ -68,9 +68,7 @@ test_corrected_system.py
 # Requirements backup
 requirements_full.txt
 
-# Removed cloud-specific files (now using main streamlit_app.py)
-# streamlit_app_cloud.py - deleted
-# requirements_cloud.txt - deleted
-
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+checkpoints/

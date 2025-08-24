@@ -109,11 +109,12 @@ try:
         st.warning(f"Diagnostic failed: {str(e)}")
         DATA_DIAGNOSTIC = {"error": str(e)}
     
-    # Import RAG components
+    # Import RAG and Fine-tuned components
     from src.rag.secured_rag_pipeline import SecuredFinancialRAG
     from src.rag.guardrails import FinancialRAGGuardrails
     from src.rag.query_enhancer import FinancialQueryEnhancer
-    st.success("✅ Full RAG system components loaded successfully")
+    from src.fine_tuning.inference.model_wrapper import FineTunedFinancialQA
+    st.success("✅ Full system components loaded successfully")
     
 except ImportError as e:
     IMPORT_ERROR_DETAILS = str(e)
@@ -204,31 +205,43 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 @st.cache_resource
-def load_rag_system():
-    """Load the secured RAG system with caching and cloud fallback."""
+def load_qa_systems():
+    """Load both RAG and Fine-tuned systems with caching and cloud fallback."""
     if not RAG_SYSTEM_AVAILABLE:
-        return load_cloud_fallback_system()
+        return load_cloud_fallback_system(), None
     
-    with st.spinner("🚀 Loading Financial RAG System..."):
+    with st.spinner("🚀 Loading QA Systems..."):
         try:
-            # Try to load full system with memory management
+            # Load RAG system
             rag_system = SecuredFinancialRAG(enable_strict_guardrails=True)
             
             # Set cloud-friendly parameters
             os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
             
-            success = rag_system.load_system()
+            rag_success = rag_system.load_system()
             
-            if success:
-                st.success("✅ Full Financial RAG System loaded successfully!")
-                return rag_system
+            # Load Fine-tuned system
+            try:
+                fine_tuned_system = FineTunedFinancialQA()
+                ft_success = True
+            except Exception as e:
+                st.warning(f"⚠️ Fine-tuned model loading failed: {str(e)}")
+                fine_tuned_system = None
+                ft_success = False
+            
+            if rag_success and ft_success:
+                st.success("✅ Both RAG and Fine-tuned systems loaded successfully!")
+                return rag_system, fine_tuned_system
+            elif rag_success:
+                st.warning("⚠️ Only RAG system available")
+                return rag_system, None
             else:
-                st.warning("⚠️ Full RAG failed, using fallback system")
-                return load_cloud_fallback_system()
+                st.warning("⚠️ Full systems failed, using fallback")
+                return load_cloud_fallback_system(), None
                 
         except Exception as e:
-            st.warning(f"⚠️ Full RAG system error: {str(e)}, using fallback")
-            return load_cloud_fallback_system()
+            st.warning(f"⚠️ System loading error: {str(e)}, using fallback")
+            return load_cloud_fallback_system(), None
 
 @st.cache_resource
 def load_cloud_fallback_system():
@@ -371,11 +384,18 @@ def main_query_interface():
     st.header("💰 Financial Question Answering")
     st.markdown("Ask questions about financial performance, metrics, and business insights.")
     
-    # Load RAG system
-    rag_system = load_rag_system()
+    # Load QA systems
+    rag_system, fine_tuned_system = load_qa_systems()
     if not rag_system:
-        st.error("RAG system not available. Please check system status.")
+        st.error("QA systems not available. Please check system status.")
         return
+        
+    # System selection
+    qa_system = st.radio(
+        "🤖 Select QA System:",
+        ["RAG System", "Fine-Tuned Model", "Hybrid (Compare Both)"],
+        help="Choose which system to use for answering questions"
+    )
     
     # Show system mode
     system_mode = getattr(rag_system, '__class__', type(rag_system)).__name__
@@ -452,14 +472,42 @@ def main_query_interface():
             status_text.text("🔍 Searching financial database...")
             progress_bar.progress(60)
             
-            # Process enhanced query through secured pipeline
-            result = rag_system.secure_query_processing(
-                query=enhanced_query,  # Use enhanced query
-                user_id=user_id,
-                top_k=top_k,
-                fusion_method=fusion_method,
-                include_explanation=include_explanation
-            )
+            # Process query based on selected system
+            if qa_system == "RAG System" or not fine_tuned_system:
+                result = rag_system.secure_query_processing(
+                    query=enhanced_query,
+                    user_id=user_id,
+                    top_k=top_k,
+                    fusion_method=fusion_method,
+                    include_explanation=include_explanation
+                )
+            elif qa_system == "Fine-Tuned Model":
+                result = fine_tuned_system.answer_question(
+                    question=enhanced_query,
+                    user_id=user_id
+                )
+            else:  # Hybrid mode
+                # Get results from both systems
+                rag_result = rag_system.secure_query_processing(
+                    query=enhanced_query,
+                    user_id=user_id,
+                    top_k=top_k,
+                    fusion_method=fusion_method,
+                    include_explanation=include_explanation
+                )
+                
+                ft_result = fine_tuned_system.answer_question(
+                    question=enhanced_query,
+                    user_id=user_id
+                )
+                
+                # Combine results
+                result = {
+                    'status': 'approved' if rag_result['status'] == 'approved' and ft_result['status'] == 'approved' else 'blocked',
+                    'rag_result': rag_result,
+                    'ft_result': ft_result,
+                    'is_hybrid': True
+                }
             
             # Add enhancement metadata to result
             result['query_enhancement'] = enhancement_result
@@ -484,21 +532,44 @@ def display_query_results(result, query):
     """Display query results with proper formatting."""
     status = result.get('status', 'unknown')
     
+    # Handle hybrid results differently
+    if result.get('is_hybrid', False):
+        st.markdown("### 🤖 System Comparison")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("#### RAG System")
+            display_single_result(result['rag_result'], query, "RAG")
+        
+        with col2:
+            st.markdown("#### Fine-Tuned Model")
+            display_single_result(result['ft_result'], query, "Fine-Tuned")
+        
+        return
+    
+    # Display single system result
+    display_single_result(result, query)
+
+def display_single_result(result, query, system_name=None):
+    """Display a single system's query results."""
+    result_status = result.get('status', 'unknown')
+    
     # Security status header
     st.markdown("### 🛡️ Security Status")
-    st.markdown(f"**Status:** {format_security_status(status)}", unsafe_allow_html=True)
+    st.markdown(f"**Status:** {format_security_status(result_status)}", unsafe_allow_html=True)
     
-    if status == "blocked":
+    if result_status == "blocked":
         st.warning(f"🚫 **Query Blocked:** {result.get('reason', 'Unknown reason')}")
         st.info("💡 **Tip:** Ensure your query is related to financial topics and doesn't contain sensitive information.")
         return
     
-    if status == "error":
+    if result_status == "error":
         st.error(f"❌ **Processing Error:** {result.get('reason', 'Unknown error')}")
         return
     
     # Approved query results
-    if status == "approved":
+    if result_status == "approved":
         answer = result.get('answer', 'No answer generated')
         confidence = result.get('confidence', 0)
         
@@ -597,10 +668,10 @@ def security_dashboard():
     st.header("🛡️ Security Dashboard")
     st.markdown("Monitor system security, threats, and access patterns.")
     
-    # Load RAG system for dashboard data
-    rag_system = load_rag_system()
+    # Load QA systems for dashboard data
+    rag_system, fine_tuned_system = load_qa_systems()
     if not rag_system:
-        st.error("RAG system not available for dashboard.")
+        st.error("QA systems not available for dashboard.")
         return
     
     # Get security dashboard data
@@ -743,10 +814,10 @@ def system_analytics():
     st.header("📊 System Analytics")
     st.markdown("Analyze system performance, usage patterns, and optimization opportunities.")
     
-    # Load RAG system
-    rag_system = load_rag_system()
+    # Load QA systems
+    rag_system, fine_tuned_system = load_qa_systems()
     if not rag_system:
-        st.error("RAG system not available for analytics.")
+        st.error("QA systems not available for analytics.")
         return
     
     # Get system statistics
@@ -824,10 +895,10 @@ def admin_panel():
     # Admin controls
     st.success("✅ Admin access granted")
     
-    # Load RAG system
-    rag_system = load_rag_system()
+    # Load QA systems
+    rag_system, fine_tuned_system = load_qa_systems()
     if not rag_system:
-        st.error("RAG system not available for administration.")
+        st.error("QA systems not available for administration.")
         return
     
     # Emergency controls
@@ -1108,7 +1179,6 @@ def main():
         "🏠 Main Interface",
         "🛡️ Security Dashboard", 
         "📊 System Analytics",
-        "⚙️ Admin Panel",
         "📚 Documentation"
     ])
     
@@ -1116,13 +1186,15 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🚨 System Status")
     
-    rag_system = load_rag_system()
+    rag_system, fine_tuned_system = load_qa_systems()
     if rag_system:
         st.sidebar.success("✅ RAG System Online")
+        if fine_tuned_system:
+            st.sidebar.success("✅ Fine-Tuned Model Ready")
         st.sidebar.success("🛡️ Security Active")
         st.sidebar.success("🎯 Cross-Encoder Ready")
     else:
-        st.sidebar.error("❌ System Offline")
+        st.sidebar.error("❌ Systems Offline")
     
     # Current time
     st.sidebar.markdown(f"🕒 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -1134,8 +1206,7 @@ def main():
         security_dashboard()
     elif page == "📊 System Analytics":
         system_analytics()
-    elif page == "⚙️ Admin Panel":
-        admin_panel()
+
     elif page == "📚 Documentation":
         documentation()
 

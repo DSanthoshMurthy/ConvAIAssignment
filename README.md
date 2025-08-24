@@ -13,6 +13,7 @@
 This is a **state-of-the-art financial RAG (Retrieval-Augmented Generation) system** that provides accurate, contextual answers to financial queries with enterprise-grade security and performance.
 
 ### **🏆 Key Achievements**
+
 - ✅ **Sub-Second Response Times** (0.2s average)
 - ✅ **95% Confidence Scores** for direct financial questions
 - ✅ **Advanced Cross-Encoder Re-Ranking** (Group 98 Technique #3)
@@ -27,6 +28,7 @@ This is a **state-of-the-art financial RAG (Retrieval-Augmented Generation) syst
 ### **1. Access the Web Interface**
 
 The system is now deployed and accessible at:
+
 - **URL**: [http://localhost:8501](http://localhost:8501)
 - **Status**: ✅ Running (Background Process)
 - **Interface**: Professional Streamlit Web Application
@@ -35,13 +37,13 @@ The system is now deployed and accessible at:
 
 The web interface includes 5 main sections:
 
-| **Section** | **Purpose** | **Key Features** |
-|-------------|-------------|------------------|
-| 🏠 **Main Interface** | Ask financial questions | Natural language queries, confidence scores, source citations |
-| 🛡️ **Security Dashboard** | Monitor system security | Threat detection, approval rates, security metrics |
-| 📊 **System Analytics** | Performance monitoring | Response times, usage patterns, system health |
-| ⚙️ **Admin Panel** | System administration | Emergency controls, user management, configuration |
-| 📚 **Documentation** | Help and guidance | Quick start guide, troubleshooting, API reference |
+| **Section**                | **Purpose**       | **Key Features**                                        |
+| -------------------------------- | ----------------------- | ------------------------------------------------------------- |
+| 🏠**Main Interface**       | Ask financial questions | Natural language queries, confidence scores, source citations |
+| 🛡️**Security Dashboard** | Monitor system security | Threat detection, approval rates, security metrics            |
+| 📊**System Analytics**     | Performance monitoring  | Response times, usage patterns, system healt                  |
+|                                  |                         |                                                               |
+| 📚**Documentation**        | Help and guidance       | Quick start guide, troubleshooting, API reference             |
 
 ### **3. Example Queries**
 
@@ -78,32 +80,33 @@ Try these sample financial questions:
 ### **Core Components**
 
 1. **📝 Text Processing & Chunking**
+
    - 1,520 financial chunks with 100-token precision
    - Rich metadata (quarter, section, financial metrics)
    - Smart Q&A pair extraction
-
 2. **🔍 Advanced Retrieval System**
+
    - **Dense Search**: ChromaDB with sentence-transformers/all-MiniLM-L6-v2
    - **Sparse Search**: BM25 with financial-domain optimization
    - **Hybrid Fusion**: Weighted and RRF combination methods
-
 3. **🎯 Cross-Encoder Re-Ranking** (Group 98 mod 5 = 3)
+
    - Model: cross-encoder/ms-marco-MiniLM-L-6-v2 (90.9MB)
    - Two-stage pipeline: Retrieval → Precision re-ranking
    - Score improvements: +2.7 to +8.1 for relevant queries
-
 4. **🤖 Smart Response Generation**
+
    - Direct Q&A matching for perfect answers (95% confidence)
    - Template-based responses for structured queries
    - Financial formatting and context integration
-
 5. **🛡️ Security Guardrails**
+
    - Input validation (XSS, SQL injection, PII protection)
    - Rate limiting (30/min, 500/hour per user)
    - Content filtering and financial context validation
    - Output enhancement and quality assurance
-
 6. **🌐 Web Interface**
+
    - Professional Streamlit application
    - Real-time security monitoring
    - Performance analytics dashboard
@@ -114,18 +117,21 @@ Try these sample financial questions:
 ## 📊 **Performance Metrics**
 
 ### **🎯 Response Quality**
+
 - **Direct Q&A Accuracy**: 95% confidence
-- **Template Response Quality**: 60-80% confidence  
+- **Template Response Quality**: 60-80% confidence
 - **Average Response Time**: 0.19 seconds
 - **Cross-Encoder Boost**: +8.1 score improvement for perfect matches
 
 ### **🛡️ Security Effectiveness**
+
 - **Threat Detection**: 100% malicious pattern blocking
 - **Content Filtering**: 100% inappropriate query filtering
 - **PII Protection**: 100% sensitive data prevention
 - **Approval Rate**: 43-85% (appropriate security level)
 
 ### **⚡ System Performance**
+
 - **Retrieval Speed**: 0.147s average (hybrid search)
 - **Re-ranking Speed**: 45-155ms (cross-encoder processing)
 - **Generation Speed**: <1ms (template-based responses)
@@ -137,17 +143,18 @@ Try these sample financial questions:
 
 ### **Models & Technologies**
 
-| **Component** | **Technology** | **Purpose** |
-|---------------|----------------|-------------|
-| **Embeddings** | sentence-transformers/all-MiniLM-L6-v2 | Dense vector search |
-| **Cross-Encoder** | cross-encoder/ms-marco-MiniLM-L-6-v2 | Precision re-ranking |
-| **Vector Store** | ChromaDB | Persistent embedding storage |
-| **Sparse Index** | BM25Okapi | Keyword-based retrieval |
-| **Web Framework** | Streamlit + Plotly | Interactive dashboard |
-| **Security** | Custom guardrails | Multi-layer protection |
+| **Component**     | **Technology**                   | **Purpose**            |
+| ----------------------- | -------------------------------------- | ---------------------------- |
+| **Embeddings**    | sentence-transformers/all-MiniLM-L6-v2 | Dense vector search          |
+| **Cross-Encoder** | cross-encoder/ms-marco-MiniLM-L-6-v2   | Precision re-ranking         |
+| **Vector Store**  | ChromaDB                               | Persistent embedding storage |
+| **Sparse Index**  | BM25Okapi                              | Keyword-based retrieval      |
+| **Web Framework** | Streamlit + Plotly                     | Interactive dashboard        |
+| **Security**      | Custom guardrails                      | Multi-layer protection       |
 
 ### **System Requirements**
-- **Python**: 3.13+ 
+
+- **Python**: 3.13+
 - **Memory**: 4GB+ recommended
 - **Storage**: 2GB for models and indexes
 - **Network**: Internet for initial model downloads
@@ -157,18 +164,21 @@ Try these sample financial questions:
 ## 🎮 **Using the Web Interface**
 
 ### **Main Query Interface**
+
 1. **Enter Your Question**: Type financial queries in natural language
 2. **Advanced Options**: Configure retrieval parameters and explanation detail
 3. **Security Status**: Real-time validation feedback
 4. **Response Analysis**: Confidence scores, source citations, performance metrics
 
 ### **Security Dashboard**
+
 - **System Status**: Component health monitoring
 - **Security Metrics**: Approval rates, threat detection stats
 - **Guardrails Effectiveness**: Rate limiting, content filtering performance
 - **Response Quality**: Confidence distribution, performance trends
 
-### **Admin Panel** 
+### **Admin Panel**
+
 - **Authentication**: Admin password protection (default: `admin123`)
 - **Emergency Controls**: System lockdown, user access management
 - **Configuration**: Security settings, rate limits, system parameters
@@ -179,6 +189,7 @@ Try these sample financial questions:
 ## 🔒 **Security Features**
 
 ### **Input Validation**
+
 - ✅ Query length limits (500 characters)
 - ✅ Malicious pattern detection (XSS, SQL injection)
 - ✅ PII protection (SSN, credit cards, emails)
@@ -186,6 +197,7 @@ Try these sample financial questions:
 - ✅ Financial context validation
 
 ### **Output Enhancement**
+
 - ✅ Response quality validation
 - ✅ Confidence-based disclaimers
 - ✅ Financial formatting standardization
@@ -193,6 +205,7 @@ Try these sample financial questions:
 - ✅ Content sanitization
 
 ### **Access Control**
+
 - ✅ Rate limiting per user
 - ✅ Emergency lockdown capability
 - ✅ Admin authentication
@@ -203,18 +216,21 @@ Try these sample financial questions:
 ## 📈 **Business Value**
 
 ### **✨ For Financial Analysts**
+
 - **Instant Insights**: Get answers in 0.2 seconds vs. hours of manual research
 - **High Accuracy**: 95% confidence for direct financial questions
 - **Source Citations**: Full transparency with document references
 - **Cross-Period Analysis**: Compare metrics across quarters efficiently
 
 ### **🛡️ For IT Security Teams**
+
 - **Enterprise Security**: Bank-grade protection with real-time threat detection
 - **Compliance Ready**: Complete audit trails and access controls
 - **Performance Monitoring**: Comprehensive dashboards and alerting
 - **Emergency Response**: Immediate lockdown capabilities
 
 ### **📊 For Management**
+
 - **Cost Reduction**: Automated financial Q&A reduces analyst workload
 - **Risk Mitigation**: Secured system prevents data leaks and attacks
 - **Scalability**: Handle thousands of queries per hour
@@ -224,24 +240,26 @@ Try these sample financial questions:
 
 ## 🎯 **Success Metrics Achieved**
 
-| **Target** | **Achieved** | **Status** |
-|------------|--------------|------------|
-| Response Time < 2s | 0.19s average | ✅ **Exceeded** |
-| Retrieval Accuracy > 80% | 95% for Q&A pairs | ✅ **Exceeded** |
-| Answer Quality > 85% | 95% confidence direct answers | ✅ **Exceeded** |
-| Security Detection > 95% | 100% threat blocking | ✅ **Exceeded** |
+| **Target**         | **Achieved**            | **Status**     |
+| ------------------------ | ----------------------------- | -------------------- |
+| Response Time < 2s       | 0.19s average                 | ✅**Exceeded** |
+| Retrieval Accuracy > 80% | 95% for Q&A pairs             | ✅**Exceeded** |
+| Answer Quality > 85%     | 95% confidence direct answers | ✅**Exceeded** |
+| Security Detection > 95% | 100% threat blocking          | ✅**Exceeded** |
 
 ---
 
 ## 🚀 **Next Steps & Expansion**
 
 ### **Immediate Opportunities**
+
 - **Data Expansion**: Add more financial periods and companies
 - **Advanced Analytics**: Implement trend analysis and forecasting
 - **API Development**: Create REST API for programmatic access
 - **Mobile Interface**: Responsive design for mobile devices
 
-### **Enterprise Enhancements**  
+### **Enterprise Enhancements**
+
 - **Multi-Tenant Support**: Separate data for different organizations
 - **Advanced Authentication**: SSO integration and role-based access
 - **Custom Dashboards**: Personalized financial reporting
@@ -252,12 +270,14 @@ Try these sample financial questions:
 ## 📞 **Support & Maintenance**
 
 ### **System Health**
+
 - **Monitoring**: Real-time performance and security tracking
 - **Logging**: Comprehensive audit trails and error reporting
 - **Backup**: Automated data and configuration backups
 - **Updates**: Seamless model and security updates
 
 ### **Documentation**
+
 - **User Guide**: Complete system usage documentation
 - **Admin Manual**: System administration and configuration
 - **API Reference**: Technical integration specifications
@@ -270,8 +290,9 @@ Try these sample financial questions:
 This **Financial RAG System** represents a **world-class implementation** of modern AI technology for financial question answering. With **enterprise-grade security**, **sub-second performance**, and **95% accuracy**, it's ready for immediate production deployment.
 
 The system successfully combines:
+
 - ✅ **Advanced AI Models** (cross-encoder re-ranking, hybrid retrieval)
-- ✅ **Enterprise Security** (multi-layer guardrails, threat protection)  
+- ✅ **Enterprise Security** (multi-layer guardrails, threat protection)
 - ✅ **Professional Interface** (Streamlit dashboard, analytics)
 - ✅ **Production Performance** (0.2s response times, high confidence)
 
