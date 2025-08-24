@@ -24,6 +24,8 @@ python-dotenv==1.1.1
 # ML/DL
 torch==2.8.0
 transformers==4.55.2
+h5py==3.10.0  # For HDF5 support
+gdown==5.1.0  # For Google Drive downloads
 
 # API and web
 fastapi==0.116.1

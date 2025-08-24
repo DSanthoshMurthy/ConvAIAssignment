@@ -229,8 +229,22 @@ def load_qa_systems():
             
             # Load Fine-tuned system
             try:
+                from src.fine_tuning.model_downloader import ModelDownloader
+                
+                # Get Google Drive file ID from secrets
+                model_file_id = st.secrets.get("MODEL_FILE_ID")
+                if not model_file_id:
+                    raise ValueError("MODEL_FILE_ID not found in secrets")
+                
+                # Download model
+                downloader = ModelDownloader()
+                model_path = downloader.download_model(model_file_id)
+                
+                # Initialize model with downloaded weights
                 fine_tuned_system = FineTunedFinancialQA()
+                fine_tuned_system.load_state_dict(torch.load(model_path, map_location='cpu'))
                 ft_success = True
+                st.success("✅ Fine-tuned model loaded successfully from Google Drive")
             except Exception as e:
                 st.warning(f"⚠️ Fine-tuned model loading failed: {str(e)}")
                 fine_tuned_system = None
