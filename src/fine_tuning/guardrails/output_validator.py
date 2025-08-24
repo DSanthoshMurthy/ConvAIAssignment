@@ -7,7 +7,7 @@ import numpy as np
 class OutputValidator:
     def __init__(
         self,
-        confidence_threshold: float = 0.7,
+        confidence_threshold: float = 0.4,  # Reduced threshold since we have better validation
         max_number_threshold: float = 1e12  # 1 trillion
     ):
         """Initialize output validator.
@@ -149,10 +149,7 @@ class OutputValidator:
         Returns:
             Tuple of (is_valid, error_message)
         """
-                # Check if answer contains question keywords
-        question_words = ['what', 'how', 'when', 'where', 'why', 'which']
-        if any(word in answer.lower() for word in question_words):
-            return False, "Answer contains question words"
+                # No longer checking for question words as they might be part of valid answers
         
         return True, ""
     

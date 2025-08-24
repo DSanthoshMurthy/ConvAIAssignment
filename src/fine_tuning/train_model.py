@@ -225,11 +225,11 @@ def main():
         'hidden_size': 768,  # Full size
         'dropout': 0.2,  # Increased dropout
         'expert_types': [
-            'company_info',
-            'revenue_metrics',
-            'expense_metrics',
-            'profitability',
-            'segment_analysis'
+            'financial_metrics',      # Revenue, income, etc.
+            'profitability',         # Profit/loss analysis
+            'operational_metrics',   # Operations, expenses
+            'segment_performance',   # Segment-wise analysis
+            'temporal_analysis'      # Time-based comparisons
         ],
         'use_wandb': False,
         'patience': 5,  # Increased patience
