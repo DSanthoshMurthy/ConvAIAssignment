@@ -1,29 +1,28 @@
 # Core dependencies
 streamlit==1.48.1
 nltk==3.9.1
-numpy==1.24.3  # Fixed version for compatibility
-pandas==2.0.3  # Compatible with numpy 1.24.3
+numpy>=1.25.0  # Required by faiss-cpu
+pandas>=2.0.3
 plotly==6.3.0
-scikit-learn==1.3.0  # Compatible with numpy 1.24.3
+scikit-learn>=1.3.0
+
+# ML/DL and Transformers
+torch>=2.1.0  # Updated for compiler support
+transformers>=4.41.0
 sentence-transformers==5.1.0
 
 # RAG and embeddings
 chromadb==1.0.17
 faiss-cpu==1.12.0
 rank-bm25==0.2.2
-pysqlite3-binary==0.5.2  # Required for ChromaDB in cloud environments
 
 # Data processing
 openpyxl==3.1.5
 PyPDF2==3.0.1
 python-dotenv==1.1.1
-
-# ML/DL
-torch==2.0.1  # Fixed version for better compatibility
-transformers==4.35.2
-h5py==3.10.0  # For HDF5 support
-gdown==5.1.0  # For Google Drive downloads
-scipy==1.10.1  # Compatible with numpy 1.24.3
+gdown==5.1.0
+scipy>=1.10.1
+spacy==3.8.7
 
 # API and web
 fastapi==0.116.1

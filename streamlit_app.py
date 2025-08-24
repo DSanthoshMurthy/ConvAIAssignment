@@ -229,22 +229,32 @@ def load_qa_systems():
             
             # Load Fine-tuned system
             try:
-                from src.fine_tuning.model_downloader import ModelDownloader
-                
-                # Get Google Drive file ID from secrets
+                # First try to get model from Google Drive
+                model_path = None
                 model_file_id = st.secrets.get("MODEL_FILE_ID")
-                if not model_file_id:
-                    raise ValueError("MODEL_FILE_ID not found in secrets")
                 
-                # Download model
-                downloader = ModelDownloader()
-                model_path = downloader.download_model(model_file_id)
+                if model_file_id:
+                    try:
+                        from src.fine_tuning.model_downloader import ModelDownloader
+                        downloader = ModelDownloader()
+                        model_path = downloader.download_model(model_file_id)
+                        st.success("✅ Fine-tuned model loaded successfully from Google Drive")
+                    except Exception as drive_error:
+                        st.warning(f"⚠️ Failed to load model from Google Drive: {str(drive_error)}")
+                        model_path = None
                 
-                # Initialize model with downloaded weights
-                fine_tuned_system = FineTunedFinancialQA()
-                fine_tuned_system.load_state_dict(torch.load(model_path, map_location='cpu'))
+                # If Google Drive failed or MODEL_FILE_ID not found, try local checkpoint
+                if not model_path:
+                    local_path = "checkpoints/best_checkpoint.pt"
+                    if os.path.exists(local_path):
+                        model_path = local_path
+                        st.success("✅ Fine-tuned model loaded successfully from local checkpoint")
+                    else:
+                        raise FileNotFoundError("Model not found in Google Drive or local checkpoints")
+                
+                # Initialize model with weights
+                fine_tuned_system = FineTunedFinancialQA(model_path=model_path)
                 ft_success = True
-                st.success("✅ Fine-tuned model loaded successfully from Google Drive")
             except Exception as e:
                 st.warning(f"⚠️ Fine-tuned model loading failed: {str(e)}")
                 fine_tuned_system = None

@@ -26,49 +26,79 @@ class FineTunedFinancialQA:
         
         # Initialize model configuration
         try:
+            print(f"Debug: Loading checkpoint from {model_path}")
             # First try loading with weights_only=True (safer)
-            checkpoint = torch.load(model_path, map_location=device, weights_only=True)
-        except Exception as e:
             try:
-                # If that fails, try loading with weights_only=False
-                checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+                checkpoint = torch.load(model_path, map_location=device)
             except Exception as e:
-                # If both loading attempts fail, raise an error
-                raise RuntimeError(f"Failed to load model checkpoint from {model_path}. Error: {str(e)}")
-        
-        config = checkpoint.get('config', {
-            'expert_types': [
-                'company_info',
-                'revenue_metrics',
-                'expense_metrics',
-                'profitability',
-                'segment_analysis'
-            ],
-            'hidden_size': 384,
-            'dropout': 0.1
-        })
-        
-        # Initialize model with proper configuration
-        print(f"Debug: Initializing model with config: {config}")
-        try:
+                print(f"Debug: Error loading checkpoint: {str(e)}")
+                # Try loading as HDF5
+                if model_path.endswith('.h5'):
+                    from ..checkpoint_converter import load_checkpoint_from_h5
+                    checkpoint = load_checkpoint_from_h5(model_path)
+                else:
+                    raise
+            
+            print(f"Debug: Checkpoint keys: {checkpoint.keys() if isinstance(checkpoint, dict) else 'Not a dict'}")
+            
+            # Extract config and state dict
+            if isinstance(checkpoint, dict):
+                config = checkpoint.get('config', {})
+                state_dict = checkpoint.get('model_state_dict', checkpoint.get('state_dict', checkpoint))
+            else:
+                config = {}
+                state_dict = checkpoint
+            
+            # Set default config values to match training configuration
+            default_config = {
+                'expert_types': [
+                    'financial_metrics',      # Revenue, income, etc.
+                    'profitability',         # Profit/loss analysis
+                    'operational_metrics',   # Operations, expenses
+                    'segment_performance',   # Segment-wise analysis
+                    'temporal_analysis'      # Time-based comparisons
+                ],
+                'hidden_size': 768,  # Full size as used in training
+                'dropout': 0.2,      # Same dropout as training
+                'use_gradient_checkpointing': False  # Disable for inference
+            }
+            
+            for key, value in default_config.items():
+                if key not in config:
+                    config[key] = value
+            
+            print(f"Debug: Using config: {config}")
+            
+            # Initialize model
             self.model = FinancialMoE(
                 expert_types=config['expert_types'],
-                hidden_size=config.get('hidden_size', 768),  # Use default if not specified
+                hidden_size=config.get('hidden_size', 768),
                 dropout=config.get('dropout', 0.1)
             )
             print("Debug: Model initialized successfully")
+            
+            # Load state dict
+            if state_dict is not None:
+                print("Debug: Loading state dict")
+                try:
+                    # Try direct loading
+                    self.model.load_state_dict(state_dict)
+                except Exception as e1:
+                    print(f"Debug: Direct loading failed: {str(e1)}")
+                    try:
+                        # Try loading with strict=False
+                        self.model.load_state_dict(state_dict, strict=False)
+                        print("Debug: Loaded state dict with strict=False")
+                    except Exception as e2:
+                        print(f"Debug: Loading with strict=False failed: {str(e2)}")
+                        raise RuntimeError(f"Failed to load model weights: {str(e2)}")
+            
+            self.model.to(device)
+            print(f"Debug: Model moved to device: {device}")
+            
         except Exception as e:
-            print(f"Debug: Error initializing model: {str(e)}")
-            raise
-        
-        # Load trained weights if available
-        if checkpoint.get('model_state_dict') is not None:
-            self.model.load_state_dict(checkpoint['model_state_dict'])
-            print("Loaded trained model weights")
-        else:
-            print("Using model with default weights (not trained)")
-        
-        self.model.to(device)
+            print(f"Debug: Fatal error during model initialization: {str(e)}")
+            raise RuntimeError(f"Failed to initialize model: {str(e)}")
         self.model.eval()
         
         # Initialize guardrails
@@ -190,6 +220,9 @@ class FineTunedFinancialQA:
                 
                 print(f"Debug: Identified period: {period}")
                 
+                # Initialize context
+                context = ""
+                
                 # Map question type to training data format
                 if 'revenue' in question.lower():
                     question = f"What was the revenue from operations in {period}?"
@@ -217,12 +250,19 @@ class FineTunedFinancialQA:
             print(f"Debug: Standardized question: '{question}'")
             print(f"Debug: Tokenizing question...")
             
-            # Tokenize input with context
+            # Tokenize input with context if available, matching training format
+            if 'context' not in locals():
+                context = ""  # Set empty context if not defined
+                
+            # Combine question and context if context exists
+            full_input = f"{question} {context}" if context.strip() else question
+            
+            # Tokenize the combined input
             inputs = self.tokenizer(
-                question,
-                padding=True,
-                truncation=True,
+                full_input,
                 max_length=512,
+                padding='max_length',
+                truncation=True,
                 return_tensors='pt'
             ).to(self.device)
             
@@ -320,13 +360,41 @@ class FineTunedFinancialQA:
                             # Combine scores
                             score = base_score * length_bonus * value_bonus * structure_bonus * position_bonus
                         
+                        # Calculate score and get answer text
+                        score = 0.0  # Default score
+                        if start_idx > question_end:  # Only calculate score for valid spans
+                            # Calculate score with additional factors
+                            span_length = end_idx - start_idx + 1
+                            base_score = top_start.values[0][i] * top_end.values[0][j]
+                            
+                            # Get the answer text
+                            answer_tokens = inputs['input_ids'][0][start_idx:end_idx+1]
+                            answer = self.tokenizer.decode(answer_tokens)
+                            answer_lower = answer.lower()
+                            
+                            # Bonus for answers containing financial values
+                            value_bonus = 2.0 if any(x in answer_lower for x in ['₹', 'billion', 'crore', 'lakh']) else 1.0
+                            
+                            # Bonus for answers with proper structure
+                            structure_bonus = 1.5 if any(x in answer_lower for x in ['was', 'were', 'reported', 'amounted to']) else 1.0
+                            
+                            # Position bonus - prefer answers from context
+                            position_bonus = 2.0  # Strong preference for answers after the question
+                            
+                            # Length penalty - prefer medium length answers
+                            length_bonus = min(span_length / 4, 1.0)  # Bonus for answers up to 4 tokens
+                            
+                            # Combine scores
+                            score = base_score * length_bonus * value_bonus * structure_bonus * position_bonus
+                        
+                        # Get answer text
                         answer_tokens = inputs['input_ids'][0][start_idx:end_idx+1]
                         answer = self.tokenizer.decode(answer_tokens)
                         print(f"Debug: Trying span [{start_idx}, {end_idx}] with score {score:.4f}: '{answer}'")
                         
                         # Only consider non-empty answers that don't consist solely of special tokens
                         answer_clean = answer.replace('[CLS]', '').replace('[SEP]', '').strip()
-                        if len(answer_clean) > 0:
+                        if len(answer_clean) > 0 and score > 0:  # Only consider answers with positive scores
                             if score > best_score:
                                 best_score = score
                                 best_answer = answer_clean
